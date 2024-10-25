@@ -1,0 +1,36 @@
+{
+  "education": [
+    {
+      "name": "Monash University",
+      "href": "https://www.monash.edu",
+      "title": "Masters of Business Administration (MBA)",
+      "logo": "/monash.png",
+      "start": "2024",
+      "description": [
+        "Specialized in IT to enhance leadership and strategic skills"
+      ]
+    },
+    {
+      "name": "UCSI University",
+      "href": "https://www.ucsiuniversity.edu.my",
+      "title": "Masters of Science in Computer Science",
+      "logo": "/ucsi.jpg",
+      "start": "2023",
+      "description": [
+        "Thesis in Data Science",
+        "Financial Data Analysis Algorithmic Trading: Developing\nPredictive Models Using Financial Time Series Data\n"
+      ]
+    },
+    {
+      "name": "University of Jordan",
+      "href": "https://www.ju.edu.jo",
+      "title": "Bachelor of Computer Engineering",
+      "logo": "/university-of-jordan.png",
+      "start": "2017",
+      "end": "2020",
+      "description": [
+        "Graduation project: Virtue Mental Health Application with research publication and deployment"
+      ]
+    }
+  ]
+}

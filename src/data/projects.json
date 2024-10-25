@@ -1,0 +1,95 @@
+{
+  "projects": [
+    {
+      "name": "Wajibaty AI",
+      "description": "A vibrant AI-powered platform designed to help users manage and organize daily tasks. Wajibaty simplifies to-do lists, schedules, and reminders, focusing on accessibility and convenience.",
+      "href": "https://wajibaty.com",
+      "image": "/wajibaty.jpg",
+      "tags": ["AI", "Task Management", "Productivity"],
+      "links": [
+        {
+          "name": "Website",
+          "href": "https://wajibaty.com",
+          "icon": "globe"
+        }
+      ]
+    },
+    {
+      "name": "SautNote AI",
+      "description": "An AI-driven transcription service that converts audio into accurate, text-based notes, enhancing productivity for professionals and students.",
+      "href": "https://sautnote.com",
+      "image": "/sautnote.jpg",
+      "tags": ["AI", "Transcription", "Productivity"],
+      "links": [
+        {
+          "name": "Website",
+          "href": "https://sautnote.com",
+          "icon": "globe"
+        }
+      ]
+    },
+    {
+      "name": "PRF Production",
+      "description": "A creative services provider offering video production, photography, and more, with AI-driven solutions for enhancing the creative process.",
+      "href": "https://prf-kw.com",
+      "image": "/prf.jpg",
+      "tags": ["AI", "Video Production", "Photography"],
+      "links": [
+        {
+          "name": "Website",
+          "href": "https://prf-kw.com",
+          "icon": "globe"
+        }
+      ]
+    },
+    {
+      "name": "KPI on the Fly AI",
+      "description": "An AI-powered business intelligence platform that generates KPIs in real-time from data. It integrates Apache Superset for easy dashboard creation.",
+      "href": "https://kpionthefly.com",
+      "image": "/kpionthefly.jpg",
+      "tags": ["AI", "Business Intelligence", "Data Analytics"],
+      "links": [
+        {
+          "name": "Website",
+          "href": "https://kpionthefly.com",
+          "icon": "globe"
+        }
+      ]
+    },
+    {
+      "name": "BIAC's Business Intelligence Consultant System",
+      "description": "A comprehensive AI-powered business intelligence solution that integrates real-time data visualization, SQLFlow, and machine learning to enhance decision-making.",
+      "image": "/biac.png",
+      "tags": ["AI", "Business Intelligence", "Data Analytics", "SQLFlow"],
+      "links": []
+    },
+    {
+      "name": "SCIC (Supply Chain Intelligence Consultant) Project",
+      "description": "An AI-powered platform that delivers real-time insights and optimization tools for supply chain management, enabling businesses to reduce costs and improve efficiency.",
+      "image": "/scic.png",
+      "tags": ["AI", "Supply Chain Optimization", "Predictive Analytics"],
+      "links": []
+    },
+    {
+      "name": "Virtue: Mental Health Application",
+      "description": "An AI-based mental health platform that helps users improve their mental well-being through personalized tools, secure data management, and a clean user interface.",
+      "image": "/virtue.png",
+      "tags": ["AI", "Mental Health", "Data Security"],
+      "links": []
+    },
+    {
+      "name": "Keef libsaty",
+      "description": "An AI-driven platform that allows users to discover fashion items by uploading images or links, providing personalized recommendations instantly.",
+      "href": "https://fashiononthefly.com",
+      "image": "/fashiononthefly.jpg",
+      "tags": ["AI", "Fashion", "E-commerce"],
+      "links": [
+        {
+          "name": "Website",
+          "href": "https://fashiononthefly.com",
+          "icon": "globe"
+        }
+      ]
+    }
+  ]
+}

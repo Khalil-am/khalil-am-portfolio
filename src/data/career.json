@@ -1,0 +1,43 @@
+{
+  "career": [
+    {
+      "name": "IT Business Analyst Specialist",
+      "href": "https://cloudsolutions.com.sa/en/",
+      "title": "IT Business Analyst Specialist",
+      "logo": "/cloudsolutions.png",
+      "start": "Sep 2023",
+      "end": "Present",
+      "description": [
+        "Streamlined business requirements gathering, producing over 1,200 pages of documentation and reducing project delivery time by 70%.",
+        "Implemented a reporting framework with Microsoft Power Platforms, creating over 100 dashboards to enable data-driven decisions.",
+        "Developed a Business Analyst training program, increasing team efficiency and skill development."
+      ]
+    },
+    {
+      "name": "Council of Engineers Association",
+      "href": "https://www.jea.org.jo/Default/En",
+      "title": "Data Scientist (Contract)",
+      "logo": "/coa.png",
+      "start": "Apr 2022",
+      "end": "Sep 2023",
+      "description": [
+        "Conducted advanced data analysis and developed predictive models, providing actionable insights for key engineering projects.",
+        "Created visualizations and dashboards that translated complex data into clear, actionable insights to support decision-making.",
+        "Authored technical documentation for data models and algorithms, ensuring reproducibility and knowledge sharing across teams."
+      ]
+    },
+    {
+      "name": "Digital Cash",
+      "href": "https://dg-cash.com/",
+      "title": "Software Data Science Intern",
+      "logo": "/digitalcash.png",
+      "start": "Oct 2021",
+      "end": "Apr 2022",
+      "description": [
+        "Built and deployed an application focusing on RESTful services with Spring Boot in an agile setting.",
+        "Developed data pipelines for large datasets, optimizing data flow and integration.",
+        "Extracted insights from application data to drive improvements and support business objectives."
+      ]
+    }
+  ]
+}

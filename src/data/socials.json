@@ -1,0 +1,19 @@
+{
+  "socials": [
+    {
+      "name": "LinkedIn",
+      "href": "https://linkedin.com/in/khalil-am",
+      "icon": "linkedin"
+    },
+    {
+      "name": "GitHub",
+      "href": "https://github.com/Khalil-am",
+      "icon": "github"
+    },
+    {
+      "name": "Email",
+      "href": "mailto:Khalil@khalil-am.com",
+      "icon": "mail"
+    }
+  ]
+}
