@@ -16,6 +16,9 @@ const calistoga = Calistoga({
 export const metadata: Metadata = {
   title: "Khalil Abu Mushref | Data Scientist",
   description: "Personal site to showcase my work, projects, and insights on data science and technology.",
+  icons: {
+    icon: "/favicon.ico", // Path to your icon file
+  },
 };
 
 export default function RootLayout({

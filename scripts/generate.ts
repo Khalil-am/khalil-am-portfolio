@@ -6,14 +6,12 @@ import { Redis } from "@upstash/redis";
 import { DirectoryLoader } from "langchain/document_loaders/fs/directory";
 import { TextLoader } from "langchain/document_loaders/fs/text";
 import { RecursiveCharacterTextSplitter } from "langchain/text_splitter";
-import { getEmbeddingsCollection, getVectorStore } from "../src/lib/vectordb";
+import { getEmbeddingsCollection } from "../src/lib/vectordb"; // Retain this import for embeddings collection
 
 async function generateEmbeddings() {
-  const vectorStore = await getVectorStore();
-
-  // clear existing data
+  // Clear existing data
   (await getEmbeddingsCollection()).deleteMany({});
-  (await Redis.fromEnv()).flushdb();
+  await Redis.fromEnv().flushdb();
 
   const routeLoader = new DirectoryLoader(
     "src/app",
@@ -23,7 +21,7 @@ async function generateEmbeddings() {
     true,
   );
 
-  // routes
+  // Load routes
   const routes = (await routeLoader.load())
     .filter((route) => route.metadata.source.endsWith("page.tsx"))
     .map((route): DocumentInterface => {
@@ -42,24 +40,20 @@ async function generateEmbeddings() {
       return { pageContent: pageContentTrimmed, metadata: { url } };
     });
 
-  // console.log(routes);
-
   const routesSplitter = RecursiveCharacterTextSplitter.fromLanguage("html");
   const splitRoutes = await routesSplitter.splitDocuments(routes);
 
-  // resume data
+  // Resume data
   const dataLoader = new DirectoryLoader("src/data", {
     ".json": (path) => new TextLoader(path),
   });
 
   const data = await dataLoader.load();
 
-  // console.log(data);
-
   const dataSplitter = RecursiveCharacterTextSplitter.fromLanguage("js");
   const splitData = await dataSplitter.splitDocuments(data);
 
-  // blog posts
+  // Blog posts
   const postLoader = new DirectoryLoader(
     "content",
     {
@@ -76,14 +70,11 @@ async function generateEmbeddings() {
       return { pageContent: pageContentTrimmed, metadata: post.metadata };
     });
 
-  // console.log(posts);
-
   const postSplitter = RecursiveCharacterTextSplitter.fromLanguage("markdown");
   const splitPosts = await postSplitter.splitDocuments(posts);
 
-  await vectorStore.addDocuments(splitRoutes);
-  await vectorStore.addDocuments(splitData);
-  await vectorStore.addDocuments(splitPosts);
+  // Here, you can add the logic to save `splitRoutes`, `splitData`, and `splitPosts`
+  // to your desired storage (e.g., a database or a file) if needed.
 }
 
 generateEmbeddings();
