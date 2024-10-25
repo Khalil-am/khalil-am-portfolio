@@ -18,7 +18,7 @@ export async function getVectorStore() {
       endpoint,
       collection,
       collectionOptions: {
-        vector: { dimension: 1536, metric: "cosine" },
+        vector: { dimension: 1024, metric: "cosine" },
       },
     },
   );
