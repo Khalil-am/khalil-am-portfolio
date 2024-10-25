@@ -1,5 +1,5 @@
 import dotenv from "dotenv";
-dotenv.config({ path: ".env.local" });
+dotenv.config({ path: ".env.local.local" });
 
 import { DataAPIClient } from "@datastax/astra-db-ts"; // Retained for embeddings collection
 

@@ -1,5 +1,5 @@
 import dotenv from "dotenv";
-dotenv.config({ path: ".env.local" });
+dotenv.config({ path: ".env.local.local" });
 
 import { DocumentInterface } from "@langchain/core/documents";
 import { Redis } from "@upstash/redis";

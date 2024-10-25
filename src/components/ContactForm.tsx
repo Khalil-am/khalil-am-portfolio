@@ -1,44 +1,41 @@
 "use client";
 
-import { sendEmail } from "@/lib/actions";
-import { ContactFormSchema } from "@/lib/schemas";
-import { zodResolver } from "@hookform/resolvers/zod";
 import { PaperPlaneIcon, ReloadIcon } from "@radix-ui/react-icons";
 import { SubmitHandler, useForm } from "react-hook-form";
-import { toast } from "sonner";
-import { z } from "zod";
 import { Button } from "./ui/Button";
 import { Input } from "./ui/Input";
 import { Textarea } from "./ui/Textarea";
 import Link from "next/link";
+import { useState } from "react";
 
-type Inputs = z.infer<typeof ContactFormSchema>;
+type Inputs = {
+  name: string;
+  email: string;
+  message: string;
+};
 
-export default function ContactForm() {
+const ContactForm = () => {
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const {
     register,
     handleSubmit,
-    reset,
-    formState: { errors, isSubmitting },
-  } = useForm<Inputs>({
-    resolver: zodResolver(ContactFormSchema),
-    defaultValues: {
-      name: "",
-      email: "",
-      message: "",
-    },
-  });
+    formState: { errors },
+  } = useForm<Inputs>();
 
   const processForm: SubmitHandler<Inputs> = async (data) => {
-    const result = await sendEmail(data);
+    setIsSubmitting(true);
 
-    if (result.error) {
-      toast.error("An error occurred! Please try again later.");
-      return;
+    const res = await fetch("/api/contact", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
+    });
+
+    if (res.ok) {
+      setIsSubmitting(false);
     }
-
-    toast.success("Message sent successfully!");
-    reset();
   };
 
   return (
@@ -51,10 +48,10 @@ export default function ContactForm() {
             type="text"
             placeholder="Name"
             autoComplete="given-name"
-            {...register("name")}
+            {...register("name", { required: "Name is required" })}
           />
           {errors.name?.message && (
-            <p className="input-error">{errors.name.message}</p>
+            <p className="input-error">{String(errors.name.message)}</p>
           )}
         </div>
 
@@ -65,11 +62,10 @@ export default function ContactForm() {
             type="email"
             placeholder="Email"
             autoComplete="email"
-            {...register("email")}
+            {...register("email", { required: "Email is required" })}
           />
-
           {errors.email?.message && (
-            <p className="input-error">{errors.email.message}</p>
+            <p className="input-error">{String(errors.email.message)}</p>
           )}
         </div>
 
@@ -80,11 +76,10 @@ export default function ContactForm() {
             placeholder="Leave feedback about the site, career opportunities or just to say hello etc."
             autoComplete="Message"
             className="resize-none"
-            {...register("message")}
+            {...register("message", { required: "Message is required" })}
           />
-
           {errors.message?.message && (
-            <p className="input-error">{errors.message.message}</p>
+            <p className="input-error">{String(errors.message.message)}</p>
           )}
         </div>
       </div>
@@ -115,4 +110,6 @@ export default function ContactForm() {
       </div>
     </form>
   );
-}
+};
+
+export default ContactForm;
