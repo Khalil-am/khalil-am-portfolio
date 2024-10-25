@@ -8,20 +8,18 @@ export async function POST(req: Request) {
   try {
     const body = await req.json();
     const messages = body.messages;
+    const userContext = body.userContext; // Expect userContext to be part of the request
 
-    // Debugging: Log the incoming messages
-    console.log("Incoming messages:", messages);
-
-    const latestMessage = messages[messages.length - 1]?.content; // Use optional chaining
-    if (!latestMessage) {
-      throw new Error("Latest message is undefined");
+    // Check if userContext is provided
+    if (!userContext || !userContext.name) {
+      throw new Error("User context is missing or incomplete.");
     }
 
     const { stream, handlers } = LangChainStream();
 
     // Configure OpenAI chat model
     const chatModel = new ChatOpenAI({
-      model: "gpt-3.5-turbo-0125", // Use the desired OpenAI model
+      model: "gpt-3.5-turbo-0125",
       streaming: true,
       callbacks: [handlers],
       temperature: 0.3,
@@ -29,24 +27,28 @@ export async function POST(req: Request) {
 
     // Construct chat history
     const chatHistory = messages.slice(0, -1).map((msg: { role: string; content: string }) => {
-      // Ensure each message has the necessary properties
-      if (msg.role === "user") {
-        return new HumanMessage(msg.content);
-      } else if (msg.role === "ai") {
-        return new AIMessage(msg.content);
-      } else {
-        throw new Error(`Unknown message role: ${msg.role}`);
-      }
+      return msg.role === "user"
+        ? new HumanMessage(msg.content)
+        : new AIMessage(msg.content);
     });
 
-    // Combine the latest message with chat history
+    const latestMessage = messages[messages.length - 1]?.content;
     const fullMessages = [...chatHistory, new HumanMessage(latestMessage)];
 
-    // Debugging: Log the full messages
-    console.log("Full messages:", fullMessages);
+    // Add user context to the prompt
+    const contextPrompt = `
+      You are a friendly chatbot. Answer questions based on the user's profile and context provided below:
+      Name: ${userContext.name}
+      Occupation: ${userContext.occupation}
+      Description: ${userContext.description}
+      Background: ${JSON.stringify(userContext.background)}
+      Interests: ${userContext.interests.join(", ")}
 
-    // Generate response based on combined messages
-    const response = await chatModel.invoke(fullMessages); // Pass the combined messages directly
+      Now, here is the latest question: ${latestMessage}
+    `;
+
+    // Generate response based on context and combined messages
+    const response = await chatModel.invoke(fullMessages.concat(new HumanMessage(contextPrompt)));
 
     // Stream the response
     return new StreamingTextResponse(stream);

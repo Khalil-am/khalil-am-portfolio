@@ -30,9 +30,7 @@ export function ChatProvider({ children }: Props) {
           title: "Masters of Business Administration (MBA)",
           logo: "/monash.png",
           start: "2024",
-          description: [
-            "Specialized in IT to enhance leadership and strategic skills.",
-          ],
+          description: ["Specialized in IT to enhance leadership and strategic skills."],
         },
         {
           name: "UCSI University",
@@ -52,9 +50,7 @@ export function ChatProvider({ children }: Props) {
           logo: "/university-of-jordan.png",
           start: "2017",
           end: "2020",
-          description: [
-            "Graduation project: Virtue Mental Health Application with research publication and deployment.",
-          ],
+          description: ["Graduation project: Virtue Mental Health Application with research publication and deployment."],
         },
       ],
       experience: [
