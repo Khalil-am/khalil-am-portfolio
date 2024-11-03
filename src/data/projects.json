@@ -1,6 +1,33 @@
 {
   "projects": [
     {
+      "name": "Virtue 2.0",
+      "description": "An AI mental health support tool offering appointments with top practitioners. Features both payment and non-profit charity plans, enabling users to get diagnoses and connect with the best mental health professionals.",
+      "href": "https://virtue-help.me",
+      "image": "/img.png",
+      "tags": ["AI", "Mental Health", "Non-Profit", "Healthcare","Diagnosis"],
+      "links": [
+        {
+          "name": "Website",
+          "href": "https://virtue-help.me",
+          "icon": "globe"
+        }
+      ]
+    },
+    {
+      "name": "Yadree: Business Intelligence Consultant System",
+      "description": "A comprehensive AI-powered business intelligence solution that integrates real-time data visualization, SQLFlow, and machine learning to enhance decision-making.",
+      "image": "/biac.png",
+      "tags": ["AI", "Business Intelligence", "Data Analytics", "SQLFlow", "Machine Learning"],
+      "links": [
+        {
+          "name": "Website",
+          "href": "https://yadree.com",
+          "icon": "globe"
+        }
+      ]
+    },
+    {
       "name": "Wajibaty AI",
       "description": "A vibrant AI-powered platform designed to help users manage and organize daily tasks. Wajibaty simplifies to-do lists, schedules, and reminders, focusing on accessibility and convenience.",
       "href": "https://wajibaty.com",
@@ -10,6 +37,20 @@
         {
           "name": "Website",
           "href": "https://wajibaty.com",
+          "icon": "globe"
+        }
+      ]
+    },
+    {
+      "name": "KPI on the Fly AI",
+      "description": "An AI-powered business intelligence platform that generates KPIs in real-time from data. It integrates Apache Superset for easy dashboard creation.",
+      "href": "https://kpionthefly.com",
+      "image": "/kpionthefly.jpg",
+      "tags": ["AI", "Business Intelligence", "Data Analytics"],
+      "links": [
+        {
+          "name": "Website",
+          "href": "https://kpionthefly.com",
           "icon": "globe"
         }
       ]
@@ -43,27 +84,6 @@
       ]
     },
     {
-      "name": "KPI on the Fly AI",
-      "description": "An AI-powered business intelligence platform that generates KPIs in real-time from data. It integrates Apache Superset for easy dashboard creation.",
-      "href": "https://kpionthefly.com",
-      "image": "/kpionthefly.jpg",
-      "tags": ["AI", "Business Intelligence", "Data Analytics"],
-      "links": [
-        {
-          "name": "Website",
-          "href": "https://kpionthefly.com",
-          "icon": "globe"
-        }
-      ]
-    },
-    {
-      "name": "BIAC's Business Intelligence Consultant System",
-      "description": "A comprehensive AI-powered business intelligence solution that integrates real-time data visualization, SQLFlow, and machine learning to enhance decision-making.",
-      "image": "/biac.png",
-      "tags": ["AI", "Business Intelligence", "Data Analytics", "SQLFlow"],
-      "links": []
-    },
-    {
       "name": "SCIC (Supply Chain Intelligence Consultant) Project",
       "description": "An AI-powered platform that delivers real-time insights and optimization tools for supply chain management, enabling businesses to reduce costs and improve efficiency.",
       "image": "/scic.png",
@@ -75,12 +95,18 @@
       "description": "An AI-based mental health platform that helps users improve their mental well-being through personalized tools, secure data management, and a clean user interface.",
       "image": "/virtue.png",
       "tags": ["AI", "Mental Health", "Data Security"],
-      "links": []
+      "links": [
+        {
+          "name": "Website",
+          "href": "https://virtue-help.me",
+          "icon": "globe"
+        }
+      ]
     },
     {
-      "name": "Keef libsaty",
+      "name": "Naseej",
       "description": "An AI-driven platform that allows users to discover fashion items by uploading images or links, providing personalized recommendations instantly.",
-      "href": "https://fashiononthefly.com",
+      "href": "https://naseej.life",
       "image": "/fashiononthefly.jpg",
       "tags": ["AI", "Fashion", "E-commerce"],
       "links": [
