@@ -1,0 +1,40 @@
+{
+  "models": [
+    {
+      "title": "DistilBERT",
+      "description": "A smaller, faster, and lighter version of BERT optimized for resource-constrained environments.",
+      "imageUrl": "/distilbert.jpg",
+      "link": "https://github.com/huggingface/transformers/tree/main/examples/research_projects/distilbert"
+    },
+    {
+      "title": "ALBERT",
+      "description": "A lite BERT model that reduces memory consumption and increases training efficiency.",
+      "imageUrl": "/albert.jpg",
+      "link": "https://github.com/google-research/albert"
+    },
+    {
+      "title": "Stable Diffusion",
+      "description": "An open-source model for generating high-quality images from text prompts.",
+      "imageUrl": "/stable-diffusion.jpg",
+      "link": "https://github.com/CompVis/stable-diffusion"
+    },
+    {
+      "title": "YOLOv5",
+      "description": "A real-time object detection model known for its speed and accuracy.",
+      "imageUrl": "/yolov5.jpg",
+      "link": "https://github.com/ultralytics/yolov5"
+    },
+    {
+      "title": "CLARA",
+      "description": "A specialized model for natural language understanding and dialog management in healthcare applications.",
+      "imageUrl": "/clara.jpg",
+      "link": "https://developer.nvidia.com/clara"
+    },
+    {
+      "title": "OpenL3",
+      "description": "An open-source deep audio embedding model used for audio analysis tasks, such as audio classification and music recommendation.",
+      "imageUrl": "/openl3.jpg",
+      "link": "https://github.com/marl/openl3"
+    }
+  ]
+}

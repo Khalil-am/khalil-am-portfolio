@@ -11,6 +11,10 @@ const navLinks = [
     name: "projects",
     href: "/projects",
   },
+    {
+    name: "AI",
+    href: "/ml-models",
+  },
   {
     name: "blog",
     href: "/blog",
