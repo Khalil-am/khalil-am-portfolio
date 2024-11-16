@@ -14,12 +14,25 @@
       ]
     },
     {
+      "name": "Pixelated Fintech Institute",
+      "href": "https://www.pixilated.online/",
+      "title": "IT Senior Business Analyst & BI Developer",
+      "logo": "/pixilated.png",
+      "start": "Jan 2021",
+      "end": "Sep 2023",
+      "description": [
+        "Launched a tailored training program for analysts, strengthening team capabilities in BI and operations.",
+        "Improved data accuracy and consistency in reporting by implementing standardized documentation practices.",
+        "Facilitated regular workshops for stakeholders, fostering a data-driven culture and enhancing project buy-in."
+      ]
+    },
+    {
       "name": "Council of Engineers Association",
       "href": "https://www.jea.org.jo/Default/En",
       "title": "Data Scientist (Contract)",
       "logo": "/coa.png",
-      "start": "Apr 2022",
-      "end": "Sep 2023",
+      "start": "July 2020",
+      "end": "Jan 2021",
       "description": [
         "Conducted advanced data analysis and developed predictive models, providing actionable insights for key engineering projects.",
         "Created visualizations and dashboards that translated complex data into clear, actionable insights to support decision-making.",
@@ -29,10 +42,10 @@
     {
       "name": "Digital Cash",
       "href": "https://dg-cash.com/",
-      "title": "Software Data Science Intern",
+      "title": "Software Data Scientist",
       "logo": "/digitalcash.png",
-      "start": "Oct 2021",
-      "end": "Apr 2022",
+      "start": "Jun 2019",
+      "end": "July 2020",
       "description": [
         "Built and deployed an application focusing on RESTful services with Spring Boot in an agile setting.",
         "Developed data pipelines for large datasets, optimizing data flow and integration.",
