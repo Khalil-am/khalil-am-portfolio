@@ -1,20 +1,6 @@
 {
   "projects": [
     {
-      "name": "Virtue 2.0",
-      "description": "An AI mental health support tool offering appointments with top practitioners. Features both payment and non-profit charity plans, enabling users to get diagnoses and connect with the best mental health professionals.",
-      "href": "https://virtue-help.me",
-      "image": "/img.png",
-      "tags": ["AI", "Mental Health", "Non-Profit", "Healthcare","Diagnosis"],
-      "links": [
-        {
-          "name": "Website",
-          "href": "https://virtue-help.me",
-          "icon": "globe"
-        }
-      ]
-    },
-    {
       "name": "Yadree: Business Intelligence Consultant System",
       "description": "A comprehensive AI-powered business intelligence solution that integrates real-time data visualization, SQLFlow, and machine learning to enhance decision-making.",
       "image": "/biac.png",
@@ -28,15 +14,29 @@
       ]
     },
     {
-      "name": "Wajibaty AI",
-      "description": "A vibrant AI-powered platform designed to help users manage and organize daily tasks. Wajibaty simplifies to-do lists, schedules, and reminders, focusing on accessibility and convenience.",
-      "href": "https://wajibaty.com",
-      "image": "/wajibaty.jpg",
-      "tags": ["AI", "Task Management", "Productivity"],
+      "name": "Pixify: AI-Powered Ecommerce and Financial Services Platform",
+      "description": "Pixilated offers an innovative AI-powered financial ecommerce platform designed for flexibility and personalization. With customizable plans tailored to user needs.",
+      "href": "https://Pixilated.online",
+      "image": "/Pixi1.png",
+      "tags": ["AI", "financial", "ecommerce", "Machine learning","Diagnosis","LLM"],
       "links": [
         {
           "name": "Website",
-          "href": "https://wajibaty.com",
+          "href": "https://virtue-help.me",
+          "icon": "globe"
+        }
+      ]
+    },
+    {
+      "name": "Virtue 2.0",
+      "description": "An AI mental health support tool offering appointments with top practitioners. Features both payment and non-profit charity plans, enabling users to get diagnoses and connect with the best mental health professionals.",
+      "href": "https://virtue-help.me",
+      "image": "/img.png",
+      "tags": ["AI", "Mental Health", "Non-Profit", "Healthcare","Diagnosis"],
+      "links": [
+        {
+          "name": "Website",
+          "href": "https://virtue-help.me",
           "icon": "globe"
         }
       ]
@@ -56,6 +56,20 @@
       ]
     },
     {
+      "name": "PRF Production",
+      "description": "A creative services provider offering video production, photography, and more, with AI-driven solutions for enhancing the creative process.",
+      "href": "https://prf-kw.com",
+      "image": "/prf.jpg",
+      "tags": ["AI", "Video Production", "Photography"],
+      "links": [
+        {
+          "name": "Website",
+          "href": "https://prf-kw.com",
+          "icon": "globe"
+        }
+      ]
+    },
+    {
       "name": "SautNote AI",
       "description": "An AI-driven transcription service that converts audio into accurate, text-based notes, enhancing productivity for professionals and students.",
       "href": "https://sautnote.com",
@@ -70,15 +84,15 @@
       ]
     },
     {
-      "name": "PRF Production",
-      "description": "A creative services provider offering video production, photography, and more, with AI-driven solutions for enhancing the creative process.",
-      "href": "https://prf-kw.com",
-      "image": "/prf.jpg",
-      "tags": ["AI", "Video Production", "Photography"],
+      "name": "Wajibaty AI",
+      "description": "A vibrant AI-powered platform designed to help users manage and organize daily tasks. Wajibaty simplifies to-do lists, schedules, and reminders, focusing on accessibility and convenience.",
+      "href": "https://wajibaty.com",
+      "image": "/wajibaty.jpg",
+      "tags": ["AI", "Task Management", "Productivity"],
       "links": [
         {
           "name": "Website",
-          "href": "https://prf-kw.com",
+          "href": "https://wajibaty.com",
           "icon": "globe"
         }
       ]
