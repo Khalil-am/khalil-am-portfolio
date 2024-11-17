@@ -43,10 +43,10 @@
     },
     {
       "name": "KPI on the Fly AI",
-      "description": "An AI-powered business intelligence platform that generates KPIs in real-time from data. It integrates Apache Superset for easy dashboard creation.",
+      "description": " a powerful AI-powered business intelligence platform designed to generate real-time KPIs directly from your data. Seamlessly integrating with Apache Superset, it enables effortless dashboard creation, Experience streamlined, dynamic KPI generation with KPI on the Fly.",
       "href": "https://kpionthefly.com",
       "image": "/kpionthefly.jpg",
-      "tags": ["AI", "Business Intelligence", "Data Analytics"],
+      "tags": ["AI", "Business Intelligence", "Data Analytics","KPI","Excel"],
       "links": [
         {
           "name": "Website",
