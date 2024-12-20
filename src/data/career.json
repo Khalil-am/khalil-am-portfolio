@@ -27,19 +27,6 @@
       ]
     },
     {
-      "name": "Virtue",
-      "href": "https://Virtue-help.me/",
-      "title": "Data Scientist | Software Engineer",
-      "logo": "/virtue-logo.png",
-      "start": "Apr 2022",
-      "end": "Aug 2023",
-      "description": [
-        "Architect-ed and implemented the back-end services: using the Java Spring framework, ensuring efficient data processing and secure interactions with the machine learning models.",
-        "Developed and fine-tuned a machine learning model: to accurately predict the severity of patient complications based on clinical data, enhancing the decision-making process for healthcare professionals.",
-        "Created a Machine learning algorithm that supports people with mental health issues and recommends the best practitioner for them."
-      ]
-    },
-    {
       "name": "Council of Engineers Association",
       "href": "https://www.jea.org.jo/Default/En",
       "title": "Data Scientist (Contract)",
