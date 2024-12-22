@@ -29,6 +29,20 @@
       ]
     },
     {
+      "name": "Hewari: AI-Powered Document builder",
+      "description": "Hewari offers an innovative AI-powered Document builder and assistant for boosting productivity and managing Business analysis.",
+      "href": "https://www.hewari.com",
+      "image": "/Hewari.png",
+      "tags": ["AI", "Assistant", "AI Agent", "LLM","ReAct (Reason + Act)","LLAMA 3.3 70B"],
+      "links": [
+        {
+          "name": "Website",
+          "href": "https://www.hewari.com",
+          "icon": "globe"
+        }
+      ]
+    },
+    {
       "name": "ShifaWay: AI Healthcare Scheduling and Management Platform",
       "description": "ShifaWay is a comprehensive healthcare scheduling and management platform designed to streamline administrative workflows and improve patient care delivery.",
       "href": "https://ShifaWay.com",
