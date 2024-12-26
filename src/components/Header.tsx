@@ -7,7 +7,7 @@ import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
 
 const navLinks = [
-  { name: "home", href: "/" },
+  // { name: "home", href: "/" },
   { name: "projects", href: "/projects" },
   { name: "AI", href: "/ml-models" },
   { name: "blog", href: "/blog" },
