@@ -8,10 +8,10 @@ import { useEffect, useState } from "react";
 
 const navLinks = [
   // { name: "home", href: "/" },
-  { name: "projects", href: "/projects" },
+  { name: "Projects", href: "/projects" },
   { name: "BI", href: "/bi" },
   { name: "AI", href: "/ml-models" },
-  { name: "contact", href: "/contact" },
+  { name: "Contact", href: "/contact" },
 ];
 
 export default function Header() {
