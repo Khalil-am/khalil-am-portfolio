@@ -10,6 +10,7 @@ import Link from "next/link";
 import path from "path";
 import Posts from "@/components/Posts";
 import MLModels from "@/components/MLModels";
+import BI from "@/components/BI";
 
 const blogDirectory = path.join(process.cwd(), "content");
 const KHALIL_BIRTH_YEAR = 1998;
@@ -68,6 +69,19 @@ export default async function Home() {
         <Projects limit={LIMIT} />
       </section>
 
+      {/* New BI Section */}
+      <section className="flex flex-col gap-8">
+        <div className="flex justify-between">
+          <h2 className="title text-2xl sm:text-3xl">Business Intelligence</h2>
+          <LinkWithIcon
+            href="/bi" // The dedicated BI page
+            position="right"
+            icon={<ArrowRightIcon className="size-5" />}
+            text="view all"
+          />
+        </div>
+        <BI limit={LIMIT} />
+      </section>
       {/* New ML Models Section */}
       <section className="flex flex-col gap-8">
         <div className="flex justify-between">

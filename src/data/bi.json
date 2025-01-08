@@ -1,0 +1,31 @@
+{
+  "projects": [
+    {
+      "name": "Yadree: Business Intelligence Consultant System",
+      "description": "A comprehensive AI-powered business intelligence solution...",
+      "image": "/biac.png",
+      "tags": ["AI", "Business Intelligence", "Data Analytics", "SQLFlow", "Machine Learning"],
+      "links": [
+        {
+          "name": "Website",
+          "href": "https://yadree.com",
+          "icon": "globe"
+        }
+      ]
+    },
+    {
+      "name": "KPI on the Fly AI",
+      "description": "A powerful AI-powered BI platform to generate real-time KPIs...",
+      "href": "https://kpionthefly.com",
+      "image": "/kpionthefly.jpg",
+      "tags": ["AI", "Business Intelligence", "Data Analytics", "KPI", "Excel"],
+      "links": [
+        {
+          "name": "Website",
+          "href": "https://kpionthefly.com",
+          "icon": "globe"
+        }
+      ]
+    }
+  ]
+}
