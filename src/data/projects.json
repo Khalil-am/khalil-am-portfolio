@@ -51,20 +51,6 @@
       ]
     },
     {
-      "name": "TAB: AI-Menu",
-      "description": "An innovative AI-powered menu system tailored for restaurants. TAB enables dynamic menu updates, personalized suggestions for customers, and seamless integration with table and POS systems.",
-      "href": "https://tab-jo.online/dashboard",
-      "image": "/tabmenu.png",
-      "tags": ["AI", "Restaurants", "Dynamic Menus", "POS Integration", "Customer Experience"],
-      "links": [
-        {
-          "name": "Website",
-          "href": "https://tab-jo.online/dashboard",
-          "icon": "globe"
-        }
-      ]
-    },
-    {
       "name": "Hewari: AI-Powered Document builder",
       "description": "Hewari offers an innovative AI-powered Document builder and assistant for boosting productivity and managing Business analysis.",
       "href": "https://www.hewari.com",
