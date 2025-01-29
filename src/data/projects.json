@@ -39,13 +39,13 @@
     {
       "name": "TAB - Revolutionizing Digital Menus for Restaurants",
       "description": "TAB is an AI-powered menu system designed to enhance dining experiences and streamline restaurant operations. With interactive digital menus.",
-      "href": "https://tab-jo.online",
+      "href": "https://tab-jo.online/order/40",
       "image": "/tabmenu.jpg",
       "tags": ["AI", "Restaurants", "Digital Menus", "POS Integration", "Customer Experience"],
       "links": [
         {
           "name": "Website",
-          "href": "https://tab-jo.online",
+          "href": "https://tab-jo.online/order/40",
           "icon": "globe"
         }
       ]
