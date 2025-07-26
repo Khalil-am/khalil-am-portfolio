@@ -4,13 +4,11 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "npm run gen && next build",
-    "gen": "npx ts-node ./scripts/generate.ts",
+    "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
-    "@datastax/astra-db-ts": "^1.4.1",
     "@hookform/resolvers": "^3.9.0",
     "@langchain/community": "^0.3.1",
     "@langchain/core": "^0.3.2",
@@ -30,8 +28,6 @@
     "gray-matter": "^4.0.3",
     "langchain": "^0.3.2",
     "lucide-react": "^0.441.0",
-    "mailgun-api": "^0.0.1",
-    "mailgun-js": "^0.22.0",
     "mailgun.js": "^10.2.3",
     "mongoose": "^8.7.2",
     "next": "^14.2.12",
