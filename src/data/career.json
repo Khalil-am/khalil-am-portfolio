@@ -1,12 +1,25 @@
 {
   "career": [
     {
+      "name": "Master Team",
+      "href": "https://www.masterteam.sa/",
+      "title": "Sr. IT Business Consultant",
+      "logo": "/masterteam.jpg",
+      "start": "May 2025",
+      "end": "Present",
+      "description": [
+        "Streamlined business requirements gathering, producing over 500+ pages of documentation and reducing project delivery time by 70%.",
+        "Implemented over 10 systems within different entities",
+        "Developed a Business Consultant Framework supporting over 15+ client software products ."
+      ]
+    },
+    {
       "name": "Cloud Solutions",
       "href": "https://cloudsolutions.com.sa/en/",
       "title": "IT Business Analyst | Product Owner",
       "logo": "/cloudsolutions.png",
       "start": "Sep 2023",
-      "end": "Present",
+      "end": "May 2025",
       "description": [
         "Streamlined business requirements gathering, producing over 1,200 pages of documentation and reducing project delivery time by 70%.",
         "Implemented a reporting framework with Microsoft Power Platforms, creating over 100 dashboards to enable data-driven decisions.",

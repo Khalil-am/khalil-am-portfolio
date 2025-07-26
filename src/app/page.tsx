@@ -33,10 +33,10 @@ export default async function Home() {
         <div className="flex flex-col">
           <h1 className="title text-5xl">Khalil Abu Mushref</h1>
           <p className="mt-4 font-light">
-            {new Date().getFullYear() - KHALIL_BIRTH_YEAR}-year-old Data Scientist and IT Business Analyst based in Riyadh, Saudi Arabia.
+            {new Date().getFullYear() - KHALIL_BIRTH_YEAR}-year-old Sr. IT Business Consultant and Data Scientist based in Riyadh, Saudi Arabia.
           </p>
           <p className="mt-2 font-light">
-            I leverage data science and analytics to drive strategic impact in fintech, healthcare, and business intelligence. With a passion for full-stack development, machine learning, and cloud solutions, I enhance data-driven solutions across industries.
+            I Lead digital transformation through business consulting and analysis, helping organizations define requirements and implement effective solutions. With a background in data science, I support data-driven decisions across fintech, healthcare, AI, and enterprise systems.
           </p>
           <div className="mt-4 flex items-end gap-1">
             <p className="font-semibold">Reach out to learn more about my expertise</p>
