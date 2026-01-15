@@ -1,6 +1,22 @@
 {
   "projects": [
     {
+      "name": "NuRad: AI-Powered Radiology & Medical Terminology Scanner",
+      "description": "NuRad is an AI-driven medical intelligence platform focused on radiology and clinical terminology scanning. It analyzes medical reports, radiology findings, and unstructured healthcare text.",
+      "href": "https://nurad.ai",
+      "image": "/Nurad.png",
+      "tags": [
+        "AI",
+        "Healthcare",
+        "Radiology",
+        "Medical Terminology",
+        "LLM",
+        "Clinical NLP",
+        "Diagnosis Support"
+      ],
+      "links": []
+    },
+    {
       "name": "Yadree: Business Intelligence Consultant System",
       "description": "A comprehensive AI-powered business intelligence solution that integrates real-time data visualization, SQLFlow, and machine learning to enhance decision-making.",
       "image": "/biac.png",
@@ -8,7 +24,7 @@
       "links": [
         {
           "name": "Website",
-          "href": "https://yadree.com",
+          "href": "https://yadree.vercel.app/",
           "icon": "globe"
         }
       ]
@@ -27,19 +43,10 @@
         }
       ]
     },
-
-
-
-
-
-
-
-
-
     {
       "name": "TAB - Revolutionizing Digital Menus for Restaurants",
       "description": "TAB is an AI-powered menu system designed to enhance dining experiences and streamline restaurant operations. With interactive digital menus.",
-      "href": "https://tab-jo.online/order/40",
+      "href": "https://tab-blue.vercel.app/order/40",
       "image": "/tabmenu.jpg",
       "tags": ["AI", "Restaurants", "Digital Menus", "POS Integration", "Customer Experience"],
       "links": [
@@ -53,41 +60,35 @@
     {
       "name": "Hewari: AI-Powered Document builder",
       "description": "Hewari offers an innovative AI-powered Document builder and assistant for boosting productivity and managing Business analysis.",
-      "href": "https://www.hewari.com",
+      "href": "https://ba-ai.vercel.app",
       "image": "/Hewari.png",
       "tags": ["AI", "Assistant", "AI Agent", "LLM","ReAct (Reason + Act)","LLAMA 3.3 70B"],
       "links": [
         {
           "name": "Website",
-          "href": "https://www.hewari.com",
+          "href": "https://ba-ai.vercel.app",
           "icon": "globe"
         }
       ]
     },
     {
-      "name": "ShifaWay: AI Healthcare Scheduling and Management Platform",
-      "description": "ShifaWay is a comprehensive healthcare scheduling and management platform designed to streamline administrative workflows and improve patient care delivery.",
+      "name": "ShifaWay: AI Healthcare Scheduling",
+      "description": "ShifaWay is a comprehensive healthcare scheduling and management platform designed to streamline administrative workflows.",
       "href": "https://ShifaWay.com",
       "image": "/ShifaWay.png",
       "tags": ["AI",  "Scheduling", "Machine learning","Patient management","LLM"],
-      "links": [
-        {
-          "name": "Website",
-          "href": "https://ShifaWay.com",
-          "icon": "globe"
-        }
-      ]
+      "links": []
     },
     {
       "name": "Virtue 2.0",
       "description": "An AI mental health support tool offering appointments with top practitioners. Features both payment and non-profit charity plans, enabling users to get diagnoses and connect with the best mental health professionals.",
-      "href": "https://virtue-help.me",
+      "href": "https://virtue-alpha.vercel.app",
       "image": "/img.png",
       "tags": ["AI", "Mental Health", "Non-Profit", "Healthcare","Diagnosis"],
       "links": [
         {
           "name": "Website",
-          "href": "https://virtue-help.me",
+          "href": "https://virtue-alpha.vercel.app",
           "icon": "globe"
         }
       ]
@@ -95,13 +96,13 @@
     {
       "name": "KPI on the Fly AI",
       "description": " a powerful AI-powered business intelligence platform designed to generate real-time KPIs directly from your data. Seamlessly integrating with Apache Superset, it enables effortless dashboard creation, Experience streamlined, dynamic KPI generation with KPI on the Fly.",
-      "href": "https://kpionthefly.com",
+      "href": "https://kpionthefly.vercel.app",
       "image": "/kpionthefly.jpg",
       "tags": ["AI", "Business Intelligence", "Data Analytics","KPI","Excel"],
       "links": [
         {
           "name": "Website",
-          "href": "https://kpionthefly.com",
+          "href": "https://kpionthefly.vercel.app",
           "icon": "globe"
         }
       ]
@@ -123,13 +124,13 @@
     {
       "name": "SautNote AI",
       "description": "An AI-driven transcription service that converts audio into accurate, text-based notes, enhancing productivity for professionals and students.",
-      "href": "https://sautnote.com",
+      "href": "https://saut-note.vercel.app",
       "image": "/sautnote.jpg",
       "tags": ["AI", "Transcription", "Productivity"],
       "links": [
         {
           "name": "Website",
-          "href": "https://sautnote.com",
+          "href": "https://saut-note.vercel.app",
           "icon": "globe"
         }
       ]
@@ -137,13 +138,13 @@
     {
       "name": "Wajibaty AI",
       "description": "A vibrant AI-powered platform designed to help users manage and organize daily tasks. Wajibaty simplifies to-do lists, schedules, and reminders, focusing on accessibility and convenience.",
-      "href": "https://wajibaty.com",
+      "href": "https://wajibaty.vercel.app",
       "image": "/wajibaty.jpg",
       "tags": ["AI", "Task Management", "Productivity"],
       "links": [
         {
           "name": "Website",
-          "href": "https://wajibaty.com",
+          "href": "https://wajibaty.vercel.app",
           "icon": "globe"
         }
       ]
