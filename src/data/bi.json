@@ -1,8 +1,88 @@
 {
   "projects": [
     {
+      "name": "Executive Insights Dashboard",
+      "description": "A comprehensive executive dashboard providing real-time KPIs, revenue metrics, and strategic insights. Features interactive visualizations for CFO-level decision making, including financial performance tracking, trend analysis, and key business metrics across multiple dimensions.",
+      "href": "https://yadree.vercel.app/",
+      "image": "/dashboard-executive.png",
+      "tags": [
+        "Power BI",
+        "Executive Analytics",
+        "Financial KPIs",
+        "Real-time Monitoring",
+        "Strategic Insights"
+      ],
+      "links": [
+        {
+          "name": "View Demo",
+          "href": "https://yadree.vercel.app/",
+          "icon": "globe"
+        }
+      ]
+    },
+    {
+      "name": "Sales Performance Analytics",
+      "description": "Advanced sales analytics dashboard featuring revenue breakdowns, customer segmentation, and performance metrics. Includes trend analysis, forecasting capabilities, and detailed drill-down views for sales team performance, product categories, and regional comparisons.",
+      "href": "https://kpionthefly.vercel.app",
+      "image": "/dashboard-analytics.png",
+      "tags": [
+        "Tableau",
+        "Sales Analytics",
+        "Revenue Tracking",
+        "Customer Insights",
+        "Performance Metrics"
+      ],
+      "links": [
+        {
+          "name": "View Demo",
+          "href": "https://kpionthefly.vercel.app",
+          "icon": "globe"
+        }
+      ]
+    },
+    {
+      "name": "Marketing & Operations Dashboard",
+      "description": "Integrated marketing and operations intelligence platform delivering actionable insights on campaign performance, operational efficiency, and resource allocation. Features multi-channel analytics, conversion tracking, and operational KPIs with predictive modeling capabilities.",
+      "href": "https://yadree.vercel.app/",
+      "image": "/dashboard-sales.png",
+      "tags": [
+        "Power BI",
+        "Marketing Analytics",
+        "Operations Intelligence",
+        "Campaign Tracking",
+        "ROI Analysis"
+      ],
+      "links": [
+        {
+          "name": "View Demo",
+          "href": "https://yadree.vercel.app/",
+          "icon": "globe"
+        }
+      ]
+    },
+    {
+      "name": "Web Analytics Intelligence Platform",
+      "description": "Sophisticated web analytics dashboard providing comprehensive insights into user behavior, traffic patterns, and engagement metrics. Features real-time monitoring, conversion funnel analysis, audience segmentation, and detailed performance tracking across all digital touchpoints.",
+      "href": "https://kpionthefly.vercel.app",
+      "image": "/dashboard-web-analytics.png",
+      "tags": [
+        "Tableau",
+        "Web Analytics",
+        "User Behavior",
+        "Conversion Optimization",
+        "Digital Intelligence"
+      ],
+      "links": [
+        {
+          "name": "View Demo",
+          "href": "https://kpionthefly.vercel.app",
+          "icon": "globe"
+        }
+      ]
+    },
+    {
       "name": "Yadree: Business Intelligence Consultant System",
-      "description": "A comprehensive AI-powered business intelligence solution that integrates real-time data visualization, SQLFlow, and machine learning to enhance decision-making.",
+      "description": "A comprehensive AI-powered business intelligence solution that integrates real-time data visualization, SQLFlow, and machine learning to enhance decision-making. Features automated insights generation, natural language querying, and intelligent data exploration capabilities.",
       "href": "https://yadree.vercel.app/",
       "image": "/biac.png",
       "tags": [
@@ -22,10 +102,16 @@
     },
     {
       "name": "KPI on the Fly AI",
-      "description": " a powerful AI-powered business intelligence platform designed to generate real-time KPIs directly from your data. Seamlessly integrating with Apache Superset, it enables effortless dashboard creation, Experience streamlined, dynamic KPI generation with KPI on the Fly.",
+      "description": "A powerful AI-powered business intelligence platform designed to generate real-time KPIs directly from your data. Seamlessly integrating with Apache Superset, it enables effortless dashboard creation and dynamic KPI generation. Experience streamlined analytics with intelligent automation and Excel integration.",
       "href": "https://kpionthefly.vercel.app",
       "image": "/kpionthefly.jpg",
-      "tags": ["AI", "Business Intelligence", "Data Analytics", "KPI", "Excel"],
+      "tags": [
+        "AI",
+        "Business Intelligence",
+        "Data Analytics",
+        "KPI Generation",
+        "Apache Superset"
+      ],
       "links": [
         {
           "name": "Website",
