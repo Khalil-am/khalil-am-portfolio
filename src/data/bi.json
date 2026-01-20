@@ -2,27 +2,34 @@
   "projects": [
     {
       "name": "Yadree: Business Intelligence Consultant System",
-      "description": "A comprehensive AI-powered business intelligence solution...",
+      "description": "A comprehensive AI-powered business intelligence solution that integrates real-time data visualization, SQLFlow, and machine learning to enhance decision-making.",
+      "href": "https://yadree.vercel.app/",
       "image": "/biac.png",
-      "tags": ["AI", "Business Intelligence", "Data Analytics", "SQLFlow", "Machine Learning"],
+      "tags": [
+        "AI",
+        "Business Intelligence",
+        "Data Analytics",
+        "SQLFlow",
+        "Machine Learning"
+      ],
       "links": [
         {
           "name": "Website",
-          "href": "https://yadree.com",
+          "href": "https://yadree.vercel.app/",
           "icon": "globe"
         }
       ]
     },
     {
       "name": "KPI on the Fly AI",
-      "description": "A powerful AI-powered BI platform to generate real-time KPIs...",
-      "href": "https://kpionthefly.com",
+      "description": " a powerful AI-powered business intelligence platform designed to generate real-time KPIs directly from your data. Seamlessly integrating with Apache Superset, it enables effortless dashboard creation, Experience streamlined, dynamic KPI generation with KPI on the Fly.",
+      "href": "https://kpionthefly.vercel.app",
       "image": "/kpionthefly.jpg",
       "tags": ["AI", "Business Intelligence", "Data Analytics", "KPI", "Excel"],
       "links": [
         {
           "name": "Website",
-          "href": "https://kpionthefly.com",
+          "href": "https://kpionthefly.vercel.app",
           "icon": "globe"
         }
       ]

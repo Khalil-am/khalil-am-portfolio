@@ -1,9 +1,30 @@
 {
   "projects": [
     {
+      "name": "SprintsGate: Agile User Acceptance Testing Platform",
+      "description": "SprintsGate is a modern UAT management platform designed to empower agile teams by streamlining User Acceptance Testing workflows, execution tracking to ensure faster, higher-quality releases.",
+      "href": "https://sprintsgate.com",
+      "image": "/sprintsgate.png",
+      "tags": [
+        "Agile",
+        "User Acceptance Testing",
+        "QA",
+        "Product Delivery",
+        "Project Management",
+        "Enterprise Software"
+      ],
+      "links": [
+        {
+          "name": "Website",
+          "href": "https://sprintsgate.com",
+          "icon": "globe"
+        }
+      ]
+    },
+    {
       "name": "NuRad: AI-Powered Radiology & Medical Terminology Scanner",
       "description": "NuRad is an AI-driven medical intelligence platform focused on radiology and clinical terminology scanning. It analyzes medical reports, radiology findings, and unstructured healthcare text.",
-      "href": "https://nurad.ai",
+      "href": "https://nurad.one",
       "image": "/Nurad.png",
       "tags": [
         "AI",
@@ -14,13 +35,26 @@
         "Clinical NLP",
         "Diagnosis Support"
       ],
-      "links": []
+      "links": [
+          {
+            "name": "Website",
+            "href": "https://nurad.one",
+            "icon": "globe"
+          }
+      ]
     },
     {
       "name": "Yadree: Business Intelligence Consultant System",
       "description": "A comprehensive AI-powered business intelligence solution that integrates real-time data visualization, SQLFlow, and machine learning to enhance decision-making.",
+      "href": "https://yadree.vercel.app/",
       "image": "/biac.png",
-      "tags": ["AI", "Business Intelligence", "Data Analytics", "SQLFlow", "Machine Learning"],
+      "tags": [
+        "AI",
+        "Business Intelligence",
+        "Data Analytics",
+        "SQLFlow",
+        "Machine Learning"
+      ],
       "links": [
         {
           "name": "Website",
@@ -34,7 +68,14 @@
       "description": "Pixilated offers an innovative AI-powered financial ecommerce platform designed for flexibility and personalization. With customizable plans tailored to user needs.",
       "href": "https://Pixilated.online",
       "image": "/Pixi1.png",
-      "tags": ["AI", "financial", "ecommerce", "Machine learning","Diagnosis","LLM"],
+      "tags": [
+        "AI",
+        "financial",
+        "ecommerce",
+        "Machine learning",
+        "Diagnosis",
+        "LLM"
+      ],
       "links": [
         {
           "name": "Website",
@@ -48,7 +89,13 @@
       "description": "TAB is an AI-powered menu system designed to enhance dining experiences and streamline restaurant operations. With interactive digital menus.",
       "href": "https://tab-blue.vercel.app/order/40",
       "image": "/tabmenu.jpg",
-      "tags": ["AI", "Restaurants", "Digital Menus", "POS Integration", "Customer Experience"],
+      "tags": [
+        "AI",
+        "Restaurants",
+        "Digital Menus",
+        "POS Integration",
+        "Customer Experience"
+      ],
       "links": [
         {
           "name": "Website",
@@ -62,7 +109,14 @@
       "description": "Hewari offers an innovative AI-powered Document builder and assistant for boosting productivity and managing Business analysis.",
       "href": "https://ba-ai.vercel.app",
       "image": "/Hewari.png",
-      "tags": ["AI", "Assistant", "AI Agent", "LLM","ReAct (Reason + Act)","LLAMA 3.3 70B"],
+      "tags": [
+        "AI",
+        "Assistant",
+        "AI Agent",
+        "LLM",
+        "ReAct (Reason + Act)",
+        "LLAMA 3.3 70B"
+      ],
       "links": [
         {
           "name": "Website",
@@ -76,7 +130,13 @@
       "description": "ShifaWay is a comprehensive healthcare scheduling and management platform designed to streamline administrative workflows.",
       "href": "https://ShifaWay.com",
       "image": "/ShifaWay.png",
-      "tags": ["AI",  "Scheduling", "Machine learning","Patient management","LLM"],
+      "tags": [
+        "AI",
+        "Scheduling",
+        "Machine learning",
+        "Patient management",
+        "LLM"
+      ],
       "links": []
     },
     {
@@ -84,7 +144,7 @@
       "description": "An AI mental health support tool offering appointments with top practitioners. Features both payment and non-profit charity plans, enabling users to get diagnoses and connect with the best mental health professionals.",
       "href": "https://virtue-alpha.vercel.app",
       "image": "/img.png",
-      "tags": ["AI", "Mental Health", "Non-Profit", "Healthcare","Diagnosis"],
+      "tags": ["AI", "Mental Health", "Non-Profit", "Healthcare", "Diagnosis"],
       "links": [
         {
           "name": "Website",
@@ -98,7 +158,7 @@
       "description": " a powerful AI-powered business intelligence platform designed to generate real-time KPIs directly from your data. Seamlessly integrating with Apache Superset, it enables effortless dashboard creation, Experience streamlined, dynamic KPI generation with KPI on the Fly.",
       "href": "https://kpionthefly.vercel.app",
       "image": "/kpionthefly.jpg",
-      "tags": ["AI", "Business Intelligence", "Data Analytics","KPI","Excel"],
+      "tags": ["AI", "Business Intelligence", "Data Analytics", "KPI", "Excel"],
       "links": [
         {
           "name": "Website",
