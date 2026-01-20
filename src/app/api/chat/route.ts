@@ -1,5 +1,3 @@
-"use server";
-
 import { AIMessage, HumanMessage, SystemMessage } from "@langchain/core/messages";
 import { ChatOpenAI } from "@langchain/openai";
 import { LangChainStream, StreamingTextResponse } from "ai";
@@ -111,11 +109,11 @@ export async function POST(req: Request) {
 
     // Configure OpenAI chat model with optimized settings
     const chatModel = new ChatOpenAI({
-      model: "gpt-4o-mini", // Upgraded to GPT-4o-mini for better performance
+      model: "gpt-4o-mini",
       streaming: true,
       callbacks: [handlers],
-      temperature: 0.7, // Balanced for natural conversation
-      maxTokens: 500, // Reasonable response length
+      temperature: 0.7,
+      maxTokens: 500,
     });
 
     // Create system message with Khalil's context
@@ -135,8 +133,8 @@ export async function POST(req: Request) {
       new HumanMessage(latestMessage)
     ];
 
-    // Generate response with full context
-    await chatModel.invoke(fullMessages);
+    // Generate response with full context (don't await, let it stream)
+    chatModel.invoke(fullMessages);
 
     // Stream the response
     return new StreamingTextResponse(stream);
