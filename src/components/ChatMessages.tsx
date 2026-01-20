@@ -38,10 +38,9 @@ export default function ChatMessages({
       {!error && messages.length === 0 && (
         <div className="flex h-full flex-col items-center justify-center mt-16 gap-2">
           <Bot />
-          <p className="font-medium">Send a message to start the chat!</p>
+          <p className="font-medium">Hi! I'm Khalil Support 👋</p>
           <p className="text-center text-xs text-muted-foreground">
-            You can ask the bot anything about me and it will help to find the
-            relevant information!
+            Ask me anything about Khalil's experience, projects, skills, or how to contact him!
           </p>
         </div>
       )}
