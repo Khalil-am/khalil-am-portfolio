@@ -1,40 +1,60 @@
 {
   "models": [
     {
-      "title": "DistilBERT",
-      "description": "A smaller, faster, and lighter version of BERT optimized for resource-constrained environments.",
-      "imageUrl": "/distilbert.jpg",
-      "link": "https://github.com/huggingface/transformers/tree/main/examples/research_projects/distilbert"
+      "title": "GPT-4 & Large Language Models",
+      "description": "State-of-the-art transformer-based language models powering advanced natural language understanding, generation, and reasoning. Applied in healthcare documentation, business intelligence automation, and AI-powered consulting systems.",
+      "imageUrl": "/gpt4-architecture.png",
+      "link": "https://openai.com/research/gpt-4",
+      "tags": ["NLP", "Transformers", "Healthcare AI", "Business Intelligence"]
     },
     {
-      "title": "ALBERT",
-      "description": "A lite BERT model that reduces memory consumption and increases training efficiency.",
-      "imageUrl": "/albert.jpg",
-      "link": "https://github.com/google-research/albert"
+      "title": "LLaMA 3.3 70B",
+      "description": "Meta's open-source large language model with 70 billion parameters, optimized for reasoning and action (ReAct). Utilized in AI agents for document building, business analysis, and intelligent decision support systems.",
+      "imageUrl": "/llama3.png",
+      "link": "https://ai.meta.com/llama/",
+      "tags": ["Open Source", "AI Agents", "ReAct", "Document Intelligence"]
     },
     {
-      "title": "Stable Diffusion",
-      "description": "An open-source model for generating high-quality images from text prompts.",
+      "title": "Healthcare LLMs & Medical AI",
+      "description": "Specialized large language models designed for healthcare applications including clinical NLP, radiology report analysis, medical terminology scanning, and personalized oncology treatment prediction. Integrates with FHIR standards and clinical workflows.",
+      "imageUrl": "/healthcare-llm.png",
+      "link": "https://developer.nvidia.com/clara",
+      "tags": ["Healthcare", "Medical AI", "Clinical NLP", "Radiology"]
+    },
+    {
+      "title": "BERT & Transformer Models",
+      "description": "Bidirectional encoder representations from transformers enabling deep contextual understanding of text. Applied in business requirements analysis, document classification, sentiment analysis, and knowledge extraction from unstructured data.",
+      "imageUrl": "/bert-transformer.png",
+      "link": "https://github.com/google-research/bert",
+      "tags": ["NLP", "Text Classification", "Document Analysis", "Embeddings"]
+    },
+    {
+      "title": "Gemini 2.5 Flash",
+      "description": "Google's multimodal AI model combining vision, language, and reasoning capabilities. Optimized for fast inference and cost-effective deployment in production environments, supporting real-time analytics and intelligent automation.",
+      "imageUrl": "/gemini-ai.png",
+      "link": "https://deepmind.google/technologies/gemini/",
+      "tags": ["Multimodal", "Vision + Language", "Real-time", "Production AI"]
+    },
+    {
+      "title": "Medical Imaging AI & Computer Vision",
+      "description": "Deep learning models for medical image analysis including X-ray classification, CT scan interpretation, and radiology workflow optimization. Supports diagnostic assistance, anomaly detection, and automated reporting for healthcare delivery platforms.",
+      "imageUrl": "/medical-imaging-ai.jpg",
+      "link": "https://github.com/Project-MONAI/MONAI",
+      "tags": ["Computer Vision", "Medical Imaging", "Radiology", "Diagnostics"]
+    },
+    {
+      "title": "Predictive Analytics & ML Pipelines",
+      "description": "End-to-end machine learning pipelines for predictive modeling, forecasting, and decision support. Implemented using Python, Spark, and big data tools for business intelligence, supply chain optimization, and personalized recommendations.",
       "imageUrl": "/stable-diffusion.jpg",
-      "link": "https://github.com/CompVis/stable-diffusion"
+      "link": "https://spark.apache.org/docs/latest/ml-guide.html",
+      "tags": ["Predictive Modeling", "MLOps", "Big Data", "Business Analytics"]
     },
     {
-      "title": "YOLOv5",
-      "description": "A real-time object detection model known for its speed and accuracy.",
+      "title": "Real-time Object Detection (YOLOv8+)",
+      "description": "Latest generation YOLO models for real-time object detection and computer vision applications. Applied in quality assurance, inventory management, and automated visual inspection systems with edge deployment capabilities.",
       "imageUrl": "/yolov5.jpg",
-      "link": "https://github.com/ultralytics/yolov5"
-    },
-    {
-      "title": "CLARA",
-      "description": "A specialized model for natural language understanding and dialog management in healthcare applications.",
-      "imageUrl": "/clara.jpg",
-      "link": "https://developer.nvidia.com/clara"
-    },
-    {
-      "title": "OpenL3",
-      "description": "An open-source deep audio embedding model used for audio analysis tasks, such as audio classification and music recommendation.",
-      "imageUrl": "/openl3.jpg",
-      "link": "https://github.com/marl/openl3"
+      "link": "https://github.com/ultralytics/ultralytics",
+      "tags": ["Computer Vision", "Real-time Detection", "Edge AI", "Quality Control"]
     }
   ]
 }
