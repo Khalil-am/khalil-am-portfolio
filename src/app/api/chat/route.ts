@@ -1,6 +1,5 @@
-import { AIMessage, HumanMessage, SystemMessage } from "@langchain/core/messages";
-import { ChatOpenAI } from "@langchain/openai";
-import { LangChainStream, StreamingTextResponse } from "ai";
+import { OpenAIStream, StreamingTextResponse } from "ai";
+import OpenAI from "openai";
 
 // Comprehensive knowledge base about Khalil Abu Mushref
 const KHALIL_CONTEXT = `You are Khalil Support, an AI assistant representing Khalil Abu Mushref, an IT Delivery Manager and Senior Business Consultant specializing in AI-enabled enterprise solutions.
@@ -99,44 +98,39 @@ Personalized oncology, cancer treatment prediction, healthcare AI applications, 
 
 8. **Provide Value**: Help visitors understand how Khalil's expertise can benefit their projects or organizations.`;
 
+// Initialize OpenAI client
+const openai = new OpenAI({
+  apiKey: process.env.OPENAI_API_KEY,
+});
+
 export async function POST(req: Request) {
   try {
     const body = await req.json();
-    const messages = body.messages;
-    const latestMessage = messages[messages.length - 1].content;
+    const messages = body.messages || [];
 
-    const { stream, handlers } = LangChainStream();
-
-    // Configure OpenAI chat model with optimized settings
-    const chatModel = new ChatOpenAI({
-      model: "gpt-4o-mini",
-      streaming: true,
-      callbacks: [handlers],
-      temperature: 0.7,
-      maxTokens: 500,
-    });
-
-    // Create system message with Khalil's context
-    const systemMessage = new SystemMessage(KHALIL_CONTEXT);
-
-    // Construct chat history
-    const chatHistory = messages.slice(0, -1).map((msg: { role: string; content: string }) =>
-      msg.role === "user"
-        ? new HumanMessage(msg.content)
-        : new AIMessage(msg.content),
-    );
-
-    // Combine system message, chat history, and latest message
-    const fullMessages = [
-      systemMessage,
-      ...chatHistory,
-      new HumanMessage(latestMessage)
+    // Prepare messages for OpenAI API
+    const openaiMessages: OpenAI.Chat.ChatCompletionMessageParam[] = [
+      {
+        role: "system",
+        content: KHALIL_CONTEXT,
+      },
+      ...messages.map((msg: { role: string; content: string }) => ({
+        role: msg.role as "user" | "assistant",
+        content: msg.content,
+      })),
     ];
 
-    // Generate response with full context (don't await, let it stream)
-    chatModel.invoke(fullMessages);
+    // Create streaming response
+    const response = await openai.chat.completions.create({
+      model: "gpt-4o-mini",
+      messages: openaiMessages,
+      temperature: 0.7,
+      max_tokens: 500,
+      stream: true,
+    });
 
-    // Stream the response
+    // Convert to streaming text response using the ai package
+    const stream = OpenAIStream(response as any);
     return new StreamingTextResponse(stream);
   } catch (error) {
     console.error("Chat API Error:", error);
