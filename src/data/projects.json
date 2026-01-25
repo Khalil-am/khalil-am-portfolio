@@ -128,7 +128,7 @@
     {
       "name": "ShifaWay: AI Healthcare Scheduling",
       "description": "ShifaWay is a comprehensive healthcare scheduling and management platform designed to streamline administrative workflows.",
-      "href": "https://ShifaWay.com",
+      "href": "https://shifaway.vercel.app",
       "image": "/ShifaWay.png",
       "tags": [
         "AI",
@@ -137,7 +137,13 @@
         "Patient management",
         "LLM"
       ],
-      "links": []
+      "links": [
+        {
+          "name": "Website",
+          "href": "https://shifaway.vercel.app",
+          "icon": "globe"
+        }
+      ]
     },
     {
       "name": "Virtue 2.0",
