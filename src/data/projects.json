@@ -64,6 +64,27 @@
       ]
     },
     {
+      "name": "ShifaWay: AI Healthcare Scheduling",
+      "description": "ShifaWay is a comprehensive healthcare scheduling and management platform designed to streamline administrative workflows.",
+      "href": "https://shifaway.vercel.app",
+      "image": "/shifaway-hero.png",
+      "tags": [
+        "AI",
+        "Healthcare",
+        "Scheduling",
+        "Machine learning",
+        "Patient management",
+        "LLM"
+      ],
+      "links": [
+        {
+          "name": "Website",
+          "href": "https://shifaway.vercel.app",
+          "icon": "globe"
+        }
+      ]
+    },
+    {
       "name": "Pixify: AI-Powered Ecommerce and Financial Services Platform",
       "description": "Pixilated offers an innovative AI-powered financial ecommerce platform designed for flexibility and personalization. With customizable plans tailored to user needs.",
       "href": "https://Pixilated.online",
@@ -121,26 +142,6 @@
         {
           "name": "Website",
           "href": "https://ba-ai.vercel.app",
-          "icon": "globe"
-        }
-      ]
-    },
-    {
-      "name": "ShifaWay: AI Healthcare Scheduling",
-      "description": "ShifaWay is a comprehensive healthcare scheduling and management platform designed to streamline administrative workflows.",
-      "href": "https://shifaway.vercel.app",
-      "image": "/ShifaWay.png",
-      "tags": [
-        "AI",
-        "Scheduling",
-        "Machine learning",
-        "Patient management",
-        "LLM"
-      ],
-      "links": [
-        {
-          "name": "Website",
-          "href": "https://shifaway.vercel.app",
           "icon": "globe"
         }
       ]
