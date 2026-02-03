@@ -1,6 +1,21 @@
 {
   "projects": [
     {
+      "name": "STRATA AI: Decision Intelligence Framework",
+      "description": "A decision intelligence system designed to support executives and PMOs in making governance-ready, high-risk decisions. STRATA AI structures complex situations into clear options, assesses risk and impact, applies escalation and authority logic, and produces board-ready decision outputs.",
+      "image": "/strata-ai-hero.png",
+      "tags": [
+        "AI",
+        "Decision Intelligence",
+        "Governance",
+        "Enterprise AI",
+        "PMO & Strategy",
+        "Executive Decision System",
+        "Risk Management"
+      ],
+      "links": []
+    },
+    {
       "name": "SprintsGate: Agile User Acceptance Testing Platform",
       "description": "SprintsGate is a modern UAT management platform designed to empower agile teams by streamlining User Acceptance Testing workflows, execution tracking to ensure faster, higher-quality releases.",
       "href": "https://sprintsgate.com",
