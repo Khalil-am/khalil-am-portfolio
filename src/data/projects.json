@@ -2,7 +2,7 @@
   "projects": [
     {
       "name": "STRATA AI: Decision Intelligence Framework",
-      "description": "A decision intelligence system designed to support executives and PMOs in making governance-ready, high-risk decisions. STRATA AI structures complex situations into clear options, assesses risk and impact, and produces board-ready decision outputs.",
+      "description": "A decision intelligence system designed to support executives and PMOs in making governance-ready, high-risk decisions. Structures complex situations into clear options and produces board-ready decision outputs.",
       "href": "https://strataai.manus.space/",
       "image": "/strata-ai-hero.png",
       "tags": [
