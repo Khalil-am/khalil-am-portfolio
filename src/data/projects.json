@@ -22,6 +22,27 @@
       ]
     },
     {
+      "name": "SIHHATI: Health & Wellness Tracking Platform",
+      "description": "A comprehensive health and wellness tracking platform currently in beta testing. SIHHATI helps users monitor their lifestyle habits, track wellness metrics, and gain insights into their health journey.",
+      "href": "https://sihhatiapp.manus.space/",
+      "image": "/sihhati-hero.png",
+      "tags": [
+        "HealthTech",
+        "Wellness Tracking",
+        "Beta Testing",
+        "Mobile Application",
+        "Lifestyle Analytics",
+        "Habit Tracking"
+      ],
+      "links": [
+        {
+          "name": "Website",
+          "href": "https://sihhatiapp.manus.space/",
+          "icon": "globe"
+        }
+      ]
+    },
+    {
       "name": "SprintsGate: Agile User Acceptance Testing Platform",
       "description": "SprintsGate is a modern UAT management platform designed to empower agile teams by streamlining User Acceptance Testing workflows, execution tracking to ensure faster, higher-quality releases.",
       "href": "https://sprintsgate.com",
