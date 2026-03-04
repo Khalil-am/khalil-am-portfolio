@@ -127,6 +127,46 @@
       ]
     },
     {
+      "name": "BoardIQ: PMO Task Intelligence Platform",
+      "description": "A real-time PMO dashboard that connects to Trello to surface lagging tasks, client priority scores, and team workload analytics with an AI assistant for instant insights.",
+      "href": "https://www.boardiq.click/",
+      "image": "/boardiq-hero.png",
+      "tags": [
+        "PMO Tools",
+        "Task Analytics",
+        "AI Assistant",
+        "Trello Integration",
+        "Project Management"
+      ],
+      "links": [
+        {
+          "name": "Website",
+          "href": "https://www.boardiq.click/",
+          "icon": "globe"
+        }
+      ]
+    },
+    {
+      "name": "Musajil: Enterprise Event Management Platform",
+      "description": "An enterprise-grade event management platform with guest-first registration, real-time operations command center, offline-tolerant check-in, and predictive analytics for seamless events.",
+      "href": "https://musajil.online/",
+      "image": "/musajil-hero.png",
+      "tags": [
+        "Event Management",
+        "Predictive Analytics",
+        "Enterprise",
+        "Real-Time Operations",
+        "QR Check-In"
+      ],
+      "links": [
+        {
+          "name": "Website",
+          "href": "https://musajil.online/",
+          "icon": "globe"
+        }
+      ]
+    },
+    {
       "name": "Pixify: AI-Powered Ecommerce and Financial Services Platform",
       "description": "Pixilated offers an innovative AI-powered financial ecommerce platform designed for flexibility and personalization. With customizable plans tailored to user needs.",
       "href": "https://Pixilated.online",
