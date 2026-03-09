@@ -21,6 +21,27 @@
       ]
     },
     {
+      "name": "SprintsGate: Agile User Acceptance Testing Platform",
+      "description": "SprintsGate is a modern UAT management platform designed to empower agile teams by streamlining User Acceptance Testing workflows, execution tracking to ensure faster, higher-quality releases.",
+      "href": "https://sprintsgate.com",
+      "image": "/sprintsgate.png",
+      "tags": [
+        "Agile",
+        "User Acceptance Testing",
+        "QA",
+        "Product Delivery",
+        "Project Management",
+        "Enterprise Software"
+      ],
+      "links": [
+        {
+          "name": "Website",
+          "href": "https://sprintsgate.com",
+          "icon": "globe"
+        }
+      ]
+    },
+    {
       "name": "UX Compass: User Experience & Product Design Reference",
       "description": "A comprehensive Arabic UX reference platform with 33+ frameworks, 30+ ready templates, and 12 execution playbooks — built on sources from OpenAI, IBM, NN/g, and IxDF.",
       "href": "https://uxcompass.manus.space/",
@@ -78,27 +99,6 @@
         {
           "name": "Website",
           "href": "https://sihhatiapp.manus.space/",
-          "icon": "globe"
-        }
-      ]
-    },
-    {
-      "name": "SprintsGate: Agile User Acceptance Testing Platform",
-      "description": "SprintsGate is a modern UAT management platform designed to empower agile teams by streamlining User Acceptance Testing workflows, execution tracking to ensure faster, higher-quality releases.",
-      "href": "https://sprintsgate.com",
-      "image": "/sprintsgate.png",
-      "tags": [
-        "Agile",
-        "User Acceptance Testing",
-        "QA",
-        "Product Delivery",
-        "Project Management",
-        "Enterprise Software"
-      ],
-      "links": [
-        {
-          "name": "Website",
-          "href": "https://sprintsgate.com",
           "icon": "globe"
         }
       ]
