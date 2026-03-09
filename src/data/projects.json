@@ -1,6 +1,46 @@
 {
   "projects": [
     {
+      "name": "IdeaIQ: Innovation Board Platform",
+      "description": "A collaborative brainstorming platform that helps teams capture, organize, and prioritize ideas through a structured phase-gate process — from intake to implementation.",
+      "href": "https://ideaiq.click",
+      "image": "/ideaiq-hero.png",
+      "tags": [
+        "Innovation",
+        "Collaboration",
+        "Phase-Gate",
+        "Idea Management",
+        "Real-Time"
+      ],
+      "links": [
+        {
+          "name": "Website",
+          "href": "https://ideaiq.click",
+          "icon": "globe"
+        }
+      ]
+    },
+    {
+      "name": "UX Compass: User Experience & Product Design Reference",
+      "description": "A comprehensive Arabic UX reference platform with 33+ frameworks, 30+ ready templates, and 12 execution playbooks — built on sources from OpenAI, IBM, NN/g, and IxDF.",
+      "href": "https://uxcompass.manus.space/",
+      "image": "/uxcompass-hero.png",
+      "tags": [
+        "UX Design",
+        "Product Design",
+        "Design Systems",
+        "Arabic Platform",
+        "Frameworks"
+      ],
+      "links": [
+        {
+          "name": "Website",
+          "href": "https://uxcompass.manus.space/",
+          "icon": "globe"
+        }
+      ]
+    },
+    {
       "name": "STRATA AI: Decision Intelligence Framework",
       "description": "A decision intelligence system designed to support executives and PMOs in making governance-ready, high-risk decisions. Structures complex situations into clear options and produces board-ready decision outputs.",
       "href": "https://strataai.manus.space/",
