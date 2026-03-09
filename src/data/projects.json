@@ -21,17 +21,17 @@
       ]
     },
     {
-      "name": "SprintsGate: Agile User Acceptance Testing Platform",
-      "description": "SprintsGate is a modern UAT management platform designed to empower agile teams by streamlining User Acceptance Testing workflows, execution tracking to ensure faster, higher-quality releases.",
+      "name": "SprintsGate: Sprint-Driven UAT Platform",
+      "description": "An AI-powered UAT platform that transforms business requirements into sprint-ready test cases in minutes. SprintsGate gives agile teams a Kanban board for test execution, real-time analytics, and full requirements traceability from BRD to sign-off.",
       "href": "https://sprintsgate.com",
       "image": "/sprintsgate.png",
       "tags": [
         "Agile",
-        "User Acceptance Testing",
+        "UAT",
+        "AI Test Generation",
+        "Kanban",
         "QA",
-        "Product Delivery",
-        "Project Management",
-        "Enterprise Software"
+        "Sprint Management"
       ],
       "links": [
         {
