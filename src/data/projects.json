@@ -361,16 +361,9 @@
     {
       "name": "Naseej",
       "description": "An AI-driven platform that allows users to discover fashion items by uploading images or links, providing personalized recommendations instantly.",
-      "href": "https://naseej.life",
       "image": "/fashiononthefly.jpg",
       "tags": ["AI", "Fashion", "E-commerce"],
-      "links": [
-        {
-          "name": "Website",
-          "href": "https://fashiononthefly.com",
-          "icon": "globe"
-        }
-      ]
+      "links": []
     }
   ]
 }
