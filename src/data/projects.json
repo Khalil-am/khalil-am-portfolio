@@ -42,6 +42,27 @@
       ]
     },
     {
+      "name": "Consultant OS: AI-Powered Consulting Workspace",
+      "description": "An AI-powered consulting workspace that automates documentation, meetings, reports, decisions, and workflows for modern delivery and business analysis teams.",
+      "href": "https://consultantos.com",
+      "image": "/consultant-os-hero.png",
+      "tags": [
+        "AI",
+        "Workflow Automation",
+        "Business Analysis",
+        "PMO & Governance",
+        "Reporting",
+        "Productivity"
+      ],
+      "links": [
+        {
+          "name": "Website",
+          "href": "https://consultantos.com",
+          "icon": "globe"
+        }
+      ]
+    },
+    {
       "name": "UX Compass: User Experience & Product Design Reference",
       "description": "A comprehensive Arabic UX reference platform with 33+ frameworks, 30+ ready templates, and 12 execution playbooks — built on sources from OpenAI, IBM, NN/g, and IxDF.",
       "href": "https://uxcompass.manus.space/",
@@ -243,27 +264,6 @@
         {
           "name": "Website",
           "href": "https://tab-jo.online/order/40",
-          "icon": "globe"
-        }
-      ]
-    },
-    {
-      "name": "Hewari: AI-Powered Document builder",
-      "description": "Hewari offers an innovative AI-powered Document builder and assistant for boosting productivity and managing Business analysis.",
-      "href": "https://ba-ai.vercel.app",
-      "image": "/Hewari.png",
-      "tags": [
-        "AI",
-        "Assistant",
-        "AI Agent",
-        "LLM",
-        "ReAct (Reason + Act)",
-        "LLAMA 3.3 70B"
-      ],
-      "links": [
-        {
-          "name": "Website",
-          "href": "https://ba-ai.vercel.app",
           "icon": "globe"
         }
       ]
