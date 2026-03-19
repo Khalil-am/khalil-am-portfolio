@@ -1,20 +1,6 @@
 {
   "models": [
     {
-      "title": "Gemini 2.5 Pro",
-      "description": "Google DeepMind's latest multimodal AI model combining vision, language, and advanced reasoning. Applied in real-time analytics dashboards, intelligent automation pipelines, and AI-powered consulting workflows for enterprise decision support.",
-      "imageUrl": "/gemini-ai.png",
-      "link": "https://deepmind.google/technologies/gemini/",
-      "tags": ["Multimodal", "Reasoning", "Production AI", "Enterprise"]
-    },
-    {
-      "title": "LLaMA 3.3 70B",
-      "description": "Meta's open-source large language model with 70 billion parameters, optimized for reasoning and action (ReAct). Utilized in AI agents for automated document generation, business analysis workflows, and intelligent decision support systems.",
-      "imageUrl": "/llama3.png",
-      "link": "https://ai.meta.com/llama/",
-      "tags": ["Open Source", "AI Agents", "ReAct", "Document Intelligence"]
-    },
-    {
       "title": "RAG & LangChain",
       "description": "Retrieval-Augmented Generation framework combining LLMs with enterprise knowledge bases. Applied in consulting operating systems for automated deliverable generation, requirements documentation, and intelligent business analysis workflows.",
       "imageUrl": "/rag-documents.jpg",
@@ -27,6 +13,20 @@
       "imageUrl": "/predictive-analytics.jpg",
       "link": "https://xgboost.readthedocs.io/",
       "tags": ["Predictive Modeling", "Drug Response", "Classification", "Analytics"]
+    },
+    {
+      "title": "LLaMA 4 Maverick 400B",
+      "description": "Meta's latest open-source large language model with 400 billion parameters, featuring a mixture-of-experts architecture for superior reasoning and multilingual capabilities. Utilized in AI agents for automated document generation, business analysis workflows, and intelligent decision support systems.",
+      "imageUrl": "/llama3.png",
+      "link": "https://ai.meta.com/llama/",
+      "tags": ["Open Source", "AI Agents", "MoE", "Document Intelligence"]
+    },
+    {
+      "title": "Gemini 2.5 Pro",
+      "description": "Google DeepMind's latest multimodal AI model combining vision, language, and advanced reasoning. Applied in real-time analytics dashboards, intelligent automation pipelines, and AI-powered consulting workflows for enterprise decision support.",
+      "imageUrl": "/gemini-ai.png",
+      "link": "https://deepmind.google/technologies/gemini/",
+      "tags": ["Multimodal", "Reasoning", "Production AI", "Enterprise"]
     },
     {
       "title": "Apache Spark MLlib",
