@@ -15,6 +15,13 @@
       "tags": ["Predictive Modeling", "Drug Response", "Classification", "Analytics"]
     },
     {
+      "title": "Qlib – Quantitative Modeling",
+      "description": "Microsoft's AI-powered quantitative investment platform for building end-to-end ML pipelines in finance. Applied in algorithmic trading, financial time series forecasting, portfolio optimization, and risk modeling with state-of-the-art deep learning strategies.",
+      "imageUrl": "/quantitative-modeling.jpg",
+      "link": "https://github.com/microsoft/qlib",
+      "tags": ["Quantitative Finance", "Algorithmic Trading", "Time Series", "Portfolio Optimization"]
+    },
+    {
       "title": "LLaMA 4 Maverick 400B",
       "description": "Meta's latest open-source large language model with 400 billion parameters, featuring a mixture-of-experts architecture for superior reasoning and multilingual capabilities. Utilized in AI agents for automated document generation, business analysis workflows, and intelligent decision support systems.",
       "imageUrl": "/llama4.png",
