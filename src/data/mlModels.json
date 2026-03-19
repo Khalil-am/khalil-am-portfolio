@@ -15,27 +15,6 @@
       "tags": ["Open Source", "AI Agents", "ReAct", "Document Intelligence"]
     },
     {
-      "title": "Med-PaLM 2 & Medical LLMs",
-      "description": "Google's medical large language model achieving expert-level performance on clinical reasoning tasks. Applied in personalized oncology treatment prediction, clinical Q&A, and healthcare decision support aligned with FHIR standards.",
-      "imageUrl": "/medical-ai-oncology.jpg",
-      "link": "https://sites.research.google/med-palm/",
-      "tags": ["Healthcare AI", "Oncology", "Clinical NLP", "Medical Reasoning"]
-    },
-    {
-      "title": "MONAI – Medical Imaging AI",
-      "description": "NVIDIA's open-source deep learning framework for medical image analysis including X-ray classification, CT scan interpretation, and radiology workflow optimization. Powers diagnostic assistance and automated reporting in healthcare delivery platforms.",
-      "imageUrl": "/medical-imaging-ai.jpg",
-      "link": "https://github.com/Project-MONAI/MONAI",
-      "tags": ["Radiology", "Medical Imaging", "Deep Learning", "Diagnostics"]
-    },
-    {
-      "title": "BioBERT – Biomedical NLP",
-      "description": "Pre-trained biomedical language representation model for mining biomedical text. Applied in clinical document analysis, drug interaction extraction, oncology literature mining, and automated medical terminology processing.",
-      "imageUrl": "/biobert-clinical.jpg",
-      "link": "https://github.com/dmis-lab/biobert",
-      "tags": ["Biomedical NLP", "Text Mining", "Clinical Documents", "Research"]
-    },
-    {
       "title": "RAG & LangChain",
       "description": "Retrieval-Augmented Generation framework combining LLMs with enterprise knowledge bases. Applied in consulting operating systems for automated deliverable generation, requirements documentation, and intelligent business analysis workflows.",
       "imageUrl": "/rag-documents.jpg",
@@ -55,6 +34,27 @@
       "imageUrl": "/spark-bigdata.jpg",
       "link": "https://spark.apache.org/mllib/",
       "tags": ["Big Data", "ML Pipelines", "Distributed Computing", "BI Automation"]
+    },
+    {
+      "title": "Med-PaLM 2 & Medical LLMs",
+      "description": "Google's medical large language model achieving expert-level performance on clinical reasoning tasks. Applied in personalized oncology treatment prediction, clinical Q&A, and healthcare decision support aligned with FHIR standards.",
+      "imageUrl": "/medical-ai-oncology.jpg",
+      "link": "https://sites.research.google/med-palm/",
+      "tags": ["Healthcare AI", "Oncology", "Clinical NLP", "Medical Reasoning"]
+    },
+    {
+      "title": "MONAI – Medical Imaging AI",
+      "description": "NVIDIA's open-source deep learning framework for medical image analysis including X-ray classification, CT scan interpretation, and radiology workflow optimization. Powers diagnostic assistance and automated reporting in healthcare delivery platforms.",
+      "imageUrl": "/medical-imaging-ai.jpg",
+      "link": "https://github.com/Project-MONAI/MONAI",
+      "tags": ["Radiology", "Medical Imaging", "Deep Learning", "Diagnostics"]
+    },
+    {
+      "title": "BioBERT – Biomedical NLP",
+      "description": "Pre-trained biomedical language representation model for mining biomedical text. Applied in clinical document analysis, drug interaction extraction, oncology literature mining, and automated medical terminology processing.",
+      "imageUrl": "/biobert-clinical.jpg",
+      "link": "https://github.com/dmis-lab/biobert",
+      "tags": ["Biomedical NLP", "Text Mining", "Clinical Documents", "Research"]
     }
   ]
 }
