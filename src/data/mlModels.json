@@ -17,7 +17,7 @@
     {
       "title": "LLaMA 4 Maverick 400B",
       "description": "Meta's latest open-source large language model with 400 billion parameters, featuring a mixture-of-experts architecture for superior reasoning and multilingual capabilities. Utilized in AI agents for automated document generation, business analysis workflows, and intelligent decision support systems.",
-      "imageUrl": "/llama3.png",
+      "imageUrl": "/llama4.png",
       "link": "https://ai.meta.com/llama/",
       "tags": ["Open Source", "AI Agents", "MoE", "Document Intelligence"]
     },
