@@ -1,6 +1,33 @@
 {
   "projects": [
     {
+      "name": "KAM CLI",
+      "description": "A developer-focused command-line interface that streamlines daily engineering workflows, automates repetitive tasks, and provides fast access to custom tooling, productivity shortcuts, and project utilities.",
+      "image": "/kam-cli.png",
+      "tags": [
+        "CLI",
+        "Developer Tools",
+        "Automation",
+        "Productivity",
+        "Open Source"
+      ],
+      "links": []
+    },
+    {
+      "name": "Wathiq: Modern E-Invoicing Platform",
+      "description": "Wathiq is a modern and secure e-invoicing platform designed to digitally empower businesses. It helps organizations digitize invoicing, strengthen compliance, and drive growth through streamlined invoice issuance, VAT handling, and real-time financial insights.",
+      "image": "/wathiq.png",
+      "tags": [
+        "E-Invoicing",
+        "Compliance",
+        "FinTech",
+        "VAT",
+        "SaaS",
+        "Business Automation"
+      ],
+      "links": []
+    },
+    {
       "name": "IdeaIQ: Innovation Board Platform",
       "description": "A collaborative brainstorming platform that helps teams capture, organize, and prioritize ideas through a structured phase-gate process — from intake to implementation.",
       "href": "https://ideaiq.click",
