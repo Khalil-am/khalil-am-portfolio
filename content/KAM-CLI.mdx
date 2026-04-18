@@ -1,0 +1,78 @@
+---
+title: "KAM CLI: A Developer-First Command-Line Toolkit"
+summary: "An overview of KAM CLI — an open-source, developer-focused command-line interface that automates repetitive engineering tasks, centralizes productivity shortcuts, and accelerates the way I ship every day."
+image: "/kam-cli.png"
+publishedAt: "2026-03-25"
+---
+
+Every senior engineer eventually reaches the same realization: the biggest productivity gains don't come from a new framework or a shinier editor — they come from **eliminating the small, repeated, forgettable tasks** that sit between you and the work that actually matters.
+
+That belief is what led me to build **[KAM CLI](https://github.com/Khalil-am/kam-cli)**.
+
+KAM CLI is a developer-first command-line toolkit — a single, consistent entrypoint to the dozens of little workflows I run every day: repo scaffolding, environment bootstrapping, one-shot code operations, documentation generation, commit hygiene, and project utilities. Instead of dozens of scripts scattered across machines, it's one tool, one config, one muscle-memory.
+
+---
+
+## Why a CLI, and Why Now
+
+Over the past year, my workflow has shifted sharply toward AI-augmented engineering. That shift makes the CLI more important, not less — because the more capable the AI layer becomes, the more leverage you get from a clean, scriptable, composable command surface beneath it.
+
+KAM CLI is designed around a few core beliefs:
+
+- **Repetition is a design signal.** If I've typed the same sequence three times, it becomes a command.
+- **Composability beats monoliths.** Every command is small, deterministic, and pipeable.
+- **Humans and agents share the same interface.** Whatever works for me in a terminal also works for Claude Code inside an automation.
+
+---
+
+## What It Actually Does
+
+KAM CLI is organized around the surfaces of real engineering work:
+
+### **Project Bootstrap**
+New repositories come up in seconds — directory structure, conventions, initial tooling, and git wiring, all in a single command. No more copy-pasting from old repos and hoping nothing got missed.
+
+### **Environment & Secrets Utilities**
+Fast, safe handling of local environments: `.env` scaffolding from templates, secret checks before commit, and guardrails that make it harder to leak credentials by accident.
+
+### **Code & Docs Operations**
+Deterministic helpers for everyday code operations — renaming across a repo, generating structured docs from source, creating release notes from commit history, and triggering well-defined refactor sequences.
+
+### **Git & Commit Hygiene**
+Opinionated helpers for structured commits, branch lifecycle, PR creation, and post-merge cleanup — keeping history clean without ceremony.
+
+### **Project Utilities**
+A growing set of small tools: directory diffs, project-aware search, context-ready bundles for AI prompts, and quick links into the services I use most.
+
+---
+
+## Design Principles
+
+KAM CLI is intentionally boring in the right places:
+
+- **Small binaries, clear verbs.** Every command does one thing, named for what it does.
+- **Config lives in the repo.** Per-project overrides sit next to the code, not in hidden global state.
+- **Quiet by default, verbose when asked.** The CLI gets out of the way unless you ask it to explain itself.
+- **No surprises in production.** Destructive operations require confirmation or explicit flags.
+
+The goal isn't to be clever. The goal is to be **trustworthy enough that I reach for it without thinking**.
+
+---
+
+## Why It's Open Source
+
+KAM CLI lives publicly on GitHub at [github.com/Khalil-am/kam-cli](https://github.com/Khalil-am/kam-cli) for the same reason most of my tooling does: **my workflow isn't a trade secret, and the parts that generalize should be shared.**
+
+If a command I wrote saves somebody else an hour a week, that's already a good return on the time I spent writing it.
+
+---
+
+## Where This Is Going
+
+The roadmap for KAM CLI is focused and practical:
+
+- A richer plugin system so commands can be shared across teams and repos.
+- Deeper AI-assisted flows — natural-language entrypoints that resolve to the same underlying, deterministic commands.
+- First-class integration with KAM AI and BC Automations, so the CLI becomes the "hands" for higher-level agents.
+
+At its core, KAM CLI is a bet that **the terminal isn't going anywhere** — it's just getting smarter. This toolkit is my way of making sure my terminal keeps up with the rest of my stack.

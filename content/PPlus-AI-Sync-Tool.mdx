@@ -1,0 +1,89 @@
+---
+title: "PPlus AI Sync Tool: Reliable Configuration Sync Across Environments"
+summary: "A deep-dive into the PPlus AI Sync Tool — a standalone, AI-assisted configuration sync platform that closes the gap between dev, stage, and prod PPlus instances with full preview, audit, and rollback."
+image: "/PPlus-Demo.png"
+publishedAt: "2026-03-08"
+---
+
+Anyone who has operated PPlus in production knows the pain of syncing configuration between environments. Dashboards drift. Chart components get out of step. Level sources get reshaped on one side and not the other. Keys get renamed, formulas quietly break, and "it worked in dev" becomes a weekly refrain.
+
+The previous `ConfigurationDiffTool` tried to solve this — but it **didn't copy all configuration** (Dashboards, ChartComponents, and Level.Sources were captured but never synced), and it **didn't map renamed keys correctly** (a naive `string.Replace`, with formula rewriting left commented out).
+
+The **[PPlus AI Sync Tool](https://github.com/Khalil-am/pplus-ai-sync-tool)** is the complete rebuild.
+
+---
+
+## What It Does
+
+The PPlus AI Sync Tool is a standalone, AI-assisted configuration sync platform for PPlus. It supports:
+
+- **dev → stage → prod** promotion paths
+- **custom fan-out** to any number of target instances
+- **semantic matching** between renamed entities
+- **formula rewriting** as keys evolve
+- **preview, audit, and rollback** on every run
+
+The guiding principle is simple: **never trust a sync that can't be previewed, audited, and rolled back**.
+
+---
+
+## Architecture at a Glance
+
+The tool is a pnpm monorepo organized around clear domain boundaries:
+
+```
+apps/web/               Next.js 15 app (UI + API routes)
+packages/core/          Domain types, matchers, pipeline contracts
+packages/connectors/    PPlusConnector interface + RestConnector (HTTP)
+packages/ai/            Anthropic client, tool schemas, prompts
+packages/formula/       Deterministic {{Key}} parser + rewriter
+packages/db/            Drizzle schema, migrations, AES-256-GCM cred store
+packages/shared/        Zod schemas + entity-kind presets shared server/client
+```
+
+### **Deterministic where it should be**
+Formula parsing and rewriting are deterministic. The `{{Key}}` parser is unit-tested, and rewriting runs against structured AST nodes — not regexes hoping for the best.
+
+### **AI where it needs to be**
+Semantic entity matching is hard: two dashboards with different names might still be "the same" executive dashboard in different environments. The tool uses Claude for `proposeMapping`, `rewriteFormula`, `classifyRisk`, and streamed `explainDiff` — each with tight, cache-backed prompts.
+
+### **Secure by default**
+Credentials are stored with AES-256-GCM. Authentication supports cookie, bearer, and basic flows through the `RestConnector`. Audit entries and applied ops are tracked in Drizzle-managed tables — every action is reversible.
+
+---
+
+## Autopilot: The Default Experience
+
+The UI is **Autopilot-first**. The landing route redirects to `/autopilot`, and the header surfaces only two entry points:
+
+- **Autopilot** — one-click source → target sync with Claude in the loop.
+- **History** — every applied run, with one-click rollback.
+
+The full pipeline pages (`/connect`, `/snapshot`, `/match`, `/align`, `/diff`, `/apply`) are still reachable by direct URL — but they're no longer front-and-center. Autopilot handles the happy path end-to-end, and the deep pages are there when you need precision.
+
+---
+
+## Why This Matters
+
+Configuration sync sounds like plumbing. It isn't. In a production PPlus deployment, a broken sync pipeline means:
+
+- Executive dashboards drifting between environments.
+- KPIs that silently compute against wrong field mappings.
+- Compliance gaps where staging no longer mirrors production.
+- Hours of manual clean-up by the team that can least afford the distraction.
+
+The **PPlus AI Sync Tool** eliminates that class of problems by treating configuration sync as a first-class pipeline — capture, match, diff, plan, apply, rollback — with AI where it adds judgment and determinism everywhere else.
+
+---
+
+## What's Next
+
+The scaffolding pass is complete. The next passes are focused on:
+
+- Full pipeline stage execution (capture → rollback).
+- NextAuth operator login with encrypted credential persistence.
+- Per-target diff viewer, mapping editor, and apply-with-nonce confirm flow.
+
+The tool is on GitHub at [github.com/Khalil-am/pplus-ai-sync-tool](https://github.com/Khalil-am/pplus-ai-sync-tool) — with prerequisites as simple as Node 22+ and pnpm 9+.
+
+No Docker. No Postgres. No API keys in config files. Just a clean, AI-assisted configuration sync tool that finally treats PPlus environments with the care they deserve.
