@@ -1,6 +1,27 @@
 {
   "projects": [
     {
+      "name": "SquadIQ: Delivery OS for Agile Client Teams",
+      "description": "A delivery OS built around pairs, not pools. Every deliverable is a card, every card has a checklist, every squad has its own kanban board, and one dashboard sees it all — so two-person squads can run client work faster and smarter.",
+      "href": "https://squadiq.click",
+      "image": "/squadiq-hero.png",
+      "tags": [
+        "Delivery OS",
+        "Kanban",
+        "Squad-Based",
+        "Client Delivery",
+        "Productivity",
+        "SaaS"
+      ],
+      "links": [
+        {
+          "name": "Website",
+          "href": "https://squadiq.click",
+          "icon": "globe"
+        }
+      ]
+    },
+    {
       "name": "KAM CLI",
       "description": "A developer-focused command-line interface that streamlines daily engineering workflows, automates repetitive tasks, and provides fast access to custom tooling, productivity shortcuts, and project utilities.",
       "image": "/kam-cli.png",
