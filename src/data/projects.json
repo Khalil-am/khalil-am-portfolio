@@ -37,6 +37,7 @@
     {
       "name": "Wathiq: Modern E-Invoicing Platform",
       "description": "A modern and secure e-invoicing platform designed to digitally empower businesses. Wathiq helps organizations digitize invoicing, strengthen VAT compliance, and drive growth through real-time financial insights.",
+      "href": "https://wathiq-phi.vercel.app/",
       "image": "/wathiq.png",
       "tags": [
         "E-Invoicing",
@@ -46,7 +47,13 @@
         "SaaS",
         "Business Automation"
       ],
-      "links": []
+      "links": [
+        {
+          "name": "Website",
+          "href": "https://wathiq-phi.vercel.app/",
+          "icon": "globe"
+        }
+      ]
     },
     {
       "name": "IdeaIQ: Innovation Board Platform",
