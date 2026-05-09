@@ -1,0 +1,126 @@
+---
+title: "StoryIQ — Signal to Story. Story to Pass."
+summary: "Introducing StoryIQ: the IQ-suite product that turns a Product Owner's signal into an immutable Pass Record, with a 7-stage approval workflow connecting PO, Dev, and QA around audit-grade evidence."
+image: "/storyiq-hero.png"
+publishedAt: "2026-05-09"
+---
+
+Most delivery tools track *that* something happened. Very few prove *what* was actually done — with evidence, with sign-off, with a record nobody can quietly edit later.
+
+That gap is where things break. A PO writes a story, an engineer ships it, QA gives a thumbs-up in chat, and weeks later nobody can answer the simplest question: *what was passed, by whom, against what acceptance criteria?*
+
+**StoryIQ** was built to close that gap.
+
+It is the IQ-suite product that sits between [IdeaIQ](https://ideaiq.click) (where opportunities are explored) and [SquadIQ](https://squadiq.click) (where the active work board lives). StoryIQ is the layer in the middle — the **approval workflow** that turns a PO's observation into a verified, immutably recorded outcome.
+
+> *Signal to story. Story to pass.*
+
+---
+
+## The Idea Behind StoryIQ
+
+The premise is simple: **delivery without proof is a story you tell yourself.**
+
+In every team I have worked with, the last mile of a story — the moment between "I think it's done" and "we agree it shipped" — is the most fragile part of the system. It happens in DMs, in screenshots, in Jira comments that get rewritten, in QA verdicts that never get tied back to the original ask.
+
+So we asked a different question:
+
+**What if the act of passing a story was itself a first-class object — versioned, signed, and locked?**
+
+That object became the **Pass Pack**, and the workflow around it became StoryIQ.
+
+---
+
+## The 7-Stage Workflow
+
+StoryIQ runs every story through a fixed left-to-right pipeline. Each stage has one owner, one exit gate, and one moment where the system says: *not yet.*
+
+```
+Signals → Ready → In Progress → Self Check → QA Review → PO Pass → Closed
+```
+
+| Stage | Owner | Exit gate |
+|---|---|---|
+| **Signals** | PO | Title and acceptance criteria set |
+| **Ready** | PO → Assignee | Self-claim or assigned |
+| **In Progress** | Assignee | Self-checks complete |
+| **Self Check** | Assignee | Pass Pack valid — *whatChanged*, primary link, every selfCheck done, ≥1 proof |
+| **QA Review** | QA | Verdict recorded — `pass` or `changes_needed` |
+| **PO Pass** | PO | Decision note on *Pass Story* or *Request Changes* |
+| **Closed** | — | Terminal — immutable `poPasses` snapshot frozen with sha256 |
+
+The pipeline does not care how clever you are. It cares that every signal becomes a story, every story carries its own evidence, and every closed item carries a record nobody — including the PO who passed it — can rewrite later.
+
+---
+
+## The Pass Pack
+
+The Pass Pack is the centerpiece. Before a story can leave Self Check, the assignee has to fill it in:
+
+- **What changed** — a plain-language description of the actual delivery
+- **Primary link** — the canonical artifact (PR, deploy, document, dashboard)
+- **Self-checks** — every line on the story's checklist marked done
+- **Proof** — at least one artifact (screenshot, log, test run, recording)
+
+Only then can QA pick it up. Only then can the PO pass it. And once the PO clicks *Pass Story*, the entire Pass Pack is hashed and frozen as an immutable Pass Record.
+
+That hash is what makes the difference between *"I think we shipped it"* and *"here is what was shipped, signed, on this date, against these criteria."*
+
+---
+
+## Config-Driven, Not Code-Driven
+
+StoryIQ inherits the **PPLUS configuration pattern** that runs through the rest of the IQ suite: every instance declares its own stages, status ranges, role mapping, SLA per stage, and product areas through a single `instanceConfig.productConfig` JSON blob.
+
+That means an instance can:
+
+- Rename stages without a deploy
+- Adjust SLA windows per stage
+- Swap PO / Dev / QA role mappings
+- Add new product areas (journey × persona)
+- Tighten or loosen Pass Pack requirements
+
+…all from configuration. No migration, no release, no engineering ticket.
+
+The workflow itself is driven by a **Workflow Registry** — `workflowRegistry → workflowActivities → workflowActions → workflowConditions → slaPolicies` — so the rules of the pipeline are themselves data, not code.
+
+---
+
+## Cross-Product Events
+
+StoryIQ does not live alone. Every state change emits a CloudEvent on the shared `@iq/events` bus, so the rest of the suite can listen:
+
+- `iq.storyiq.signal.captured`
+- `iq.storyiq.story.created`
+- `iq.storyiq.story.transitioned`
+- `iq.storyiq.passPack.completed`
+- `iq.storyiq.story.passed`
+
+[SquadIQ](https://squadiq.click) subscribes so squad boards stay in sync. [BoardIQ](https://www.boardiq.click/) subscribes so the executive dashboard reflects what was actually passed — not just what was claimed. The signal-to-pass journey becomes one continuous, observable system across the suite.
+
+---
+
+## Who StoryIQ Is For
+
+StoryIQ is designed for teams whose delivery has consequences:
+
+- Product Owners who need an honest answer to *"what shipped this week?"*
+- Engineering leads tired of evidence living in Slack threads
+- QA teams that want a fixed verdict object instead of comment-thread negotiation
+- Compliance and audit functions that need a record they can trust without re-interviewing the team
+
+If your team ships work and you cannot, in one click, retrieve the exact artifact, checklist, and decision behind a closed story — StoryIQ is built for you.
+
+---
+
+## What's Next
+
+This is **StoryIQ v1.0** — the foundation. The 7 stages, the Pass Pack, the immutable record, the config-driven workflow, the cross-suite events. The roadmap from here focuses on deeper signal capture (auto-promoting observations from BoardIQ and IdeaIQ), richer QA verdict objects, and tighter feedback loops back into IdeaIQ when a story closes as *changes_needed* twice in a row.
+
+We are opening the launch publicly today.
+
+→ Explore StoryIQ at **[storyiq.click](https://storyiq.click)**
+
+Signal to story. Story to pass.
+
+— *Khalil*

@@ -1,6 +1,27 @@
 {
   "projects": [
     {
+      "name": "StoryIQ: Signal-to-Pass Approval Workflow",
+      "description": "The IQ-suite product that turns a Product Owner's signal into an immutable Pass Record. A 7-stage workflow — Signals → Ready → In Progress → Self Check → QA Review → PO Pass → Closed — with a Pass Pack that locks evidence, sha256 snapshots, and config-driven stages, roles, and SLAs per instance.",
+      "href": "https://storyiq.click",
+      "image": "/storyiq-hero.png",
+      "tags": [
+        "Approval Workflow",
+        "PO/Dev/QA",
+        "Audit-Grade",
+        "Config-Driven",
+        "IQ Suite",
+        "SaaS"
+      ],
+      "links": [
+        {
+          "name": "Website",
+          "href": "https://storyiq.click",
+          "icon": "globe"
+        }
+      ]
+    },
+    {
       "name": "SquadIQ: Delivery OS for Agile Client Teams",
       "description": "A delivery OS built around pairs, not pools. Every deliverable is a card, every card has a checklist, every squad has its own kanban board, and one dashboard sees it all — so two-person squads can run client work faster and smarter.",
       "href": "https://squadiq.click",
