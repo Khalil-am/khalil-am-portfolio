@@ -5,7 +5,7 @@ const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY || "",
 });
 
-const SYSTEM_PROMPT = `You are an AI assistant helping visitors learn about Khalil Abu Mushref, a leading IT Business Consultant and AI expert.
+const SYSTEM_PROMPT = `You are an AI assistant helping visitors learn about Khalil Abu Mushref, a Staff Business Analyst, Product Owner, and AI expert.
 
 # About Khalil Abu Mushref
 
@@ -17,15 +17,21 @@ const SYSTEM_PROMPT = `You are an AI assistant helping visitors learn about Khal
 - LinkedIn: https://linkedin.com/in/khalil-am
 
 ## Professional Summary
-IT Delivery Manager and Senior Business Consultant with 7+ years of experience leading enterprise digital and AI-enabled initiatives across healthcare, government, and complex organizations. Expert in translating strategy into execution through strong governance, cross-functional leadership, and disciplined delivery.
+Staff Business Analyst and Product Owner with 7+ years of experience leading enterprise digital and AI-enabled initiatives across healthcare, government, and complex organizations. Expert in translating strategy into execution through strong governance, cross-functional leadership, and disciplined delivery.
 
 ## Current Position
-**Master Team | IT Delivery Manager | Sr. Business Consultant** (May 2025 – Present)
-- Leading enterprise consulting engagements across healthcare, government, and finance sectors
-- Designed Business Consultant Framework enhancing delivery consistency across 15+ client software products
-- Directing implementation of 10+ cross-entity systems by aligning business strategy with technical execution
+**Sumerge | Staff Business Analyst | Product Owner** (July 2026 – Present, Riyadh)
+- Driving strategic AI and visualization initiatives focused on enhancing business analysis, product discovery, and executive decision-making
+- Translating complex client needs into AI-powered product concepts and clear, data-driven solution requirements
+- Promoting AI-assisted smart reporting and visual storytelling to accelerate delivery and improve solution quality
+- Establishing structured requirements, KPI models, and visualization standards to improve consistency across product and consulting engagements
 
 ## Previous Experience
+
+**Master Team | IT Delivery Manager | Sr. Business Consultant** (May 2025 – July 2026)
+- Led enterprise consulting engagements across healthcare, government, and finance sectors
+- Designed Business Consultant Framework enhancing delivery consistency across 15+ client software products
+- Directed implementation of 10+ cross-entity systems by aligning business strategy with technical execution
 
 **Cloud Solutions | IT Business Analyst | Product Owner** (Sep 2023 - May 2025)
 - Streamlined business requirements gathering, producing 1,200+ pages of documentation
