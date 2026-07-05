@@ -17,15 +17,21 @@ const SYSTEM_PROMPT = `You are an AI assistant helping visitors learn about Khal
 - LinkedIn: https://linkedin.com/in/khalil-am
 
 ## Professional Summary
-IT Delivery Manager and Senior Business Consultant with 7+ years of experience leading enterprise digital and AI-enabled initiatives across healthcare, government, and complex organizations. Expert in translating strategy into execution through strong governance, cross-functional leadership, and disciplined delivery.
+IT Senior Business Consultant & Product Owner with 8+ years of experience leading enterprise digital and AI-enabled initiatives. Skilled in turning strategy into clear execution through governance, stakeholder alignment, and disciplined delivery.
 
 ## Current Position
-**Master Team | IT Delivery Manager | Sr. Business Consultant** (May 2025 – Present)
-- Leading enterprise consulting engagements across healthcare, government, and finance sectors
-- Designed Business Consultant Framework enhancing delivery consistency across 15+ client software products
-- Directing implementation of 10+ cross-entity systems by aligning business strategy with technical execution
+**Sumerge | Staff Business Analyst | Product Owner** (July 2026 – Present, Riyadh)
+- Driving strategic AI and visualization initiatives focused on enhancing business analysis, product discovery, and executive decision-making
+- Translating complex client needs into AI-powered product concepts and clear, data-driven solution requirements
+- Promoting AI-assisted smart reporting and visual storytelling to improve solution quality
+- Establishing structured requirements, KPI models, and visualization standards across product and consulting engagements
 
 ## Previous Experience
+
+**Master Team | IT Sr. Business Consultant | Product Owner** (May 2025 - July 2026)
+- Led enterprise consulting engagements, delivering tailored digital solutions across healthcare, government, and finance sectors
+- Developed a Business Framework that improved delivery consistency across 60+ client software products
+- Oversaw implementation of 30+ cross-entity systems by aligning strategy with execution and compliance
 
 **Cloud Solutions | IT Business Analyst | Product Owner** (Sep 2023 - May 2025)
 - Streamlined business requirements gathering, producing 1,200+ pages of documentation
@@ -46,13 +52,13 @@ IT Delivery Manager and Senior Business Consultant with 7+ years of experience l
 - Developed data pipelines for large datasets
 
 ## Education
-- **Master's in Computing (Artificial Intelligence)** - National University of Malaysia (Expected 2025)
+- **Master's in Computing (Artificial Intelligence)** - National University of Malaysia (Expected 2026)
   * Research: AI applications in personalized oncology, predicting cancer treatment outcomes
 - **Bachelor's in Computer Engineering** - University of Jordan (2020)
   * Graduation Project: Virtue mental health application using AI
 
 ## Certifications
-PMI-ACP® (Agile), PMP, TOGAF®, NVIDIA Accelerated Data Science, Databricks Certified Data Engineer, AWS Solutions Architect, Tableau Certified Data Analyst, Alteryx Designer Expert
+PMI-ACP® (Agile), PMP, TOGAF®, NVIDIA Accelerated Data Science, Databricks Certified Data Engineer, AWS Solutions Architect, Professional Scrum Master (Scrum.org), Tableau Certified Data Analyst, Alteryx Designer Expert
 
 ## Featured Projects
 
@@ -79,7 +85,7 @@ PMI-ACP® (Agile), PMP, TOGAF®, NVIDIA Accelerated Data Science, Databricks Cer
 - **Project Management**: Agile (PMI-ACP), PMP, Scrum, UAT Management
 
 ## Key Achievements
-- Developed Business Framework improving delivery consistency across 30+ client software products
+- Developed Business Framework improving delivery consistency across 60+ client software products
 - Produced over 1,200 pages of business documentation
 - Managed over 100 Power BI dashboards empowering data-driven decisions
 - Improved project delivery time by 70%

@@ -1,12 +1,25 @@
 {
   "career": [
     {
+      "name": "Sumerge",
+      "href": "https://www.sumerge.com/",
+      "title": "Staff Business Analyst | Product Owner",
+      "logo": "/sumerge.svg",
+      "start": "July 2026",
+      "end": "Present",
+      "description": [
+        "Driving strategic AI and visualization initiatives focused on enhancing business analysis, product discovery, and executive decision-making.",
+        "Translating complex client needs into AI-powered product concepts and clear, data-driven solution requirements.",
+        "Establishing structured requirements, KPI models, and visualization standards to improve consistency across product and consulting engagements."
+      ]
+    },
+    {
       "name": "Master Team",
       "href": "https://www.masterteam.sa/",
-      "title": "Sr. IT Business Consultant",
+      "title": "IT Sr. Business Consultant | Product Owner",
       "logo": "/masterteam.jpg",
       "start": "May 2025",
-      "end": "Present",
+      "end": "July 2026",
       "description": [
         "Led enterprise-wide consulting engagements, delivering tailored digital solutions across healthcare, government, and finance sectors.",
         "Developed a Business Framework that improved delivery consistency across 60+ client software products.",
