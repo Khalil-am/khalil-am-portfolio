@@ -1,4 +1,12 @@
+import type { Metadata } from "next";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Privacy Policy",
+  description:
+    "How khalil-am.com handles your data — what is collected, how it is used, and your choices.",
+  alternates: { canonical: "/privacy" },
+};
 
 const lastUpdated = "Sep 2024";
 

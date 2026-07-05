@@ -1,4 +1,18 @@
 import Projects from "@/components/Projects";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Projects",
+  description:
+    "AI-powered platforms and product builds by Khalil Abu Mushref — SprintsGate, BoardIQ, NuRad, StoryIQ, and more across healthcare, delivery, and analytics.",
+  alternates: { canonical: "/projects" },
+  openGraph: {
+    title: "Projects | Khalil Abu Mushref",
+    description:
+      "AI-powered platforms and product builds across healthcare, delivery, and analytics.",
+    url: "/projects",
+  },
+};
 
 export default async function ProjectPage() {
   return (

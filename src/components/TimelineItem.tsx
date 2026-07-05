@@ -22,7 +22,7 @@ export default function TimelineItem({ experience }: Props) {
         <Avatar className="size-12 border">
           <AvatarImage
             src={logo}
-            alt={name}
+            alt={`${name} logo`}
             className="bg-background object-contain"
           />
           <AvatarFallback>{name[0]}</AvatarFallback>

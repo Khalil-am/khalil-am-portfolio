@@ -14,10 +14,10 @@ export default function Experience() {
         <TabsTrigger value="work">Work</TabsTrigger>
         <TabsTrigger value="education">Education</TabsTrigger>
       </TabsList>
-      <TabsContent value="work">
+      <TabsContent value="work" forceMount className="data-[state=inactive]:hidden">
         <Timeline experience={career}></Timeline>
       </TabsContent>
-      <TabsContent value="education">
+      <TabsContent value="education" forceMount className="data-[state=inactive]:hidden">
         <Timeline experience={education}></Timeline>
       </TabsContent>
     </Tabs>

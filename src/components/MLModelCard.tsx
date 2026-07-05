@@ -26,17 +26,26 @@ export function MLModelCard({ model }: ModelProps) {
   return (
     <Card className="flex flex-col">
       <CardHeader>
-        {imageUrl && (
-          <Link href={link || imageUrl}>
+        {imageUrl &&
+          (link ? (
+            <Link href={link}>
+              <Image
+                src={imageUrl}
+                alt={`Illustration for ${title}`}
+                width={500}
+                height={300}
+                className="h-40 w-full object-cover object-top"
+              />
+            </Link>
+          ) : (
             <Image
               src={imageUrl}
-              alt={title}
+              alt={`Illustration for ${title}`}
               width={500}
               height={300}
               className="h-40 w-full object-cover object-top"
             />
-          </Link>
-        )}
+          ))}
       </CardHeader>
       <CardContent className="flex flex-col gap-2">
         <CardTitle>{title}</CardTitle>
@@ -59,7 +68,12 @@ export function MLModelCard({ model }: ModelProps) {
           </div>
         )}
         <div className="flex flex-row flex-wrap items-start gap-1">
-          <Link href={link} target="_blank">
+          <Link
+            href={link}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label={`Learn more about ${title}`}
+          >
             <Badge className="flex gap-2 px-2 py-1 text-[10px]">
               <Icon name="file-text" className="size-3" />
               Learn More

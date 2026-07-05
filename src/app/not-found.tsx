@@ -7,13 +7,7 @@ export default function NotFound() {
     <article className="mt-8 flex flex-col gap-8 pb-16">
       <div className="min-h-full px-4 sm:px-6 sm:py-24 md:grid md:place-items-center lg:px-8">
         <div className="mx-auto max-w-max text-center">
-          <Image
-            src="/cryingbee.png"
-            alt="Crying Bee"
-            width={150}
-            height={150}
-            priority
-          />
+          <Image src="/cryingbee.png" alt="" width={150} height={150} />
           <section className="sm:flex">
             <p className="title text-muted-foreground leading-loose">404</p>
             <div className="sm:ml-6">

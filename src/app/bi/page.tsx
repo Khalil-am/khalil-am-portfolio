@@ -1,5 +1,18 @@
-// /src/app/bi/page.tsx
 import BI from "@/components/BI";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Business Intelligence Dashboards",
+  description:
+    "Power BI and analytics dashboard portfolio by Khalil Abu Mushref — executive KPIs, sales performance, and real-time reporting for data-driven decisions.",
+  alternates: { canonical: "/bi" },
+  openGraph: {
+    title: "Business Intelligence Dashboards | Khalil Abu Mushref",
+    description:
+      "Executive KPIs, sales performance, and real-time reporting dashboards.",
+    url: "/bi",
+  },
+};
 
 export default async function BIPage() {
   return (

@@ -22,17 +22,26 @@ export function BICard({ project }: Props) {
   return (
     <Card className="flex flex-col">
       <CardHeader>
-        {image && (
-          <Link href={href || image}>
+        {image &&
+          (href ? (
+            <Link href={href}>
+              <Image
+                src={image}
+                alt={`Screenshot of the ${name} dashboard`}
+                width={500}
+                height={300}
+                className="h-40 w-full object-cover object-top"
+              />
+            </Link>
+          ) : (
             <Image
               src={image}
-              alt={name}
+              alt={`Screenshot of the ${name} dashboard`}
               width={500}
               height={300}
               className="h-40 w-full object-cover object-top"
             />
-          </Link>
-        )}
+          ))}
       </CardHeader>
 
       <CardContent className="flex flex-col gap-2">
@@ -60,7 +69,12 @@ export function BICard({ project }: Props) {
         {links && links.length > 0 && (
           <div className="flex flex-row flex-wrap items-start gap-1">
             {links.toSorted().map((link, idx) => (
-              <Link href={link?.href} key={idx} target="_blank">
+              <Link
+                href={link?.href}
+                key={idx}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Badge key={idx} className="flex gap-2 px-2 py-1 text-[10px]">
                   <Icon name={link.icon} className="size-3" />
                   {link.name}

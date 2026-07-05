@@ -1,5 +1,3 @@
-"use client";
-
 import data from "@/data/bi.json";          // read from your BI data
 import { projectSchema } from "@/lib/schemas";
 import { BICard } from "./BICard";

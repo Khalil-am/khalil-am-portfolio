@@ -63,7 +63,7 @@ export default async function Home() {
             href="/projects"
             position="right"
             icon={<ArrowRightIcon className="size-5" />}
-            text="view all"
+            text="view all projects"
           />
         </div>
         <Projects limit={LIMIT} />
@@ -77,7 +77,7 @@ export default async function Home() {
             href="/bi" // The dedicated BI page
             position="right"
             icon={<ArrowRightIcon className="size-5" />}
-            text="view all"
+            text="view all dashboards"
           />
         </div>
         <BI limit={LIMIT} />
@@ -90,7 +90,7 @@ export default async function Home() {
             href="/ml-models"  // Link to the full ML Models page
             position="right"
             icon={<ArrowRightIcon className="size-5" />}
-            text="view all"
+            text="view all ML models"
           />
         </div>
         <MLModels limit={LIMIT} /> {/* Display limited ML models */}
@@ -103,7 +103,7 @@ export default async function Home() {
             href="/blog"
             position="right"
             icon={<ArrowRightIcon className="size-5" />}
-            text="view more"
+            text="more insights"
           />
         </div>
         <Posts posts={posts} />

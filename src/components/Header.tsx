@@ -1,10 +1,6 @@
-"use client";
-
 import Link from "next/link";
 import ChatToggle from "./ChatToggle";
 import ThemeToggle from "./ThemeToggle";
-import { useTheme } from "next-themes";
-import { useEffect, useState } from "react";
 
 const navLinks = [
   // { name: "home", href: "/" },
@@ -16,30 +12,24 @@ const navLinks = [
 ];
 
 export default function Header() {
-  const { resolvedTheme } = useTheme();
-  const [mounted, setMounted] = useState(false);
-
-  useEffect(() => {
-    setMounted(true);
-  }, []);
-
-  if (!mounted) {
-    return null; // Prevents hydration mismatch
-  }
-
   return (
     <header className="sticky top-0 z-50 bg-background/75 py-6 backdrop-blur-sm">
-      <nav className="flex items-center justify-between">
-        {/* Logo Section */}
+      <nav aria-label="Main navigation" className="flex items-center justify-between">
+        {/* Logo Section — both theme variants rendered, CSS picks one */}
         <Link href="/">
           <img
-            src={
-              resolvedTheme === "dark"
-                ? "/assets/Kam-logo-white.svg"
-                : "/assets/Kam-logo-black.svg"
-            }
-            alt="Logo"
-            className="h-14 w-auto"
+            src="/assets/Kam-logo-black.svg"
+            alt="Khalil Abu Mushref — home"
+            width={56}
+            height={56}
+            className="h-14 w-auto dark:hidden"
+          />
+          <img
+            src="/assets/Kam-logo-white.svg"
+            alt="Khalil Abu Mushref — home"
+            width={56}
+            height={56}
+            className="hidden h-14 w-auto dark:block"
           />
         </Link>
 
