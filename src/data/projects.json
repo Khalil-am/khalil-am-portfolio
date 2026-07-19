@@ -1,12 +1,11 @@
 {
   "projects": [
     {
-      "name": "IMDAD: Healthcare Procurement Platform",
-      "description": "An end-to-end healthcare procurement platform covering the full PR → RFQ → PO → delivery lifecycle. IMDAD digitizes a complete procurement policy manual with tiered approvals, letters of credit, gate passes, product recalls, and a supplier portal — driven by a configurable workflow engine and role-based access across 38 personas.",
+      "name": "IMDAD: End-to-End Procurement Platform",
+      "description": "An end-to-end procurement platform covering the full PR → RFQ → PO → delivery lifecycle. IMDAD digitizes a complete procurement policy manual with tiered approvals, letters of credit, gate passes, product recalls, and a supplier portal — driven by a configurable workflow engine and role-based access across 38 personas.",
       "href": "https://imdad-procurement.vercel.app/",
       "image": "/imdad-hero.png",
       "tags": [
-        "Healthcare",
         "Procurement",
         "Approval Workflows",
         "Supply Chain",
