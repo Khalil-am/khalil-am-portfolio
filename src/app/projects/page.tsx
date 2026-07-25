@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Projects",
   description:
-    "AI-powered platforms and product builds by Khalil Abu Mushref — SprintsGate, BoardIQ, NuRad, StoryIQ, and more across healthcare, delivery, and analytics.",
+    "AI-powered platforms and product builds by Khalil Abu Mushref — TaskIQ, SprintsGate, BoardIQ, NuRad, StoryIQ, and more across healthcare, delivery, and analytics.",
   alternates: { canonical: "/projects" },
   openGraph: {
     title: "Projects | Khalil Abu Mushref",

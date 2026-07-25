@@ -1,6 +1,28 @@
 {
   "projects": [
     {
+      "name": "TaskIQ: Organization-Wide Task Intelligence & Governance",
+      "description": "An enterprise task governance platform that gives every level of an organization one view of the work — from an executive rollup across departments down to a single assignee's inbox. Governed assignment, delegation, tiered approvals, leave coverage, and SLA monitoring run on a configuration-first engine where hierarchy, workflows, permissions, and dashboards are configured rather than coded — with full Arabic/English RTL parity.",
+      "href": "https://taskiq-pink.vercel.app",
+      "image": "/taskiq-hero.png",
+      "tags": [
+        "Task Governance",
+        "Delegation & Approvals",
+        "SLA Monitoring",
+        "Config-Driven",
+        "Bilingual RTL",
+        "IQ Suite",
+        "SaaS"
+      ],
+      "links": [
+        {
+          "name": "Website",
+          "href": "https://taskiq-pink.vercel.app",
+          "icon": "globe"
+        }
+      ]
+    },
+    {
       "name": "IMDAD: End-to-End Procurement Platform",
       "description": "An end-to-end procurement platform covering the full PR → RFQ → PO → delivery lifecycle. IMDAD digitizes a complete procurement policy manual with tiered approvals, letters of credit, gate passes, product recalls, and a supplier portal — driven by a configurable workflow engine and role-based access across 38 personas.",
       "href": "https://imdad-procurement.vercel.app/",
