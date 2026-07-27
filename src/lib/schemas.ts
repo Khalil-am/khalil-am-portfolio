@@ -27,6 +27,7 @@ const project = z.object({
   image: z.string().optional(),
   tags: z.array(z.string()),
   links: z.array(iconLink),
+  hidden: z.boolean().optional(),
 });
 export const projectSchema = z.object({ projects: z.array(project) });
 export type Project = z.infer<typeof project>;

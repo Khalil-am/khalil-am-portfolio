@@ -1,6 +1,7 @@
 {
   "projects": [
     {
+      "hidden": true,
       "name": "TaskIQ: Organization-Wide Task Intelligence & Governance",
       "description": "An enterprise task governance platform that gives every level of an organization one view of the work — from an executive rollup across departments down to a single assignee's inbox. Governed assignment, delegation, tiered approvals, leave coverage, and SLA monitoring run on a configuration-first engine where hierarchy, workflows, permissions, and dashboards are configured rather than coded — with full Arabic/English RTL parity.",
       "href": "https://taskiq-pink.vercel.app",
