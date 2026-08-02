@@ -4,7 +4,7 @@
       "hidden": true,
       "name": "TaskIQ: Organization-Wide Task Intelligence & Governance",
       "description": "An enterprise task governance platform that gives every level of an organization one view of the work — from an executive rollup across departments down to a single assignee's inbox. Governed assignment, delegation, tiered approvals, leave coverage, and SLA monitoring run on a configuration-first engine where hierarchy, workflows, permissions, and dashboards are configured rather than coded — with full Arabic/English RTL parity.",
-      "href": "https://taskiq-pink.vercel.app",
+      "href": "https://taskiq.stkksa.com",
       "image": "/taskiq-hero.png",
       "tags": [
         "Task Governance",
@@ -18,7 +18,7 @@
       "links": [
         {
           "name": "Website",
-          "href": "https://taskiq-pink.vercel.app",
+          "href": "https://taskiq.stkksa.com",
           "icon": "globe"
         }
       ]
@@ -26,7 +26,7 @@
     {
       "name": "IMDAD: End-to-End Procurement Platform",
       "description": "An end-to-end procurement platform covering the full PR → RFQ → PO → delivery lifecycle. IMDAD digitizes a complete procurement policy manual with tiered approvals, letters of credit, gate passes, product recalls, and a supplier portal — driven by a configurable workflow engine and role-based access across 38 personas.",
-      "href": "https://imdad-procurement.vercel.app/",
+      "href": "https://imdad.stkksa.com/",
       "image": "/imdad-hero.png",
       "tags": [
         "Procurement",
@@ -38,7 +38,7 @@
       "links": [
         {
           "name": "Website",
-          "href": "https://imdad-procurement.vercel.app/",
+          "href": "https://imdad.stkksa.com/",
           "icon": "globe"
         }
       ]
@@ -101,7 +101,7 @@
     {
       "name": "Wathiq: Modern E-Invoicing Platform",
       "description": "A modern and secure e-invoicing platform designed to digitally empower businesses. Wathiq helps organizations digitize invoicing, strengthen VAT compliance, and drive growth through real-time financial insights.",
-      "href": "https://wathiq-phi.vercel.app/",
+      "href": "https://wathiq.stkksa.com/",
       "image": "/wathiq.png",
       "tags": [
         "E-Invoicing",
@@ -114,7 +114,7 @@
       "links": [
         {
           "name": "Website",
-          "href": "https://wathiq-phi.vercel.app/",
+          "href": "https://wathiq.stkksa.com/",
           "icon": "globe"
         }
       ]
@@ -268,7 +268,7 @@
     {
       "name": "Yadree: Business Intelligence Consultant System",
       "description": "A comprehensive AI-powered business intelligence solution that integrates real-time data visualization, SQLFlow, and machine learning to enhance decision-making.",
-      "href": "https://yadree.vercel.app/",
+      "href": "https://yadree.stkksa.com/",
       "image": "/biac.png",
       "tags": [
         "AI",
@@ -280,7 +280,7 @@
       "links": [
         {
           "name": "Website",
-          "href": "https://yadree.vercel.app/",
+          "href": "https://yadree.stkksa.com/",
           "icon": "globe"
         }
       ]
@@ -288,7 +288,7 @@
     {
       "name": "ShifaWay: AI Healthcare Scheduling",
       "description": "ShifaWay is a comprehensive healthcare scheduling and management platform designed to streamline administrative workflows.",
-      "href": "https://shifaway.vercel.app",
+      "href": "https://shifaway.stkksa.com",
       "image": "/shifaway-hero.png",
       "tags": [
         "AI",
@@ -301,7 +301,7 @@
       "links": [
         {
           "name": "Website",
-          "href": "https://shifaway.vercel.app",
+          "href": "https://shifaway.stkksa.com",
           "icon": "globe"
         }
       ]
@@ -370,7 +370,7 @@
     {
       "name": "TAB - Revolutionizing Digital Menus for Restaurants",
       "description": "TAB is an AI-powered menu system designed to enhance dining experiences and streamline restaurant operations. With interactive digital menus.",
-      "href": "https://tab-blue.vercel.app/order/40",
+      "href": "https://tab.stkksa.com/order/40",
       "image": "/tabmenu.jpg",
       "tags": [
         "AI",
@@ -390,13 +390,13 @@
     {
       "name": "Virtue 2.0",
       "description": "An AI mental health support tool offering appointments with top practitioners. Features both payment and non-profit charity plans, enabling users to get diagnoses and connect with the best mental health professionals.",
-      "href": "https://virtue-alpha.vercel.app",
+      "href": "https://virtue.stkksa.com",
       "image": "/img.png",
       "tags": ["AI", "Mental Health", "Non-Profit", "Healthcare", "Diagnosis"],
       "links": [
         {
           "name": "Website",
-          "href": "https://virtue-alpha.vercel.app",
+          "href": "https://virtue.stkksa.com",
           "icon": "globe"
         }
       ]
@@ -404,13 +404,13 @@
     {
       "name": "KPI on the Fly AI",
       "description": " a powerful AI-powered business intelligence platform designed to generate real-time KPIs directly from your data. Seamlessly integrating with Apache Superset, it enables effortless dashboard creation, Experience streamlined, dynamic KPI generation with KPI on the Fly.",
-      "href": "https://kpionthefly.vercel.app",
+      "href": "https://kpionthefly.stkksa.com",
       "image": "/kpionthefly.jpg",
       "tags": ["AI", "Business Intelligence", "Data Analytics", "KPI", "Excel"],
       "links": [
         {
           "name": "Website",
-          "href": "https://kpionthefly.vercel.app",
+          "href": "https://kpionthefly.stkksa.com",
           "icon": "globe"
         }
       ]
@@ -432,13 +432,13 @@
     {
       "name": "SautNote AI",
       "description": "An AI-driven transcription service that converts audio into accurate, text-based notes, enhancing productivity for professionals and students.",
-      "href": "https://saut-note.vercel.app",
+      "href": "https://sautnote.stkksa.com",
       "image": "/sautnote.jpg",
       "tags": ["AI", "Transcription", "Productivity"],
       "links": [
         {
           "name": "Website",
-          "href": "https://saut-note.vercel.app",
+          "href": "https://sautnote.stkksa.com",
           "icon": "globe"
         }
       ]
@@ -446,13 +446,13 @@
     {
       "name": "Wajibaty AI",
       "description": "A vibrant AI-powered platform designed to help users manage and organize daily tasks. Wajibaty simplifies to-do lists, schedules, and reminders, focusing on accessibility and convenience.",
-      "href": "https://wajibaty.vercel.app",
+      "href": "https://wajibaty.stkksa.com",
       "image": "/wajibaty.jpg",
       "tags": ["AI", "Task Management", "Productivity"],
       "links": [
         {
           "name": "Website",
-          "href": "https://wajibaty.vercel.app",
+          "href": "https://wajibaty.stkksa.com",
           "icon": "globe"
         }
       ]
@@ -472,7 +472,7 @@
       "links": [
         {
           "name": "Website",
-          "href": "https://virtue-alpha.vercel.app",
+          "href": "https://virtue.stkksa.com",
           "icon": "globe"
         }
       ]
