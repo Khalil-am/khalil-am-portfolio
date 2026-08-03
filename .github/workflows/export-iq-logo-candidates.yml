@@ -7,10 +7,14 @@ on:
 permissions:
   contents: read
 
+concurrency:
+  group: iq-logo-export-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
 jobs:
   export:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 15
     steps:
       - name: Check out branch
         uses: actions/checkout@v4
@@ -31,8 +35,7 @@ jobs:
           CHROME_PATH="$(command -v google-chrome || command -v google-chrome-stable || command -v chromium || command -v chromium-browser)"
           echo "Using browser: ${CHROME_PATH}"
           test -n "${CHROME_PATH}"
-          sed -i 's|const browser = await chromium.launch({ headless: true });|const browser = await chromium.launch({ headless: true, executablePath: process.env.CHROME_PATH, args: ["--no-sandbox"] });|' scripts/export-iq-logo-candidates.mjs
-          CHROME_PATH="${CHROME_PATH}" node scripts/export-iq-logo-candidates.mjs
+          CHROME_PATH="${CHROME_PATH}" node scripts/export-iq-logo-fast.mjs
 
       - name: Upload collected assets
         if: always()
