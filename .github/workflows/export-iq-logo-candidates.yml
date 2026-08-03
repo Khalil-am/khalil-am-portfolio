@@ -20,13 +20,19 @@ jobs:
         with:
           node-version: "20"
 
-      - name: Install Playwright
-        run: |
-          npm install --no-save --ignore-scripts playwright@1.54.1
-          npx playwright install --with-deps chromium
+      - name: Install Playwright library
+        run: npm install --no-save --ignore-scripts playwright@1.54.1
 
       - name: Collect IQ logo candidates
-        run: node scripts/export-iq-logo-candidates.mjs
+        continue-on-error: true
+        run: |
+          mkdir -p iq-logo-candidates
+          echo "Logo collection started" > iq-logo-candidates/run.txt
+          CHROME_PATH="$(command -v google-chrome || command -v google-chrome-stable || command -v chromium || command -v chromium-browser)"
+          echo "Using browser: ${CHROME_PATH}"
+          test -n "${CHROME_PATH}"
+          sed -i 's|const browser = await chromium.launch({ headless: true });|const browser = await chromium.launch({ headless: true, executablePath: process.env.CHROME_PATH, args: ["--no-sandbox"] });|' scripts/export-iq-logo-candidates.mjs
+          CHROME_PATH="${CHROME_PATH}" node scripts/export-iq-logo-candidates.mjs
 
       - name: Upload collected assets
         if: always()
