@@ -1,0 +1,38 @@
+name: Export IQ logo candidates
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+permissions:
+  contents: read
+
+jobs:
+  export:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Check out branch
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install Playwright
+        run: |
+          npm install --no-save --ignore-scripts playwright@1.54.1
+          npx playwright install --with-deps chromium
+
+      - name: Collect IQ logo candidates
+        run: node scripts/export-iq-logo-candidates.mjs
+
+      - name: Upload collected assets
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: iq-logo-candidates
+          path: iq-logo-candidates
+          if-no-files-found: error
+          retention-days: 1
