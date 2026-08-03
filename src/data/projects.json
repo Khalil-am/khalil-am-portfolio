@@ -4,7 +4,7 @@
       "hidden": true,
       "name": "TaskIQ: Organization-Wide Task Intelligence & Governance",
       "description": "An enterprise task governance platform that gives every level of an organization one view of the work — from an executive rollup across departments down to a single assignee's inbox. Governed assignment, delegation, tiered approvals, leave coverage, and SLA monitoring run on a configuration-first engine where hierarchy, workflows, permissions, and dashboards are configured rather than coded — with full Arabic/English RTL parity.",
-      "href": "https://taskiq.stkksa.com",
+      "href": "https://taskiq.khalil-am.com",
       "image": "/taskiq-hero.png",
       "tags": [
         "Task Governance",
@@ -18,7 +18,7 @@
       "links": [
         {
           "name": "Website",
-          "href": "https://taskiq.stkksa.com",
+          "href": "https://taskiq.khalil-am.com",
           "icon": "globe"
         }
       ]
@@ -26,7 +26,7 @@
     {
       "name": "IMDAD: End-to-End Procurement Platform",
       "description": "An end-to-end procurement platform covering the full PR → RFQ → PO → delivery lifecycle. IMDAD digitizes a complete procurement policy manual with tiered approvals, letters of credit, gate passes, product recalls, and a supplier portal — driven by a configurable workflow engine and role-based access across 38 personas.",
-      "href": "https://imdad.stkksa.com/",
+      "href": "https://imdad.khalil-am.com",
       "image": "/imdad-hero.png",
       "tags": [
         "Procurement",
@@ -38,7 +38,7 @@
       "links": [
         {
           "name": "Website",
-          "href": "https://imdad.stkksa.com/",
+          "href": "https://imdad.khalil-am.com",
           "icon": "globe"
         }
       ]
@@ -46,7 +46,7 @@
     {
       "name": "StoryIQ: Signal-to-Pass Approval Workflow",
       "description": "The IQ-suite product that turns a Product Owner's signal into an immutable Pass Record. A 7-stage workflow — Signals → Ready → In Progress → Self Check → QA Review → PO Pass → Closed — with a Pass Pack that locks evidence, sha256 snapshots, and config-driven stages, roles, and SLAs per instance.",
-      "href": "https://storyiq.click",
+      "href": "https://storyiq.khalil-am.com",
       "image": "/storyiq-hero.png",
       "tags": [
         "Approval Workflow",
@@ -59,7 +59,7 @@
       "links": [
         {
           "name": "Website",
-          "href": "https://storyiq.click",
+          "href": "https://storyiq.khalil-am.com",
           "icon": "globe"
         }
       ]
@@ -67,7 +67,7 @@
     {
       "name": "SquadIQ: Delivery OS for Agile Client Teams",
       "description": "A delivery OS built around pairs, not pools. Every deliverable is a card, every card has a checklist, every squad has its own kanban board, and one dashboard sees it all — so two-person squads can run client work faster and smarter.",
-      "href": "https://squadiq.click",
+      "href": "https://squadiq.khalil-am.com",
       "image": "/squadiq-hero.png",
       "tags": [
         "Delivery OS",
@@ -80,7 +80,7 @@
       "links": [
         {
           "name": "Website",
-          "href": "https://squadiq.click",
+          "href": "https://squadiq.khalil-am.com",
           "icon": "globe"
         }
       ]
@@ -101,7 +101,7 @@
     {
       "name": "Wathiq: Modern E-Invoicing Platform",
       "description": "A modern and secure e-invoicing platform designed to digitally empower businesses. Wathiq helps organizations digitize invoicing, strengthen VAT compliance, and drive growth through real-time financial insights.",
-      "href": "https://wathiq.stkksa.com/",
+      "href": "https://wathiq.khalil-am.com",
       "image": "/wathiq.png",
       "tags": [
         "E-Invoicing",
@@ -114,7 +114,7 @@
       "links": [
         {
           "name": "Website",
-          "href": "https://wathiq.stkksa.com/",
+          "href": "https://wathiq.khalil-am.com",
           "icon": "globe"
         }
       ]
@@ -122,7 +122,7 @@
     {
       "name": "IdeaIQ: Innovation Board Platform",
       "description": "A collaborative brainstorming platform that helps teams capture, organize, and prioritize ideas through a structured phase-gate process — from intake to implementation.",
-      "href": "https://ideaiq.click",
+      "href": "https://ideaiq.khalil-am.com",
       "image": "/ideaiq-hero.png",
       "tags": [
         "Innovation",
@@ -134,7 +134,7 @@
       "links": [
         {
           "name": "Website",
-          "href": "https://ideaiq.click",
+          "href": "https://ideaiq.khalil-am.com",
           "icon": "globe"
         }
       ]
@@ -142,7 +142,7 @@
     {
       "name": "SprintsGate: Sprint-Driven UAT Platform",
       "description": "An AI-powered UAT platform that transforms business requirements into sprint-ready test cases in minutes. SprintsGate gives agile teams a Kanban board for test execution, real-time analytics, and full requirements traceability from BRD to sign-off.",
-      "href": "https://sprintsgate.com",
+      "href": "https://uatplatform-qhujdwrs.manus.space",
       "image": "/sprintsgate.png",
       "tags": [
         "Agile",
@@ -155,7 +155,7 @@
       "links": [
         {
           "name": "Website",
-          "href": "https://sprintsgate.com",
+          "href": "https://uatplatform-qhujdwrs.manus.space",
           "icon": "globe"
         }
       ]
@@ -163,7 +163,7 @@
     {
       "name": "Consultant OS: AI-Powered Consulting Workspace",
       "description": "An AI-powered consulting workspace that automates documentation, meetings, reports, decisions, and workflows for modern delivery and business analysis teams.",
-      "href": "https://consultantos.com",
+      "href": "https://consultantos.khalil-am.com",
       "image": "/consultant-os-hero.png",
       "tags": [
         "AI",
@@ -176,7 +176,7 @@
       "links": [
         {
           "name": "Website",
-          "href": "https://consultantos.com",
+          "href": "https://consultantos.khalil-am.com",
           "icon": "globe"
         }
       ]
@@ -246,7 +246,7 @@
     {
       "name": "NuRad: AI-Powered Radiology & Medical Terminology Scanner",
       "description": "NuRad is an AI-driven medical intelligence platform focused on radiology and clinical terminology scanning. It analyzes medical reports, radiology findings, and unstructured healthcare text.",
-      "href": "https://nurad.one",
+      "href": "https://nurad.khalil-am.com",
       "image": "/Nurad.png",
       "tags": [
         "AI",
@@ -260,7 +260,7 @@
       "links": [
           {
             "name": "Website",
-            "href": "https://nurad.one",
+            "href": "https://nurad.khalil-am.com",
             "icon": "globe"
           }
       ]
@@ -268,7 +268,7 @@
     {
       "name": "Yadree: Business Intelligence Consultant System",
       "description": "A comprehensive AI-powered business intelligence solution that integrates real-time data visualization, SQLFlow, and machine learning to enhance decision-making.",
-      "href": "https://yadree.stkksa.com/",
+      "href": "https://yadree.khalil-am.com",
       "image": "/biac.png",
       "tags": [
         "AI",
@@ -280,7 +280,7 @@
       "links": [
         {
           "name": "Website",
-          "href": "https://yadree.stkksa.com/",
+          "href": "https://yadree.khalil-am.com",
           "icon": "globe"
         }
       ]
@@ -288,7 +288,7 @@
     {
       "name": "ShifaWay: AI Healthcare Scheduling",
       "description": "ShifaWay is a comprehensive healthcare scheduling and management platform designed to streamline administrative workflows.",
-      "href": "https://shifaway.stkksa.com",
+      "href": "https://shifaway.khalil-am.com",
       "image": "/shifaway-hero.png",
       "tags": [
         "AI",
@@ -301,7 +301,7 @@
       "links": [
         {
           "name": "Website",
-          "href": "https://shifaway.stkksa.com",
+          "href": "https://shifaway.khalil-am.com",
           "icon": "globe"
         }
       ]
@@ -309,7 +309,7 @@
     {
       "name": "BoardIQ: PMO Task Intelligence Platform",
       "description": "A real-time PMO dashboard that connects to Trello to surface lagging tasks, client priority scores, and team workload analytics with an AI assistant for instant insights.",
-      "href": "https://www.boardiq.click/",
+      "href": "https://boardiq.khalil-am.com",
       "image": "/boardiq-hero.png",
       "tags": [
         "PMO Tools",
@@ -321,7 +321,7 @@
       "links": [
         {
           "name": "Website",
-          "href": "https://www.boardiq.click/",
+          "href": "https://boardiq.khalil-am.com",
           "icon": "globe"
         }
       ]
@@ -329,7 +329,7 @@
     {
       "name": "Musajil: Enterprise Event Management Platform",
       "description": "An enterprise-grade event management platform with guest-first registration, real-time operations command center, offline-tolerant check-in, and predictive analytics for seamless events.",
-      "href": "https://musajil.online/",
+      "href": "https://musajil.khalil-am.com",
       "image": "/musajil-hero.png",
       "tags": [
         "Event Management",
@@ -341,7 +341,7 @@
       "links": [
         {
           "name": "Website",
-          "href": "https://musajil.online/",
+          "href": "https://musajil.khalil-am.com",
           "icon": "globe"
         }
       ]
@@ -370,7 +370,7 @@
     {
       "name": "TAB - Revolutionizing Digital Menus for Restaurants",
       "description": "TAB is an AI-powered menu system designed to enhance dining experiences and streamline restaurant operations. With interactive digital menus.",
-      "href": "https://tab.stkksa.com/order/40",
+      "href": "https://tab.khalil-am.com",
       "image": "/tabmenu.jpg",
       "tags": [
         "AI",
@@ -382,7 +382,7 @@
       "links": [
         {
           "name": "Website",
-          "href": "https://tab-jo.online/order/40",
+          "href": "https://tab.khalil-am.com",
           "icon": "globe"
         }
       ]
@@ -390,13 +390,13 @@
     {
       "name": "Virtue 2.0",
       "description": "An AI mental health support tool offering appointments with top practitioners. Features both payment and non-profit charity plans, enabling users to get diagnoses and connect with the best mental health professionals.",
-      "href": "https://virtue.stkksa.com",
+      "href": "https://virtue.khalil-am.com",
       "image": "/img.png",
       "tags": ["AI", "Mental Health", "Non-Profit", "Healthcare", "Diagnosis"],
       "links": [
         {
           "name": "Website",
-          "href": "https://virtue.stkksa.com",
+          "href": "https://virtue.khalil-am.com",
           "icon": "globe"
         }
       ]
@@ -404,13 +404,13 @@
     {
       "name": "KPI on the Fly AI",
       "description": " a powerful AI-powered business intelligence platform designed to generate real-time KPIs directly from your data. Seamlessly integrating with Apache Superset, it enables effortless dashboard creation, Experience streamlined, dynamic KPI generation with KPI on the Fly.",
-      "href": "https://kpionthefly.stkksa.com",
+      "href": "https://kpionthefly.khalil-am.com",
       "image": "/kpionthefly.jpg",
       "tags": ["AI", "Business Intelligence", "Data Analytics", "KPI", "Excel"],
       "links": [
         {
           "name": "Website",
-          "href": "https://kpionthefly.stkksa.com",
+          "href": "https://kpionthefly.khalil-am.com",
           "icon": "globe"
         }
       ]
@@ -418,13 +418,13 @@
     {
       "name": "PRF Production",
       "description": "A creative services provider offering video production, photography, and more, with AI-driven solutions for enhancing the creative process.",
-      "href": "https://prf-kw.com",
+      "href": "https://prf.khalil-am.com",
       "image": "/prf.jpg",
       "tags": ["AI", "Video Production", "Photography"],
       "links": [
         {
           "name": "Website",
-          "href": "https://prf-kw.com",
+          "href": "https://prf.khalil-am.com",
           "icon": "globe"
         }
       ]
@@ -432,13 +432,13 @@
     {
       "name": "SautNote AI",
       "description": "An AI-driven transcription service that converts audio into accurate, text-based notes, enhancing productivity for professionals and students.",
-      "href": "https://sautnote.stkksa.com",
+      "href": "https://sautnote.khalil-am.com",
       "image": "/sautnote.jpg",
       "tags": ["AI", "Transcription", "Productivity"],
       "links": [
         {
           "name": "Website",
-          "href": "https://sautnote.stkksa.com",
+          "href": "https://sautnote.khalil-am.com",
           "icon": "globe"
         }
       ]
@@ -446,13 +446,13 @@
     {
       "name": "Wajibaty AI",
       "description": "A vibrant AI-powered platform designed to help users manage and organize daily tasks. Wajibaty simplifies to-do lists, schedules, and reminders, focusing on accessibility and convenience.",
-      "href": "https://wajibaty.stkksa.com",
+      "href": "https://wajibaty.khalil-am.com",
       "image": "/wajibaty.jpg",
       "tags": ["AI", "Task Management", "Productivity"],
       "links": [
         {
           "name": "Website",
-          "href": "https://wajibaty.stkksa.com",
+          "href": "https://wajibaty.khalil-am.com",
           "icon": "globe"
         }
       ]
@@ -472,7 +472,7 @@
       "links": [
         {
           "name": "Website",
-          "href": "https://virtue.stkksa.com",
+          "href": "https://virtue.khalil-am.com",
           "icon": "globe"
         }
       ]

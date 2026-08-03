@@ -64,15 +64,15 @@ PMI-ACP® (Agile), PMP, TOGAF®, NVIDIA Accelerated Data Science, Databricks Cer
 
 **Nurad (2026)** - AI-driven radiology delivery platform optimizing clinical workflows, imaging operations, and data governance
 
-**Yadree (2025)** - AI-powered business intelligence solution with real-time data visualization, SQLFlow, and machine learning (https://yadree.stkksa.com/)
+**Yadree (2025)** - AI-powered business intelligence solution with real-time data visualization, SQLFlow, and machine learning (https://yadree.khalil-am.com)
 
-**SprintsGate (2024)** - Modern UAT management platform for agile teams streamlining User Acceptance Testing workflows (https://sprintsgate.com)
+**SprintsGate (2024)** - Modern UAT management platform for agile teams streamlining User Acceptance Testing workflows (https://uatplatform-qhujdwrs.manus.space)
 
-**Hewari (2024)** - AI-powered document builder using LLaMA 3.3 70B with ReAct (Reason + Act) for business analysis (https://hewari.stkksa.com)
+**Hewari (2024)** - AI-powered document builder using LLaMA 3.3 70B with ReAct (Reason + Act) for business analysis (https://hewari.khalil-am.com)
 
-**KPI on the Fly AI (2025)** - AI-powered BI platform generating real-time KPIs with Apache Superset integration (https://kpionthefly.stkksa.com)
+**KPI on the Fly AI (2025)** - AI-powered BI platform generating real-time KPIs with Apache Superset integration (https://kpionthefly.khalil-am.com)
 
-**Virtue (2022)** - AI-based mental health platform with personalized tools and secure data management (https://virtue.stkksa.com)
+**Virtue (2022)** - AI-based mental health platform with personalized tools and secure data management (https://virtue.khalil-am.com)
 
 **Pixify (2023)** - AI-powered financial eCommerce platform with flexible customization (https://Pixilated.online)
 
