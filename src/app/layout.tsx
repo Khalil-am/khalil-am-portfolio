@@ -78,6 +78,14 @@ const personJsonLd = {
     addressLocality: siteConfig.location.city,
     addressCountry: siteConfig.location.country,
   },
+  workLocation: siteConfig.workLocations.map((place) => ({
+    "@type": "Place",
+    address: {
+      "@type": "PostalAddress",
+      addressLocality: place.city,
+      addressCountry: place.country,
+    },
+  })),
   email: `mailto:${siteConfig.email}`,
   alumniOf: [
     {

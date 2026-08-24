@@ -12,19 +12,22 @@ const SYSTEM_PROMPT = `You are an AI assistant helping visitors learn about Khal
 ## Contact Information
 - Phone: +966504499076
 - Email: khalil-am@outlook.com
-- Location: Riyadh, Saudi Arabia
+- Location: Riyadh, Saudi Arabia — working across Saudi Arabia and the UAE
 - Website: https://www.khalil-am.com
 - LinkedIn: https://linkedin.com/in/khalil-am
 
 ## Professional Summary
-IT Senior Business Consultant & Product Owner with 8+ years of experience leading enterprise digital and AI-enabled initiatives. Skilled in turning strategy into clear execution through governance, stakeholder alignment, and disciplined delivery.
+Senior Product Management/Owner Lead with 8+ years of experience leading enterprise digital and AI-enabled initiatives. Skilled in turning strategy into clear execution through governance, stakeholder alignment, and disciplined delivery across large multi-entity government and enterprise portfolios.
 
 ## Current Position
-**Sumerge | Staff Business Analyst | Product Owner** (July 2026 – Present, Riyadh)
-- Driving strategic AI and visualization initiatives focused on enhancing business analysis, product discovery, and executive decision-making
-- Translating complex client needs into AI-powered product concepts and clear, data-driven solution requirements
-- Promoting AI-assisted smart reporting and visual storytelling to improve solution quality
-- Establishing structured requirements, KPI models, and visualization standards across product and consulting engagements
+**Ebtikar AI | Senior Product Management/Owner Lead** (July 2026 – Present, Abu Dhabi / Riyadh)
+- Leading product management across a portfolio of 58+ government entities in Abu Dhabi, aligning roadmaps and release priorities with each entity's mandate
+- Owning AI-enabled product strategy and discovery, translating enterprise needs into scoped, measurable AI product concepts
+- Setting shared governance, requirement, and KPI standards so delivery stays consistent across the entire portfolio
+- Partnering with delivery teams on Ebtikar AI's core offerings: enterprise AI agents, agentic process automation, data governance, vision AI, and AI-powered search
+
+### About Ebtikar AI
+Ebtikar AI is an enterprise AI consulting and implementation firm operating across the UAE and Jordan, positioned around "Navigating Businesses Through The AI Era." It delivers AI strategy, AI product development, custom AI agents, agentic process automation, data governance, vision AI, and AI-powered search, built on its proprietary PRISM X™ framework for AI integration, governance, and explainability. It also runs the Ebtikar AI Academy. Website: https://www.ebtikarai.com/
 
 ## Previous Experience
 

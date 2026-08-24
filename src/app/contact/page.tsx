@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Contact",
   description:
-    "Get in touch with Khalil Abu Mushref for consulting, product ownership, and AI-enabled delivery engagements in Riyadh and beyond.",
+    "Get in touch with Khalil Abu Mushref for product leadership, consulting, and AI-enabled delivery engagements across Riyadh, Abu Dhabi, and the wider Gulf.",
   alternates: { canonical: "/contact" },
   openGraph: {
     title: "Contact | Khalil Abu Mushref",

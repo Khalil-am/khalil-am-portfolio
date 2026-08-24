@@ -2,19 +2,23 @@ export const SITE_URL = "https://www.khalil-am.com";
 
 export const siteConfig = {
   name: "Khalil Abu Mushref",
-  title: "Khalil Abu Mushref | IT Business Consultant & Product Owner",
+  title: "Khalil Abu Mushref | Senior Product Management Lead & AI Consultant",
   description:
-    "IT Senior Business Consultant & Product Owner in Riyadh with 8+ years leading enterprise digital and AI-enabled initiatives across healthcare, government, and finance.",
+    "Senior Product Management/Owner Lead at Ebtikar AI, driving AI-enabled product strategy across 150+ entities in the GCC, with 8+ years in government, healthcare, and fintech.",
   url: SITE_URL,
-  jobTitle: "Staff Business Analyst | Product Owner",
+  jobTitle: "Senior Product Management/Owner Lead",
   employer: {
-    name: "Sumerge",
-    url: "https://www.sumerge.com/",
+    name: "Ebtikar AI",
+    url: "https://www.ebtikarai.com/",
   },
   location: {
     city: "Riyadh",
     country: "SA",
   },
+  workLocations: [
+    { city: "Riyadh", country: "SA" },
+    { city: "Abu Dhabi", country: "AE" },
+  ],
   email: "khalil-am@outlook.com",
   image: `${SITE_URL}/khalil.jpg`,
   socials: {
@@ -23,14 +27,20 @@ export const siteConfig = {
   },
   keywords: [
     "Khalil Abu Mushref",
-    "IT Business Consultant",
+    "Senior Product Management Lead",
     "Product Owner",
+    "Product Management",
+    "AI Product Strategy",
+    "Ebtikar AI",
+    "IT Business Consultant",
     "Business Analyst",
     "AI Consultant",
     "Business Intelligence",
     "Power BI",
     "Data Science",
     "Digital Transformation",
+    "Abu Dhabi",
+    "United Arab Emirates",
     "Riyadh",
     "Saudi Arabia",
   ],

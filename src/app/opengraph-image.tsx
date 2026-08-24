@@ -1,7 +1,8 @@
 import { siteConfig } from "@/lib/site";
 import { ImageResponse } from "next/og";
 
-export const alt = "Khalil Abu Mushref — IT Business Consultant & Product Owner";
+export const alt =
+  "Khalil Abu Mushref — Senior Product Management Lead & AI Consultant";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -53,11 +54,11 @@ export default function OpengraphImage() {
             {siteConfig.name}
           </div>
           <div style={{ color: "#c7c9d1", fontSize: "38px" }}>
-            IT Business Consultant · Product Owner · AI &amp; BI
+            Senior Product Management Lead · AI Product Strategy
           </div>
         </div>
         <div style={{ color: "#6b7280", fontSize: "26px" }}>
-          Riyadh, Saudi Arabia
+          Ebtikar AI · Riyadh &amp; Abu Dhabi
         </div>
       </div>
     ),
