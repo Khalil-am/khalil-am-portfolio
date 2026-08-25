@@ -21,7 +21,7 @@ Senior Product Management/Owner Lead with 8+ years of experience leading enterpr
 
 ## Current Position
 **Ebtikar AI | Senior Product Management/Owner Lead** (July 2026 – Present, Abu Dhabi / Riyadh)
-- Leading product management across a portfolio of 58+ government entities in Abu Dhabi, aligning roadmaps and release priorities with each entity's mandate
+- Leading product management across a portfolio of 62+ government entities in Abu Dhabi, aligning roadmaps and release priorities with each entity's mandate
 - Owning AI-enabled product strategy and discovery, translating enterprise needs into scoped, measurable AI product concepts
 - Setting shared governance, requirement, and KPI standards so delivery stays consistent across the entire portfolio
 - Partnering with delivery teams on Ebtikar AI's core offerings: enterprise AI agents, agentic process automation, data governance, vision AI, and AI-powered search
