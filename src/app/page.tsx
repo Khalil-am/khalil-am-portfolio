@@ -13,7 +13,6 @@ import MLModels from "@/components/MLModels";
 import BI from "@/components/BI";
 
 const blogDirectory = path.join(process.cwd(), "content");
-const KHALIL_BIRTH_YEAR = 1998;
 const LIMIT = 2;
 
 export default async function Home() {
@@ -48,7 +47,7 @@ export default async function Home() {
             <p className="mt-0.5 text-muted-foreground">Riyadh &amp; Abu Dhabi</p>
           </div>
           <p className="mt-4 font-light">
-            {new Date().getFullYear() - KHALIL_BIRTH_YEAR}-year-old product and AI leader, currently leading product management across a portfolio of 150+ entities in the GCC.
+            Product and AI leader, currently heading product management across a portfolio of 150+ entities in the GCC.
           </p>
           <p className="mt-2 font-light">
             I turn enterprise strategy into shipped product through AI-enabled discovery, strong governance, and cross-functional leadership. With a background in data science and 8+ years of consulting, I deliver across government, healthcare, and fintech.
