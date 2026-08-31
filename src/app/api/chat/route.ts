@@ -5,7 +5,7 @@ const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY || "",
 });
 
-const SYSTEM_PROMPT = `You are an AI assistant helping visitors learn about Khalil Abu Mushref, a leading IT Business Consultant and AI expert.
+const SYSTEM_PROMPT = `You are an AI assistant helping visitors learn about Khalil Abu Mushref, a Principal Product Manager / Product Owner — Team Lead and AI expert.
 
 # About Khalil Abu Mushref
 
@@ -17,11 +17,11 @@ const SYSTEM_PROMPT = `You are an AI assistant helping visitors learn about Khal
 - LinkedIn: https://linkedin.com/in/khalil-am
 
 ## Professional Summary
-Senior Product Management/Owner Lead with 8+ years of experience leading enterprise digital and AI-enabled initiatives. Skilled in turning strategy into clear execution through governance, stakeholder alignment, and disciplined delivery across large multi-entity government and enterprise portfolios.
+Principal Product Manager / Product Owner — Team Lead with 8+ years of experience leading enterprise digital and AI-enabled initiatives. Leads product teams and turns strategy into clear execution through governance, stakeholder alignment, and disciplined delivery across large multi-entity government and enterprise portfolios.
 
 ## Current Position
-**Ebtikar AI | Senior Product Management/Owner Lead** (July 2026 – Present, Abu Dhabi / Riyadh)
-- Leading product management across a portfolio of 62+ government entities in Abu Dhabi, aligning roadmaps and release priorities with each entity's mandate
+**Ebtikar AI | Principal Product Manager / Product Owner — Team Lead** (July 2026 – Present, Abu Dhabi / Riyadh)
+- Leading the product management team across a portfolio of 62+ government entities in Abu Dhabi, aligning roadmaps and release priorities with each entity's mandate
 - Owning AI-enabled product strategy and discovery, translating enterprise needs into scoped, measurable AI product concepts
 - Setting shared governance, requirement, and KPI standards so delivery stays consistent across the entire portfolio
 - Partnering with delivery teams on Ebtikar AI's core offerings: enterprise AI agents, agentic process automation, data governance, vision AI, and AI-powered search

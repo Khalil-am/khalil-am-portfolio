@@ -33,7 +33,7 @@ export default async function Home() {
           <h1 className="title text-5xl">Khalil Abu Mushref</h1>
           <div className="mt-3 text-sm">
             <p className="font-medium text-foreground">
-              Senior Product Management/Owner Lead
+              Principal Product Manager / Product Owner — Team Lead
               <span className="font-light text-muted-foreground"> at </span>
               <Link
                 href="https://www.ebtikarai.com/"
@@ -47,7 +47,7 @@ export default async function Home() {
             <p className="mt-0.5 text-muted-foreground">Riyadh &amp; Abu Dhabi</p>
           </div>
           <p className="mt-4 font-light">
-            Product and AI leader, currently heading product management across a portfolio of 150+ entities in the GCC.
+            Product and AI leader, heading the product management team across a portfolio of 150+ entities in the GCC.
           </p>
           <p className="mt-2 font-light">
             I turn enterprise strategy into shipped product through AI-enabled discovery, strong governance, and cross-functional leadership. With a background in data science and 8+ years of consulting, I deliver across government, healthcare, and fintech.
