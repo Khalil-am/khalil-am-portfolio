@@ -1,0 +1,48 @@
+---
+title: "KPI on the Fly AI: What Instant BI Taught Me About Dashboards"
+summary: "KPI on the Fly AI is an AI-powered BI tool that turns a raw dataset into context-aware KPIs and a full dashboard in seconds — no sign-up, free to use."
+image: "/kpionthefly.jpg"
+publishedAt: "2023-03-14"
+---
+
+The gap between asking a business question and seeing the number is absurd: the question takes ten seconds to say, and the answer takes weeks to arrive.
+
+Those weeks have a familiar shape. A stakeholder wants one figure, and the machinery grinds into motion — a ticket, a requirements meeting, a data model, a dashboard build — until, by the time anything ships, the person who asked has either hacked a workaround together in Excel or stopped caring. As a senior business analyst and BI developer working in fintech, I have watched that cycle play out more times than I can count.
+
+**KPI on the Fly AI** is my experiment in attacking the wait directly. It is an AI-powered business intelligence platform that takes a raw dataset and generates real-time KPIs and a full dashboard from it — no account, no sign-up, free to use. You upload your data, you optionally describe what you are trying to learn, and you get a dashboard back in seconds.
+
+No demo call, no onboarding, no step two — a dataset goes in, a dashboard comes out. And building it quietly rearranged how I think about my day job.
+
+## What KPI on the Fly Actually Does
+
+The whole flow is three steps, and I refused to let it grow a fourth:
+
+1. **Upload your data.** CSV, Excel, JSON, or even plain text. Whatever export you have on hand is enough to start.
+2. **Describe your goal.** An optional line of plain language — *what are you trying to understand?* — that steers the AI toward the KPIs that matter for your business.
+3. **Get your dashboard.** KPI cards, charts, and insights, generated automatically.
+
+The KPIs are **context-aware**: instead of dumping a generic count of rows, the AI reads the shape of your data and your stated goal and proposes measures that fit your industry and business need. Visualizations come out as proper charts — bar, line, area, pie, doughnut — not a wall of numbers. And because the platform integrates with Apache Superset, generated KPIs can flow straight into dashboard creation there rather than dying in a screenshot.
+
+> The point was never to replace a BI team. The point was to shrink the distance between a question and its first answer.
+
+## How It Changed My View of BI Work
+
+Three lessons came out of building this — and none of them were the ones I expected.
+
+**The bottleneck was never the charting.** Any modern tool can render a bar chart instantly. The expensive part of BI is *translation*: turning a business question into measures, dimensions, and queries. That translation layer is exactly what this new wave of AI models turns out to be strangely good at. When the translation collapses from weeks to seconds, the entire economics of "should we even build this report?" changes.
+
+**A first draft is a different product from a single source of truth.** KPI on the Fly does not produce governed, reconciled, audited reporting — and it should not pretend to. What it produces is a *credible first draft* while the question is still warm. Most analytical questions die in the queue waiting for a perfect answer; a fast draft keeps them alive long enough to matter. The governed layer — the kind of warehouse-backed reporting I build in my [BI work](/bi) — still matters. The draft is what tells you which of those dashboards are worth building properly.
+
+**Analysts do not get replaced. The waiting does.** The part of my job that carries value is judgment: is this KPI honest, is the underlying data clean, does that trend mean what it appears to mean? None of that goes away. What goes away is the weeks of mechanical assembly that used to stand between a stakeholder's question and the moment judgment could even begin.
+
+That last one is the real shift. If a machine can hand anyone a competent draft dashboard in seconds, then the analyst's role moves up the stack — from *builder of charts* to *editor of answers*. I think that is where this whole field is heading, and I would rather learn it by shipping something than by reading about it later.
+
+KPI on the Fly is live at [kpionthefly.khalil-am.com](https://kpionthefly.khalil-am.com) — bring a CSV and see what it makes of it. My other experiments are on the [projects](/projects) page — and instant BI, dashboards, and where AI fits in analytics work are exactly the conversations I enjoy most, so [get in touch](/contact).
+
+## Key Takeaways
+
+- **KPI on the Fly AI** is an AI-powered BI platform: upload a dataset (CSV, Excel, JSON, or plain text), optionally describe your goal, and get context-aware KPIs and a full dashboard in seconds — free, with no sign-up.
+- It integrates with Apache Superset, so generated KPIs can feed real dashboard creation instead of stopping at a one-off view.
+- The true bottleneck in BI is translation — question to measures to queries — not visualization, and AI collapses that translation from weeks to seconds.
+- Instant BI produces first drafts, not single sources of truth. The draft's job is to keep a question alive and show which reports deserve governed, warehouse-backed builds.
+- The analyst's role shifts up the stack: less mechanical chart assembly, more judgment about whether the answer is honest.

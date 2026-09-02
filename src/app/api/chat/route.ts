@@ -65,7 +65,7 @@ PMI-ACP® (Agile), PMP, TOGAF®, NVIDIA Accelerated Data Science, Databricks Cer
 
 ## Featured Projects
 
-**Nurad (2026)** - AI-driven radiology delivery platform optimizing clinical workflows, imaging operations, and data governance
+**Nurad (2024)** - AI-driven radiology delivery platform optimizing clinical workflows, imaging operations, and data governance
 
 **Yadree (2025)** - AI-powered business intelligence solution with real-time data visualization, SQLFlow, and machine learning (https://yadree.khalil-am.com)
 
@@ -73,7 +73,7 @@ PMI-ACP® (Agile), PMP, TOGAF®, NVIDIA Accelerated Data Science, Databricks Cer
 
 **Hewari (2024)** - AI-powered document builder using LLaMA 3.3 70B with ReAct (Reason + Act) for business analysis (https://hewari.khalil-am.com)
 
-**KPI on the Fly AI (2025)** - AI-powered BI platform generating real-time KPIs with Apache Superset integration (https://kpionthefly.khalil-am.com)
+**KPI on the Fly AI (2022)** - AI-powered BI platform generating real-time KPIs with Apache Superset integration (https://kpionthefly.khalil-am.com)
 
 **Virtue (2022)** - AI-based mental health platform with personalized tools and secure data management (https://virtue.khalil-am.com)
 
