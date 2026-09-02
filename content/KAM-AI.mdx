@@ -1,8 +1,9 @@
 ---
 title: "KAM AI: My Personal AI Delivery System"
-summary: "An introduction to KAM AI — a personal AI delivery system that connects my tools, projects, and workflows into one coordinated layer, turning AI from an assistant into an operator across my engineering, consulting, and product work."
+summary: "KAM AI is my personal AI delivery system — a layer connecting my tools and workflows so AI operates inside my engineering, consulting, and product work."
 image: "/kam-ai.png"
 publishedAt: "2026-04-08"
+updatedAt: "2026-09-02"
 ---
 
 Most people treat AI the same way: open a chat window, type a question, copy the answer back into the real work. That model gets you about 10% of the real value AI can deliver.
@@ -18,7 +19,7 @@ At its core, KAM AI is a **personal AI delivery system** — a coordinated layer
 After a year of building with AI, I kept hitting the same three limits:
 
 1. **Context fragmentation.** Every new chat started from zero. Nothing I'd done yesterday carried into today.
-2. **Tool isolation.** My tools — PPlus, SPlus, BC Automations, the PPlus Sync Tool, KAM CLI, internal docs, GitHub — didn't share a brain. AI had to be re-briefed every time.
+2. **Tool isolation.** My tools — PPlus, SPlus, [BC Automations](/blog/BC-Automations), the [PPlus Sync Tool](/blog/PPlus-AI-Sync-Tool), [KAM CLI](/blog/KAM-CLI), internal docs, GitHub — didn't share a brain. AI had to be re-briefed every time.
 3. **Weak orchestration.** A capable model is not the same as a capable system. Without orchestration, AI stays at the "assistant" tier and never becomes an actual operator.
 
 KAM AI exists to fix all three — not by replacing existing tools, but by **connecting them**.
@@ -54,7 +55,7 @@ Configuration, APIs, and migrations are structured and verified. Language, match
 Nothing KAM AI does should be invisible. Diffs, plans, applied operations, and rollback points are first-class artifacts — the same standard I apply to my enterprise delivery work.
 
 ### **My tools are its tools**
-KAM AI doesn't reinvent what I already build. It composes KAM CLI, BC Automations, the PPlus Sync Tool, and Wathiq into a single addressable surface. Every new project I ship is a new capability the system inherits.
+KAM AI doesn't reinvent what I already build. It composes KAM CLI, BC Automations, the PPlus Sync Tool, and [Wathiq](/blog/Wathiq-Fintech-Platform) into a single addressable surface. Every new project I ship is a new capability the system inherits.
 
 ---
 
@@ -81,3 +82,13 @@ KAM AI is still early, and deliberately so. The next milestones are:
 - **Operator-grade observability** — every run gets a structured trace, not just chat output.
 
 The broader bet is simple: **the ceiling on what any individual can ship is no longer the individual — it's the system they build around themselves**. KAM AI is that system for me, and it's already changing what a single engineer-consultant can deliver in a week.
+
+---
+
+## Key Takeaways
+
+- KAM AI is a personal AI delivery system: a knowledge layer of MCP servers, an action layer of deterministic commands and adapters, and an orchestration layer built on Claude Code and Anthropic's Agent SDK.
+- The point is turning AI from an advisor into an operator — if the AI can't actually do the thing, the system isn't done.
+- Determinism where it matters, AI where it helps: configuration, APIs, and migrations stay structured and verified, while the model handles language, matching, and risk assessment.
+- Every run is auditable — diffs, plans, applied operations, and rollback points are first-class artifacts.
+- It already runs real work: UAT workbooks, dashboard replication across PPlus environments, repo bootstrapping through KAM CLI, and multi-step delivery flows.

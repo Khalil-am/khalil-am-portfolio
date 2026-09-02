@@ -1,11 +1,12 @@
 ---
 title: "PPlus AI Sync Tool: Reliable Configuration Sync Across Environments"
-summary: "A deep-dive into the PPlus AI Sync Tool — a standalone, AI-assisted configuration sync platform that closes the gap between dev, stage, and prod PPlus instances with full preview, audit, and rollback."
+summary: "I built the PPlus AI Sync Tool — a standalone, AI-assisted platform that syncs PPlus configuration across dev, stage, and prod with preview, audit, and rollback."
 image: "/PPlus-Demo.png"
 publishedAt: "2026-03-08"
+updatedAt: "2026-09-02"
 ---
 
-Anyone who has operated PPlus in production knows the pain of syncing configuration between environments. Dashboards drift. Chart components get out of step. Level sources get reshaped on one side and not the other. Keys get renamed, formulas quietly break, and "it worked in dev" becomes a weekly refrain.
+Anyone who has operated [PPlus](/blog/New_Role_New_Responsibilties) in production knows the pain of syncing configuration between environments. Dashboards drift. Chart components get out of step. Level sources get reshaped on one side and not the other. Keys get renamed, formulas quietly break, and "it worked in dev" becomes a weekly refrain.
 
 The previous `ConfigurationDiffTool` tried to solve this — but it **didn't copy all configuration** (Dashboards, ChartComponents, and Level.Sources were captured but never synced), and it **didn't map renamed keys correctly** (a naive `string.Replace`, with formula rewriting left commented out).
 
@@ -67,8 +68,8 @@ The full pipeline pages (`/connect`, `/snapshot`, `/match`, `/align`, `/diff`, `
 
 Configuration sync sounds like plumbing. It isn't. In a production PPlus deployment, a broken sync pipeline means:
 
-- Executive dashboards drifting between environments.
-- KPIs that silently compute against wrong field mappings.
+- [Executive dashboards](/bi) drifting between environments.
+- [KPIs](/blog/enterprise-bi-reporting) that silently compute against wrong field mappings.
 - Compliance gaps where staging no longer mirrors production.
 - Hours of manual clean-up by the team that can least afford the distraction.
 
@@ -87,3 +88,21 @@ The scaffolding pass is complete. The next passes are focused on:
 The tool is on GitHub at [github.com/Khalil-am/pplus-ai-sync-tool](https://github.com/Khalil-am/pplus-ai-sync-tool) — with prerequisites as simple as Node 22+ and pnpm 9+.
 
 No Docker. No Postgres. No API keys in config files. Just a clean, AI-assisted configuration sync tool that finally treats PPlus environments with the care they deserve.
+
+## FAQ
+
+### What is the PPlus AI Sync Tool?
+
+It's a standalone, AI-assisted configuration sync platform for PPlus — supporting dev → stage → prod promotion paths, custom fan-out to any number of targets, semantic matching, formula rewriting, and preview, audit, and rollback on every run.
+
+### Where does AI fit in, and where doesn't it?
+
+Claude handles the judgment calls — `proposeMapping`, `rewriteFormula`, `classifyRisk`, and streamed `explainDiff` — while the `{{Key}}` parser and AST-based rewriting stay deterministic. Never trust a sync that can't be previewed, audited, and rolled back.
+
+### What do I need to run it?
+
+Just Node 22+ and pnpm 9+ — no Docker, no Postgres, no API keys in config files. The code is on [GitHub](https://github.com/Khalil-am/pplus-ai-sync-tool).
+
+### How are credentials handled?
+
+Credentials are stored with AES-256-GCM encryption, and authentication supports cookie, bearer, and basic flows through the `RestConnector`.

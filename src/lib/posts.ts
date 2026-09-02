@@ -12,6 +12,7 @@ export type PostMetadata = {
   summary?: string;
   image?: string;
   publishedAt?: string;
+  updatedAt?: string;
   slug: string;
 };
 

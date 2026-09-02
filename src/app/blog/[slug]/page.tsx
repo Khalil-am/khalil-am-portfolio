@@ -38,7 +38,7 @@ export async function generateMetadata({
     return {};
   }
 
-  const { title, summary, publishedAt } = post.metadata;
+  const { title, summary, publishedAt, updatedAt } = post.metadata;
   const image = resolvePublicImage(post.metadata.image);
   const url = `/blog/${params.slug}`;
 
@@ -54,6 +54,7 @@ export async function generateMetadata({
       title,
       description: summary,
       publishedTime: publishedAt,
+      ...(updatedAt ? { modifiedTime: updatedAt } : {}),
       authors: [siteConfig.name],
       ...(image ? { images: [{ url: image }] } : {}),
     },
@@ -78,7 +79,7 @@ export default async function Post({ params }: PostPageProps) {
   }
 
   const { metadata, content } = post;
-  const { title, summary, publishedAt } = metadata;
+  const { title, summary, publishedAt, updatedAt } = metadata;
   const image = resolvePublicImage(metadata.image);
   const postUrl = `${SITE_URL}/blog/${slug}`;
 
@@ -92,6 +93,9 @@ export default async function Post({ params }: PostPageProps) {
     ...(image ? { image: `${SITE_URL}${image}` } : {}),
     ...(publishedAt
       ? { datePublished: new Date(publishedAt).toISOString() }
+      : {}),
+    ...(updatedAt || publishedAt
+      ? { dateModified: new Date(updatedAt ?? publishedAt!).toISOString() }
       : {}),
     author: { "@id": `${SITE_URL}/#person` },
     publisher: { "@id": `${SITE_URL}/#person` },
