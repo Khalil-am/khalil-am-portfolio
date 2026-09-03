@@ -30,6 +30,11 @@ export const metadata: Metadata = {
   applicationName: siteConfig.name,
   alternates: {
     canonical: "/",
+    types: {
+      "application/rss+xml": [
+        { url: "/feed.xml", title: "Khalil Abu Mushref — Blog" },
+      ],
+    },
   },
   openGraph: {
     type: "website",

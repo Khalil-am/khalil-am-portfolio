@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/privacy" },
 };
 
-const lastUpdated = "Sep 2024";
+const lastUpdated = "Sep 2026";
 
 export default function PrivacyPolicy() {
   return (
@@ -20,7 +20,7 @@ export default function PrivacyPolicy() {
       <div className="space-y-4">
         <h2 className="title text-3xl">Welcome!</h2>
         <p>
-          This <b>Privacy Policy</b> explains how I handle your data on my site, which is mainly for showcasing my work as a data scientist. I respect your privacy and collect very little information.
+          This <b>Privacy Policy</b> explains how I handle your data on my site, which is mainly for showcasing my work as a product leader, consultant, and builder. I respect your privacy and collect very little information.
         </p>
         <h2 className="title">What Information I Collect</h2>
         <p>

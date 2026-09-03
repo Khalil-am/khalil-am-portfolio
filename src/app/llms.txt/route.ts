@@ -1,4 +1,6 @@
+import projectData from "@/data/projects.json";
 import { getPosts } from "@/lib/posts";
+import { projectSchema } from "@/lib/schemas";
 import { siteConfig, SITE_URL } from "@/lib/site";
 import path from "path";
 
@@ -8,6 +10,18 @@ const blogDirectory = path.join(process.cwd(), "content");
 
 export async function GET(): Promise<Response> {
   const posts = await getPosts(blogDirectory);
+  const projects = projectSchema
+    .parse(projectData)
+    .projects.filter((project) => !project.hidden);
+
+  const projectLines = projects
+    .map((project) => {
+      const firstSentence = project.description.split(". ")[0];
+      return project.href
+        ? `- [${project.name}](${project.href}): ${firstSentence}.`
+        : `- ${project.name}: ${firstSentence}.`;
+    })
+    .join("\n");
 
   const postLines = posts
     .map((post) => {
@@ -30,6 +44,10 @@ ${siteConfig.name} is a ${siteConfig.jobTitle} at ${siteConfig.employer.name}, w
 - [Business Intelligence](${SITE_URL}/bi): BI and dashboard case studies
 - [ML Models](${SITE_URL}/ml-models): applied machine learning work
 - [Contact](${SITE_URL}/contact): how to get in touch
+
+## Products and platforms
+
+${projectLines}
 
 ## Blog posts
 

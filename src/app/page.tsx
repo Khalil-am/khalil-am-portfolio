@@ -3,7 +3,9 @@ import LinkWithIcon from "@/components/LinkWithIcon";
 import Projects from "@/components/Projects";
 import Socials from "@/components/Socials";
 import { Button } from "@/components/ui/Button";
+import { jsonLdScript } from "@/lib/jsonld";
 import { getPosts } from "@/lib/posts";
+import { SITE_URL } from "@/lib/site";
 import { ArrowDownRight, ArrowRightIcon, FileDown } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -18,8 +20,22 @@ const LIMIT = 2;
 export default async function Home() {
   const posts = await getPosts(blogDirectory, LIMIT);
 
+  const profilePageJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "ProfilePage",
+    "@id": `${SITE_URL}/#profilepage`,
+    url: SITE_URL,
+    inLanguage: "en",
+    mainEntity: { "@id": `${SITE_URL}/#person` },
+    isPartOf: { "@id": `${SITE_URL}/#website` },
+  };
+
   return (
     <article className="mt-8 flex flex-col gap-16 pb-16">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: jsonLdScript(profilePageJsonLd) }}
+      />
       <section className="flex flex-col items-start gap-8 md:flex-row-reverse md:items-center md:justify-between">
         <Image
           className="rounded-lg"

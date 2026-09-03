@@ -4,7 +4,7 @@ export const siteConfig = {
   name: "Khalil Abu Mushref",
   title: "Khalil Abu Mushref | Principal Product Manager / Product Owner — Team Lead",
   description:
-    "Principal Product Manager / Product Owner — Team Lead at Ebtikar AI, driving AI-enabled product strategy across 150+ entities in the GCC, with 8+ years in government, healthcare, and fintech.",
+    "Principal Product Manager / Product Owner — Team Lead at Ebtikar AI, driving AI-enabled product strategy across 150+ GCC entities. 8+ years in government, healthcare, and fintech.",
   url: SITE_URL,
   jobTitle: "Principal Product Manager / Product Owner — Team Lead",
   employer: {

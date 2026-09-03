@@ -1,5 +1,6 @@
 import LinkWithIcon from "@/components/LinkWithIcon";
 import MDXContent from "@/components/MDXContent";
+import { extractFaq, faqPageJsonLd, jsonLdScript } from "@/lib/jsonld";
 import { getPostBySlug, getPosts } from "@/lib/posts";
 import { siteConfig, SITE_URL } from "@/lib/site";
 import { formatDate } from "@/lib/utils";
@@ -66,10 +67,6 @@ export async function generateMetadata({
   };
 }
 
-function jsonLdScript(data: object): string {
-  return JSON.stringify(data).replace(/</g, "\\u003c");
-}
-
 export default async function Post({ params }: PostPageProps) {
   const { slug } = params;
   const post = await getPostBySlug(blogDirectory, slug);
@@ -117,6 +114,8 @@ export default async function Post({ params }: PostPageProps) {
     ],
   };
 
+  const faqItems = extractFaq(content);
+
   return (
     <article className="mt-8 flex flex-col gap-8 pb-16">
       <script
@@ -127,6 +126,14 @@ export default async function Post({ params }: PostPageProps) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: jsonLdScript(breadcrumbJsonLd) }}
       />
+      {faqItems.length > 0 && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: jsonLdScript(faqPageJsonLd(postUrl, faqItems)),
+          }}
+        />
+      )}
       <LinkWithIcon
         href="/blog"
         position="left"

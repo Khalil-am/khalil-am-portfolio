@@ -1,4 +1,5 @@
 import PostsWithSearch from "@/components/PostsWithSearch";
+import { jsonLdScript } from "@/lib/jsonld";
 import { getPosts } from "@/lib/posts";
 import { SITE_URL } from "@/lib/site";
 import type { Metadata } from "next";
@@ -25,10 +26,6 @@ export const metadata: Metadata = {
 };
 
 const blogDirectory = path.join(process.cwd(), "content");
-
-function jsonLdScript(data: object): string {
-  return JSON.stringify(data).replace(/</g, "\\u003c");
-}
 
 export default async function BlogPage() {
   const posts = await getPosts(blogDirectory);
