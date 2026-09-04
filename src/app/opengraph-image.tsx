@@ -2,7 +2,7 @@ import { siteConfig } from "@/lib/site";
 import { ImageResponse } from "next/og";
 
 export const alt =
-  "Khalil Abu Mushref — Principal Product Manager / Product Owner — Team Lead";
+  "Khalil Abu Mushref — Principal Product Manager / Product Owner | Team Lead";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -54,7 +54,7 @@ export default function OpengraphImage() {
             {siteConfig.name}
           </div>
           <div style={{ color: "#c7c9d1", fontSize: "38px" }}>
-            Principal Product Manager / Product Owner · Team Lead
+            Principal Product Manager / Product Owner | Team Lead
           </div>
         </div>
         <div style={{ color: "#6b7280", fontSize: "26px" }}>

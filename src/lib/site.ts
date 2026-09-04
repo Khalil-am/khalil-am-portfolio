@@ -2,11 +2,11 @@ export const SITE_URL = "https://www.khalil-am.com";
 
 export const siteConfig = {
   name: "Khalil Abu Mushref",
-  title: "Khalil Abu Mushref | Principal Product Manager / Product Owner — Team Lead",
+  title: "Khalil Abu Mushref | Principal Product Manager / Product Owner | Team Lead",
   description:
-    "Principal Product Manager / Product Owner — Team Lead at Digital Next, driving AI-enabled product strategy across 150+ GCC entities. 8+ years in government, healthcare, and fintech.",
+    "Principal Product Manager / Product Owner | Team Lead at Digital Next, driving AI-enabled product strategy across 150+ GCC entities. 8+ years in government, healthcare, and fintech.",
   url: SITE_URL,
-  jobTitle: "Principal Product Manager / Product Owner — Team Lead",
+  jobTitle: "Principal Product Manager / Product Owner | Team Lead",
   employer: {
     name: "Digital Next",
     url: "https://digitalnext.io/",

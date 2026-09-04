@@ -49,7 +49,7 @@ export default async function Home() {
           <h1 className="title text-5xl">Khalil Abu Mushref</h1>
           <div className="mt-3 text-sm">
             <p className="font-medium text-foreground">
-              Principal Product Manager / Product Owner — Team Lead
+              Principal Product Manager / Product Owner | Team Lead
               <span className="font-light text-muted-foreground"> at </span>
               <Link
                 href="https://digitalnext.io/"
