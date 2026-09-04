@@ -58,7 +58,7 @@ export default function OpengraphImage() {
           </div>
         </div>
         <div style={{ color: "#6b7280", fontSize: "26px" }}>
-          Ebtikar AI · Riyadh &amp; Abu Dhabi
+          Digital Next · Riyadh &amp; Abu Dhabi
         </div>
       </div>
     ),

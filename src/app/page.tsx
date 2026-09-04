@@ -52,12 +52,12 @@ export default async function Home() {
               Principal Product Manager / Product Owner — Team Lead
               <span className="font-light text-muted-foreground"> at </span>
               <Link
-                href="https://www.ebtikarai.com/"
+                href="https://digitalnext.io/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="underline-offset-4 hover:underline"
               >
-                Ebtikar AI
+                Digital Next
               </Link>
             </p>
             <p className="mt-0.5 text-muted-foreground">Riyadh &amp; Abu Dhabi</p>
