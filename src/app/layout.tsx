@@ -63,6 +63,9 @@ export const metadata: Metadata = {
   icons: {
     icon: "/favicon.ico",
   },
+  verification: {
+    google: "k2m3xNOYGngOTpHpYqMWOgynytDrKugHM1g9TsWjyhA",
+  },
 };
 
 const personJsonLd = {
