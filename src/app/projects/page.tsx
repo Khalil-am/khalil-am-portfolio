@@ -38,10 +38,9 @@ export default async function ProjectPage() {
         "@type": "ListItem",
         position: index + 1,
         item: {
-          "@type": "SoftwareApplication",
+          "@type": "CreativeWork",
           name: project.name,
           description: project.description,
-          applicationCategory: "BusinessApplication",
           ...(project.href ? { url: project.href } : {}),
           author: { "@id": `${SITE_URL}/#person` },
         },
