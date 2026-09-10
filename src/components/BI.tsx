@@ -1,4 +1,4 @@
-import data from "@/data/bi.json";          // read from your BI data
+import data from "@/data/bi.json"; // read from your BI data
 import { projectSchema } from "@/lib/schemas";
 import { BICard } from "./BICard";
 
@@ -19,7 +19,7 @@ export default function BI({ limit }: Props) {
   return (
     <section className="grid grid-cols-1 gap-4 sm:grid-cols-2">
       {projects.map((project, id) => (
-        <BICard key={id} project={project} />
+        <BICard key={id} project={project} headingLevel={limit ? 3 : 2} />
       ))}
     </section>
   );

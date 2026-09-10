@@ -14,20 +14,35 @@ export default function TimelineItem({ experience }: Props) {
 
   return (
     <li className="relative ml-10 py-4">
-      <Link
-        href={href}
-        target="_blank"
-        className="absolute -left-16 top-4 flex items-center justify-center rounded-full bg-white"
-      >
-        <Avatar className="size-12 border">
-          <AvatarImage
-            src={logo}
-            alt={`${name} logo`}
-            className="bg-background object-contain"
-          />
-          <AvatarFallback>{name[0]}</AvatarFallback>
-        </Avatar>
-      </Link>
+      {href ? (
+        <Link
+          href={href}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label={`Visit ${name}`}
+          className="absolute -left-16 top-4 flex items-center justify-center rounded-full bg-white"
+        >
+          <Avatar className="size-12 border">
+            <AvatarImage
+              src={logo}
+              alt={`${name} logo`}
+              className="bg-background object-contain"
+            />
+            <AvatarFallback>{name[0]}</AvatarFallback>
+          </Avatar>
+        </Link>
+      ) : (
+        <div className="absolute -left-16 top-4 flex items-center justify-center rounded-full bg-white">
+          <Avatar className="size-12 border">
+            <AvatarImage
+              src={logo}
+              alt={`${name} logo`}
+              className="bg-background object-contain"
+            />
+            <AvatarFallback>{name[0]}</AvatarFallback>
+          </Avatar>
+        </div>
+      )}
       <div className="flex flex-1 flex-col justify-start gap-1">
         {start && (
           <time className="text-xs text-muted-foreground">

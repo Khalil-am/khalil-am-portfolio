@@ -1,14 +1,15 @@
 {
   "education": [
     {
-      "name": "UKM University",
-      "href": "https://www.ukm.my/portalukm",
-      "title": "Masters of Computing in Artificial intelligence",
+      "name": "National University of Malaysia (UKM)",
+      "href": "https://www.ukm.my/portal/",
+      "title": "Master's in Computing (Artificial Intelligence)",
       "logo": "/UKM.png",
       "start": "2025",
+      "end": "Expected 2026",
       "description": [
-        "Thesis in Data Science",
-        "Financial Data Analysis Algorithmic Trading: Developing\nPredictive Models Using Financial Time Series Data\n"
+        "Research in AI applications for personalized oncology",
+        "Predicting cancer treatment outcomes and drug responsiveness"
       ]
     },
     {
@@ -19,7 +20,7 @@
       "start": "2017",
       "end": "2020",
       "description": [
-        "Graduation project: Virtue Mental Health Application with research publication and deployment"
+        "Graduation project: Virtue mental-wellness application using AI-assisted features"
       ]
     }
   ]

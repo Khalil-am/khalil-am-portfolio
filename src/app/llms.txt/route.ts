@@ -1,4 +1,5 @@
 import projectData from "@/data/projects.json";
+import { projectArticles } from "@/lib/projectArticles";
 import { getPosts } from "@/lib/posts";
 import { projectSchema } from "@/lib/schemas";
 import { siteConfig, SITE_URL } from "@/lib/site";
@@ -16,10 +17,14 @@ export async function GET(): Promise<Response> {
 
   const projectLines = projects
     .map((project) => {
-      const firstSentence = project.description.split(". ")[0];
-      return project.href
-        ? `- [${project.name}](${project.href}): ${firstSentence}.`
-        : `- ${project.name}: ${firstSentence}.`;
+      const firstSentence = project.description
+        .split(". ")[0]
+        .replace(/[.!?]+$/, "");
+      const article = projectArticles[project.name];
+      const url = article
+        ? `${SITE_URL}/blog/${article}`
+        : `${SITE_URL}/projects`;
+      return `- [${project.name}](${url}): ${firstSentence}.`;
     })
     .join("\n");
 
@@ -35,14 +40,25 @@ export async function GET(): Promise<Response> {
 
 > ${siteConfig.description}
 
-${siteConfig.name} is a ${siteConfig.jobTitle} at ${siteConfig.employer.name}, working across Riyadh and Abu Dhabi on enterprise digital and AI-enabled product delivery in government, healthcare, and fintech.
+${siteConfig.name} is a ${siteConfig.jobTitle} at ${siteConfig.employer.name}, working across Riyadh and Abu Dhabi on enterprise digital products and AI-enabled product strategy.
+
+## Identity
+
+- Canonical name: ${siteConfig.name}
+- Also known as: ${siteConfig.alternateNames.join(", ")}
+- Official profile: ${SITE_URL}/about
+- Arabic profile: ${SITE_URL}/ar
+- Current employer: [${siteConfig.employer.name}](${siteConfig.employer.url})
+- Primary topics: product management, product ownership, AI product strategy, business analysis, business intelligence, and digital transformation
 
 ## Key pages
 
 - [Home](${SITE_URL}): profile, current role, and career timeline
+- [About Khalil Abu Mushref](${SITE_URL}/about): canonical professional identity, biography, expertise, and frequently asked questions
+- [Arabic profile](${SITE_URL}/ar): Arabic biography for خليل أبو مشرف
 - [Projects](${SITE_URL}/projects): product and engineering portfolio
 - [Business Intelligence](${SITE_URL}/bi): BI and dashboard case studies
-- [ML Models](${SITE_URL}/ml-models): applied machine learning work
+- [ML Models](${SITE_URL}/ml-models): AI and machine-learning tools Khalil uses, evaluates, or studies
 - [Contact](${SITE_URL}/contact): how to get in touch
 
 ## Products and platforms

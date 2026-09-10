@@ -1,71 +1,68 @@
-import { ChatRequestOptions, Message } from "ai";
+import { chatLimits } from "@/lib/chat";
 import { SendHorizontal, Trash } from "lucide-react";
-import { HTMLAttributes } from "react";
+import type { ChangeEventHandler } from "react";
 import { Button } from "./ui/Button";
 import { Input } from "./ui/Input";
 
-interface ChatInputProps extends HTMLAttributes<HTMLFormElement> {
+interface ChatInputProps {
   input: string;
-  handleSubmit: (
-    event?: {
-      preventDefault?: () => void;
-    },
-    chatRequestOptions?: ChatRequestOptions,
-  ) => void;
-  handleInputChange: (
-    e:
-      | React.ChangeEvent<HTMLInputElement>
-      | React.ChangeEvent<HTMLTextAreaElement>,
-  ) => void;
-  setMessages: (
-    messages: Message[] | ((messages: Message[]) => Message[]),
-  ) => void;
+  handleSubmit: () => void | Promise<void>;
+  handleInputChange: ChangeEventHandler<HTMLInputElement>;
+  clearChat: () => void;
   isLoading: boolean;
-  messages: Message[];
+  hasMessages: boolean;
 }
 
 export default function ChatInput({
   input,
   handleSubmit,
   handleInputChange,
-  setMessages,
+  clearChat,
   isLoading,
-  messages,
+  hasMessages,
 }: ChatInputProps) {
-  console.log(messages)
+  const canSubmit = input.trim().length > 0 && !isLoading;
+
   return (
-    <form onSubmit={handleSubmit} className="flex gap-1 border-t px-2 py-3">
+    <form
+      onSubmit={(event) => {
+        event.preventDefault();
+        if (canSubmit) void handleSubmit();
+      }}
+      className="flex gap-1 border-t px-2 py-3"
+    >
       <Button
         title="Clear chat"
         variant="outline"
-        onClick={() => setMessages([])}
+        onClick={clearChat}
         className="px-3 py-2"
-        disabled={messages.length === 0}
+        disabled={!hasMessages || isLoading}
         type="button"
       >
         <Trash className="size-4 text-rose-500" />
+        <span className="sr-only">Clear chat</span>
       </Button>
+      <label htmlFor="chat-message" className="sr-only">
+        Message for Khalil&apos;s AI assistant
+      </label>
       <Input
+        id="chat-message"
         autoFocus
-        placeholder="Ask something..."
-        // className="bg-muted"
+        placeholder="Ask about Khalil..."
+        maxLength={chatLimits.messageLength}
+        disabled={isLoading}
         value={input}
         onChange={handleInputChange}
-        onKeyDown={(e) => {
-          if (e.key === "Enter") {
-            e.preventDefault();
-            handleSubmit(e);
-          }
-        }}
       />
       <Button
         title="Send message"
         variant="default"
         className="px-3 py-2"
-        disabled={input.length === 0}
+        disabled={!canSubmit}
         type="submit"
       >
         <SendHorizontal className="size-4" />
+        <span className="sr-only">Send message</span>
       </Button>
     </form>
   );

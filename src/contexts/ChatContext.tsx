@@ -2,7 +2,7 @@ import { createContext, ReactNode, useContext, useState } from "react";
 
 // Define the ChatContext with initial values
 const ChatContext = createContext({
-  isVisible: true,
+  isVisible: false,
   toggleChatbot: () => {},
 });
 
@@ -15,11 +15,11 @@ interface Props {
 
 // ChatProvider component
 export function ChatProvider({ children }: Props) {
-  const [isVisible, setIsVisible] = useState(true);
+  const [isVisible, setIsVisible] = useState(false);
 
   // Function to toggle the chatbot's visibility
   const toggleChatbot = () => {
-    setIsVisible(!isVisible);
+    setIsVisible((visible) => !visible);
   };
 
   return (

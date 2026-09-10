@@ -1,12 +1,7 @@
 import { SITE_URL } from "@/lib/site";
 import type { MetadataRoute } from "next";
 
-/**
- * AI/answer-engine crawlers are allowed explicitly (GEO): being present in
- * their indexes is how the site gets cited by ChatGPT, Claude, Perplexity,
- * Gemini and friends. The wildcard rule already allows them, but naming them
- * makes the policy explicit and survives a future tightening of the wildcard.
- */
+/** Keep the public portfolio crawlable while excluding request-only API routes. */
 const AI_CRAWLERS = [
   "GPTBot",
   "OAI-SearchBot",
@@ -45,5 +40,6 @@ export default function robots(): MetadataRoute.Robots {
       })),
     ],
     sitemap: `${SITE_URL}/sitemap.xml`,
+    host: SITE_URL,
   };
 }

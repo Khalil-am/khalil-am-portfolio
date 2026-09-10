@@ -12,7 +12,7 @@ export default function MLModels({ limit }: Props) {
   return (
     <section className="grid grid-cols-1 gap-4 sm:grid-cols-2">
       {models.map((model, index) => (
-        <MLModelCard key={index} model={model} />
+        <MLModelCard key={index} model={model} headingLevel={limit ? 3 : 2} />
       ))}
     </section>
   );

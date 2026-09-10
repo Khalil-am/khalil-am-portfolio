@@ -1,0 +1,60 @@
+---
+title: "Yadree: Exploring AI-Assisted Business Intelligence Workflows"
+summary: "Yadree is a portfolio prototype exploring natural-language SQL support, data visualization, and machine-learning-assisted analysis with human review."
+image: "/biac.png"
+publishedAt: "2024-10-15"
+updatedAt: "2026-09-10"
+---
+
+Yadree is a portfolio prototype exploring where AI can assist a [business intelligence](/bi) workflow without pretending to replace data engineers, analysts, or accountable decision-makers. The concept brings together natural-language query support, SQL workflow assistance, data visualization, and machine-learning-assisted analysis in one review-led workspace.
+
+The useful question behind Yadree is not whether a model can produce a confident-looking answer. It is whether the product can help a person move from a business question to a transparent, testable analysis while keeping the source data, query logic, assumptions, and limitations visible.
+
+## Product decisions explored
+
+### Treat generated SQL as a draft
+
+A natural-language request can be translated into a proposed query, but the query still needs to be checked against the available schema, business definitions, access rules, joins, filters, and aggregation logic. Yadree therefore treats SQL assistance as a starting point for review rather than an automatically trusted answer.
+
+### Keep analysis connected to its evidence
+
+Charts and written summaries are only useful when a reviewer can understand which data and transformations produced them. The prototype explores a workflow in which the business question, draft query, resulting dataset, visualization, and interpretation remain connected instead of becoming separate artifacts.
+
+### Use machine learning as decision support
+
+[Machine-learning models](/ml-models) can help explore patterns, classifications, or forecasts, but a model output is not a business decision. Yadree is framed around assisted analysis: people remain responsible for selecting appropriate data, testing assumptions, interpreting uncertainty, and deciding whether an output is fit for its intended use.
+
+## Intended workflow
+
+The concept follows a reviewable sequence:
+
+1. State a business question and identify the relevant data source.
+2. Produce or refine a draft query against the known schema.
+3. Inspect the returned data for completeness and obvious quality problems.
+4. Select a visualization that matches the question rather than merely looking impressive.
+5. Add an interpretation that distinguishes observed results from assumptions or model-assisted suggestions.
+6. Have a qualified person validate the analysis before it informs an operational or strategic decision.
+
+## Limitations
+
+Yadree does not guarantee real-time data, accurate generated SQL, statistically valid predictions, or decision-ready conclusions. Data freshness depends on the connected source. Query correctness depends on schema knowledge and business definitions. Predictive outputs depend on data quality, modeling choices, validation, and the context in which they are used.
+
+The current portfolio entry documents a product direction and prototype workflow; it is not evidence of production deployment, commercial adoption, or audited analytical performance. Sensitive data would also require appropriate permissions, security controls, and organizational governance before any real-world use.
+
+## FAQ
+
+### What is Yadree?
+
+Yadree is a portfolio prototype exploring AI-assisted business intelligence, including natural-language SQL support, visualization, and machine-learning-assisted analysis with human review.
+
+### Does Yadree generate production-ready SQL?
+
+No. The concept treats generated SQL as a draft. A knowledgeable reviewer still needs to verify the schema, joins, filters, aggregations, permissions, and relevant business definitions.
+
+### Does Yadree provide real-time or guaranteed insights?
+
+No. Freshness depends on the connected data source, and the quality of any analysis depends on the data, query, assumptions, and validation. The prototype is designed for decision support, not automated decision-making.
+
+### What is the role of a human analyst?
+
+The analyst verifies the data and query, chooses an appropriate visualization, evaluates model outputs, documents uncertainty, and decides whether the result is suitable for use. I discuss the broader role of assisted analysis in [AI in business analysis](/blog/ai-in-business-analysis).

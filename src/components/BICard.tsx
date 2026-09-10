@@ -4,7 +4,6 @@ import {
   CardContent,
   CardFooter,
   CardHeader,
-  CardTitle,
 } from "@/components/ui/Card";
 import { Project } from "@/lib/schemas";
 import Image from "next/image";
@@ -14,22 +13,25 @@ import Icon from "./Icon"; // same import as ProjectCard
 
 interface Props {
   project: Project;
+  headingLevel?: 2 | 3;
 }
 
-export function BICard({ project }: Props) {
+export function BICard({ project, headingLevel = 3 }: Props) {
   const { name, href, description, image, tags, links } = project;
+  const Heading = headingLevel === 2 ? "h2" : "h3";
 
   return (
     <Card className="flex flex-col">
       <CardHeader>
         {image &&
           (href ? (
-            <Link href={href}>
+            <Link href={href} target="_blank" rel="noopener noreferrer">
               <Image
                 src={image}
                 alt={`Screenshot of the ${name} dashboard`}
                 width={500}
                 height={300}
+                sizes="(max-width: 639px) calc(100vw - 2rem), 352px"
                 className="h-40 w-full object-cover object-top"
               />
             </Link>
@@ -39,13 +41,16 @@ export function BICard({ project }: Props) {
               alt={`Screenshot of the ${name} dashboard`}
               width={500}
               height={300}
+              sizes="(max-width: 639px) calc(100vw - 2rem), 352px"
               className="h-40 w-full object-cover object-top"
             />
           ))}
       </CardHeader>
 
       <CardContent className="flex flex-col gap-2">
-        <CardTitle>{name}</CardTitle>
+        <Heading className="font-semibold leading-none tracking-tight">
+          {name}
+        </Heading>
         <Markdown className="prose max-w-full text-pretty font-sans text-xs text-muted-foreground dark:prose-invert">
           {description}
         </Markdown>

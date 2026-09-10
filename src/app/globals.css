@@ -82,7 +82,8 @@
     @apply bg-background text-foreground;
   }
   .title {
-    @apply font-serif text-5xl tracking-wide decoration-border/75 decoration-2;
+    @apply break-words font-serif text-3xl leading-tight tracking-wide decoration-border/75 decoration-2 sm:text-5xl;
+    overflow-wrap: anywhere;
   }
   .link {
     @apply text-muted-foreground transition-colors hover:text-foreground;
@@ -100,6 +101,6 @@
     @apply font-medium;
   }
   .input-error {
-    @apply ml-1 mt-2 text-sm text-rose-400;
+    @apply ml-1 mt-2 text-sm text-rose-700 dark:text-rose-300;
   }
 }

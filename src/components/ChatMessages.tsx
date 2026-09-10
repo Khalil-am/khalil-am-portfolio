@@ -1,10 +1,10 @@
-import { Message } from "ai";
+import type { ChatMessage as ChatMessageData } from "@/lib/chat";
 import { Bot, Loader2 } from "lucide-react";
 import { useEffect, useRef } from "react";
 import ChatMessage from "./ChatMessage";
 
 interface ChatMessagesProps {
-  messages: Message[];
+  messages: ChatMessageData[];
   error: Error | undefined;
   isLoading: boolean;
 }
@@ -25,7 +25,12 @@ export default function ChatMessages({
   }, [messages]);
 
   return (
-    <div className="h-full overflow-y-auto p-3" ref={scrollRef}>
+    <div
+      className="h-full overflow-y-auto p-3"
+      ref={scrollRef}
+      aria-live="polite"
+      aria-busy={isLoading}
+    >
       <ul>
         {messages.map((msg) => (
           <li key={msg.id}>
@@ -36,11 +41,13 @@ export default function ChatMessages({
 
       {/* empty */}
       {!error && messages.length === 0 && (
-        <div className="flex h-full flex-col items-center justify-center mt-16 gap-2">
+        <div className="mt-16 flex h-full flex-col items-center justify-center gap-2">
           <Bot />
           <p className="font-medium">👋 Welcome! I&apos;m here to help</p>
           <p className="text-center text-xs text-muted-foreground">
-            Ask me anything about Khalil&apos;s expertise in AI, Business Intelligence, his projects, or how to get in touch. I&apos;m happy to answer your questions!
+            Ask me anything about Khalil&apos;s expertise in AI, Business
+            Intelligence, his projects, or how to get in touch. I&apos;m happy
+            to answer your questions!
           </p>
         </div>
       )}
@@ -57,7 +64,7 @@ export default function ChatMessages({
 
       {/* error */}
       {error && (
-        <p className="text-center text-xs text-rose-500">
+        <p className="text-center text-xs text-rose-700 dark:text-rose-300">
           Something went wrong. Please try again!
         </p>
       )}

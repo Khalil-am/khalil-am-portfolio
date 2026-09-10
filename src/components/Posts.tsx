@@ -6,9 +6,12 @@ import { Separator } from "./ui/Separator";
 
 interface Props {
   posts: PostMetadata[];
+  headingLevel?: 2 | 3;
 }
 
-export default function Posts({ posts }: Props) {
+export default function Posts({ posts, headingLevel = 3 }: Props) {
+  const Heading = headingLevel === 2 ? "h2" : "h3";
+
   return (
     posts.length > 0 && (
       <Card>
@@ -19,7 +22,9 @@ export default function Posts({ posts }: Props) {
               <Link href={`/blog/${post.slug}`}>
                 <div className="flex flex-col justify-between p-6 sm:flex-row sm:items-center">
                   <div className="max-w-md md:max-w-lg">
-                    <h3 className="text-lg font-semibold">{post.title}</h3>
+                    <Heading className="text-lg font-semibold">
+                      {post.title}
+                    </Heading>
                     <p className="mt-1 line-clamp-2 text-sm font-light text-muted-foreground">
                       {post.summary}
                     </p>

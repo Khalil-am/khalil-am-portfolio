@@ -1,11 +1,11 @@
+import type { ChatMessage as ChatMessageData } from "@/lib/chat";
 import { cn } from "@/lib/utils";
-import { Message } from "ai";
 import { Bot } from "lucide-react";
 import Link from "next/link";
 import Markdown from "react-markdown";
 
 interface ChatMessageProps {
-  message: Message;
+  message: ChatMessageData;
 }
 
 export default function ChatMessage({

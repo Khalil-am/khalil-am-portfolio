@@ -1,0 +1,47 @@
+---
+title: "Spring Boot Transactional Email Service"
+summary: "A portfolio backend project exploring reusable email templates, validated requests, provider integration, and responsible delivery handling with Spring Boot."
+image: "/email-service-hero.png"
+publishedAt: "2022-11-05"
+updatedAt: "2026-09-10"
+---
+
+This portfolio project explores a reusable Spring Boot service for sending application email such as account notifications, confirmations, and other transactional messages. The goal was to separate email composition and provider integration from the business features that trigger a message.
+
+It is a technical project record, not a claim of a commercially operated email platform. Production readiness would depend on the deployment environment, email provider, authentication controls, monitoring, privacy requirements, and measured delivery performance.
+
+## Design explored
+
+### A focused service boundary
+
+The API keeps message delivery behind one service interface. A calling application can supply the intended template and validated message data without taking responsibility for provider-specific connection details in every feature.
+
+### Reusable templates
+
+Separating templates from request handling makes notification content easier to maintain and reduces repeated formatting logic. Variables still need explicit validation and safe escaping before they are inserted into a message.
+
+### Validation before delivery
+
+A responsible email endpoint should reject malformed recipients, unexpected template fields, oversized payloads, and header-injection characters. Authentication and authorization should be applied according to the calling system; an endpoint should not be made public merely for convenience.
+
+### Delivery is an asynchronous concern
+
+An accepted API request does not prove that a message reached an inbox. A production implementation would normally need provider response tracking, bounded retries, idempotency, bounce handling, suppression rules, and observability. Those controls must be tested rather than inferred from the framework.
+
+## Limitations
+
+The project demonstrates a backend pattern and template workflow. It does not publish audited throughput, inbox-placement, availability, or security results. Any real deployment would also need secrets management, rate limiting, abuse prevention, domain authentication, retention rules, and provider-specific compliance checks.
+
+## FAQ
+
+### What is the Email Service API?
+
+A Spring Boot portfolio project that explores how an application can centralize templated transactional-email requests and provider integration behind a reusable service boundary.
+
+### Can the email templates be customized?
+
+Yes. The design separates reusable templates and their variables from the application features that trigger a message. Inputs still require validation and safe handling.
+
+### Is the service production-ready?
+
+This page does not make that claim. Production use would require environment-specific security, provider configuration, retries, bounce handling, rate limits, monitoring, and measured load and delivery testing.

@@ -4,9 +4,9 @@ import {
   CardContent,
   CardFooter,
   CardHeader,
-  CardTitle,
 } from "@/components/ui/Card";
 import { Project } from "@/lib/schemas";
+import { projectArticles } from "@/lib/projectArticles";
 import Image from "next/image";
 import Link from "next/link";
 import Markdown from "react-markdown";
@@ -14,22 +14,31 @@ import Icon from "./Icon";
 
 interface Props {
   project: Project;
+  headingLevel?: 2 | 3;
 }
 
-export function ProjectCard({ project }: Props) {
+export function ProjectCard({ project, headingLevel = 3 }: Props) {
   const { name, href, description, image, tags, links } = project;
+  const Heading = headingLevel === 2 ? "h2" : "h3";
+  const articleSlug = projectArticles[name];
+  const articleHref = articleSlug ? `/blog/${articleSlug}` : undefined;
 
   return (
     <Card className="flex flex-col">
       {image && (
         <CardHeader>
-          {href ? (
-            <Link href={href}>
+          {articleHref || href ? (
+            <Link
+              href={articleHref ?? href!}
+              target={articleHref ? undefined : "_blank"}
+              rel={articleHref ? undefined : "noopener noreferrer"}
+            >
               <Image
                 src={image}
                 alt={`Screenshot of ${name}`}
                 width={500}
                 height={300}
+                sizes="(max-width: 639px) calc(100vw - 2rem), 352px"
                 className="h-40 w-full object-cover object-top"
               />
             </Link>
@@ -39,13 +48,22 @@ export function ProjectCard({ project }: Props) {
               alt={`Screenshot of ${name}`}
               width={500}
               height={300}
+              sizes="(max-width: 639px) calc(100vw - 2rem), 352px"
               className="h-40 w-full object-cover object-top"
             />
           )}
         </CardHeader>
       )}
       <CardContent className="flex flex-col gap-2">
-        <CardTitle>{name}</CardTitle>
+        <Heading className="font-semibold leading-none tracking-tight">
+          {articleHref ? (
+            <Link className="hover:underline" href={articleHref}>
+              {name}
+            </Link>
+          ) : (
+            name
+          )}
+        </Heading>
         <Markdown className="prose max-w-full text-pretty font-sans text-xs text-muted-foreground dark:prose-invert">
           {description}
         </Markdown>
@@ -64,8 +82,15 @@ export function ProjectCard({ project }: Props) {
             ))}
           </div>
         )}
-        {links && links.length > 0 && (
+        {(articleHref || (links && links.length > 0)) && (
           <div className="flex flex-row flex-wrap items-start gap-1">
+            {articleHref ? (
+              <Link href={articleHref}>
+                <Badge className="px-2 py-1 text-[10px]" variant="secondary">
+                  Read case study
+                </Badge>
+              </Link>
+            ) : null}
             {links.toSorted().map((link, idx) => (
               <Link
                 href={link?.href}

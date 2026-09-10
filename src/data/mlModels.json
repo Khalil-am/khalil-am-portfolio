@@ -2,66 +2,86 @@
   "models": [
     {
       "title": "RAG & LangChain",
-      "description": "Retrieval-Augmented Generation framework combining LLMs with enterprise knowledge bases. Applied in consulting operating systems for automated deliverable generation, requirements documentation, and intelligent business analysis workflows.",
+      "description": "A retrieval-augmented generation toolkit that connects language models to selected knowledge sources. I use this pattern when exploring grounded document workflows, requirements support, and business-analysis assistants.",
       "imageUrl": "/rag-documents.jpg",
       "link": "https://www.langchain.com/",
       "tags": ["RAG", "Knowledge Base", "Document AI", "Consulting"]
     },
     {
       "title": "XGBoost & Gradient Boosting",
-      "description": "High-performance gradient boosting framework for predictive modeling and classification. Applied in drug response prediction, cancer treatment outcome forecasting, KPI trend analysis, and data-driven business decision support.",
+      "description": "A widely used gradient-boosting library for structured-data prediction and classification. It is part of my toolkit for forecasting experiments, KPI analysis, and research-oriented predictive modeling.",
       "imageUrl": "/predictive-analytics.jpg",
       "link": "https://xgboost.readthedocs.io/",
-      "tags": ["Predictive Modeling", "Drug Response", "Classification", "Analytics"]
+      "tags": [
+        "Predictive Modeling",
+        "Drug Response",
+        "Classification",
+        "Analytics"
+      ]
     },
     {
       "title": "Qlib – Quantitative Modeling",
-      "description": "Microsoft's AI-powered quantitative investment platform for building end-to-end ML pipelines in finance. Applied in algorithmic trading, financial time series forecasting, portfolio optimization, and risk modeling with state-of-the-art deep learning strategies.",
+      "description": "Microsoft's open-source quantitative-research platform for experimenting with financial datasets, machine-learning pipelines, time-series signals, and portfolio research.",
       "imageUrl": "/quantitative-modeling.jpg",
       "link": "https://github.com/microsoft/qlib",
-      "tags": ["Quantitative Finance", "Algorithmic Trading", "Time Series", "Portfolio Optimization"]
+      "tags": [
+        "Quantitative Finance",
+        "Algorithmic Trading",
+        "Time Series",
+        "Portfolio Optimization"
+      ]
     },
     {
-      "title": "LLaMA 4 Maverick 400B",
-      "description": "Meta's latest open-source large language model with 400 billion parameters, featuring a mixture-of-experts architecture for superior reasoning and multilingual capabilities. Utilized in AI agents for automated document generation, business analysis workflows, and intelligent decision support systems.",
+      "title": "Llama 4 Maverick",
+      "description": "A Meta language-model family I evaluate for multilingual generation, document assistance, and agent-oriented product experiments. Model specifications and availability should be checked in Meta's current documentation.",
       "imageUrl": "/llama4.png",
-      "link": "https://ai.meta.com/llama/",
+      "link": "https://developer.meta.com/ai/",
       "tags": ["Open Source", "AI Agents", "MoE", "Document Intelligence"]
     },
     {
       "title": "Gemini 2.5 Pro",
-      "description": "Google DeepMind's latest multimodal AI model combining vision, language, and advanced reasoning. Applied in real-time analytics dashboards, intelligent automation pipelines, and AI-powered consulting workflows for enterprise decision support.",
+      "description": "A Google multimodal model I evaluate for text, visual, and reasoning workflows in product prototypes. Current capabilities, limits, and availability are documented by Google.",
       "imageUrl": "/gemini-ai.png",
       "link": "https://deepmind.google/technologies/gemini/",
       "tags": ["Multimodal", "Reasoning", "Production AI", "Enterprise"]
     },
     {
       "title": "Apache Spark MLlib",
-      "description": "Scalable machine learning library for big data processing and distributed analytics. Applied in building end-to-end ML pipelines, large-scale data transformation, business intelligence automation, and enterprise forecasting systems.",
+      "description": "Apache Spark's distributed machine-learning library for scalable data preparation, modeling, and pipeline experiments across larger datasets.",
       "imageUrl": "/spark-bigdata.jpg",
       "link": "https://spark.apache.org/mllib/",
-      "tags": ["Big Data", "ML Pipelines", "Distributed Computing", "BI Automation"]
+      "tags": [
+        "Big Data",
+        "ML Pipelines",
+        "Distributed Computing",
+        "BI Automation"
+      ]
     },
     {
       "title": "Med-PaLM 2 & Medical LLMs",
-      "description": "Google's medical large language model achieving expert-level performance on clinical reasoning tasks. Applied in personalized oncology treatment prediction, clinical Q&A, and healthcare decision support aligned with FHIR standards.",
+      "description": "A Google research model for medical question answering and clinical-language research. I study this work as context for healthcare AI; it is not presented here as a diagnostic service or a model I created.",
       "imageUrl": "/medical-ai-oncology.jpg",
       "link": "https://sites.research.google/med-palm/",
       "tags": ["Healthcare AI", "Oncology", "Clinical NLP", "Medical Reasoning"]
     },
     {
       "title": "MONAI – Medical Imaging AI",
-      "description": "NVIDIA's open-source deep learning framework for medical image analysis including X-ray classification, CT scan interpretation, and radiology workflow optimization. Powers diagnostic assistance and automated reporting in healthcare delivery platforms.",
+      "description": "NVIDIA's open-source framework for medical-imaging research and development. It provides building blocks for imaging pipelines, while any clinical use requires independent validation and appropriate governance.",
       "imageUrl": "/medical-imaging-ai.jpg",
       "link": "https://github.com/Project-MONAI/MONAI",
       "tags": ["Radiology", "Medical Imaging", "Deep Learning", "Diagnostics"]
     },
     {
       "title": "BioBERT – Biomedical NLP",
-      "description": "Pre-trained biomedical language representation model for mining biomedical text. Applied in clinical document analysis, drug interaction extraction, oncology literature mining, and automated medical terminology processing.",
+      "description": "A biomedical language model used in research on biomedical text mining and terminology extraction. I reference it when studying clinical-language workflows and healthcare-focused NLP.",
       "imageUrl": "/biobert-clinical.jpg",
       "link": "https://github.com/dmis-lab/biobert",
-      "tags": ["Biomedical NLP", "Text Mining", "Clinical Documents", "Research"]
+      "tags": [
+        "Biomedical NLP",
+        "Text Mining",
+        "Clinical Documents",
+        "Research"
+      ]
     }
   ]
 }

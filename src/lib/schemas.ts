@@ -34,7 +34,7 @@ export type Project = z.infer<typeof project>;
 
 const experience = z.object({
   name: z.string(),
-  href: z.string(),
+  href: z.string().url().optional(),
   title: z.string(),
   logo: z.string(),
   start: z.string(),

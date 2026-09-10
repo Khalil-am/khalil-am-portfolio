@@ -1,0 +1,110 @@
+---
+title: "PPlus AI Sync Tool: Designing Safer Configuration Promotion"
+summary: "A portfolio prototype exploring how preview, deterministic mapping, human approval, audit history, and rollback can make enterprise configuration promotion safer."
+image: "/PPlus-Demo.png"
+publishedAt: "2026-03-08"
+updatedAt: "2026-09-10"
+---
+
+Anyone who has operated configurable enterprise platforms knows the pain of promoting configuration between environments. Dashboards drift, components get out of step, keys get renamed, formulas break, and "it worked in development" becomes a familiar refrain.
+
+The core design problem is broader than copying records. A safe tool has to understand dependencies and renamed entities, show the proposed change, require an authorized decision, record what happened, and provide a tested recovery path.
+
+The **PPlus AI Sync Tool** is an independent portfolio prototype through which I explored that design. It is not an official PPlus product, and this article intentionally omits proprietary client configuration, credentials, and implementation details.
+
+---
+
+## What It Does
+
+The prototype is designed around:
+
+- staged promotion paths between controlled environments
+- multiple explicitly authorized target instances
+- **semantic matching** between renamed entities
+- **formula rewriting** as keys evolve
+- preview, approval history, and rollback as required safety controls
+
+The guiding principle is simple: **never trust a configuration change that cannot be previewed, authorized, traced, and safely recovered**. The current work is a prototype and scaffold; the full execution and recovery pipeline remains roadmap work.
+
+---
+
+## Architecture at a Glance
+
+The prototype separates the user experience, domain contracts, connectors, deterministic formula handling, AI-assisted matching, and persistence into clear boundaries:
+
+```
+web experience         operator workflow and proposed-change review
+domain core            typed entities, matchers, and pipeline contracts
+connectors             authorized source and target adapters
+AI assistance          proposed mappings, risk classification, explanations
+formula engine         deterministic key parser and rewriter
+persistence            run history, decisions, and encrypted secrets design
+```
+
+### **Deterministic where it should be**
+
+Formula parsing and rewriting are designed to be deterministic and tested against structured nodes rather than delegated to a language model.
+
+### **AI where it needs to be**
+
+Semantic entity matching is hard: two dashboards with different names might still represent the same business view in different environments. In the prototype, AI can propose mappings, classify risk, and explain differences, but deterministic validation and human approval remain the control points.
+
+### **Secure by default**
+
+The target design keeps credentials encrypted, limits connections to authorized environments, and records proposed and applied operations. Reversibility is treated as a requirement to test—not a guarantee to claim until each connector and operation has a verified rollback path.
+
+---
+
+## Autopilot: The Default Experience
+
+The interface concept is **guided-flow first**, with two primary entry points:
+
+- **Guided promotion** — source-to-target comparison, proposed mapping, risk review, and approval.
+- **History** — the planned record of approved runs and recovery actions.
+
+Deeper steps—connect, snapshot, match, align, diff, approve, and apply—remain visible when an operator needs precision. The interface should make the safe path easy without hiding what the system proposes to change.
+
+---
+
+## Why This Matters
+
+Configuration sync sounds like plumbing. It isn't. In a production PPlus deployment, a broken sync pipeline means:
+
+- [Executive dashboards](/bi) drifting between environments.
+- [KPIs](/blog/enterprise-bi-reporting) that silently compute against wrong field mappings.
+- Compliance gaps where staging no longer mirrors production.
+- Hours of manual clean-up by the team that can least afford the distraction.
+
+The **PPlus AI Sync Tool** explores how to reduce that class of problems by treating configuration promotion as a first-class pipeline—capture, match, diff, plan, approve, apply, verify, and recover—with AI used for proposals and explanations rather than unchecked execution.
+
+---
+
+## What's Next
+
+The scaffolding pass is complete. The next passes are focused on:
+
+- full pipeline execution and connector-level recovery testing;
+- operator authentication and encrypted credential persistence; and
+- per-target diff review, mapping edits, and explicit apply confirmation.
+
+The implementation uses Node 22+ and pnpm 9+. A public repository is not currently linked from this portfolio.
+
+No Docker. No Postgres. No API keys in config files. Just a clean, AI-assisted configuration sync tool that finally treats PPlus environments with the care they deserve.
+
+## FAQ
+
+### What is the PPlus AI Sync Tool?
+
+It is an independent portfolio prototype for safer enterprise configuration promotion. The design combines deterministic parsing, AI-assisted mapping proposals, human review, run history, and a planned recovery workflow; full execution and rollback validation remain roadmap work.
+
+### Where does AI fit in, and where doesn't it?
+
+AI helps propose mappings, classify risk, and explain differences, while parsing, validation, authorization, and application controls stay deterministic or human-governed. Never trust a configuration change that cannot be previewed, authorized, traced, and safely recovered.
+
+### What do I need to run it?
+
+The prototype uses Node 22+ and pnpm 9+. A public repository is not currently linked from this portfolio, and the case study does not provide a production deployment guide.
+
+### How are credentials handled?
+
+The target architecture calls for encrypted credential storage, least-privilege connections, explicit environment authorization, and secrets kept out of configuration files. Those controls must be verified in the actual deployment before production use.

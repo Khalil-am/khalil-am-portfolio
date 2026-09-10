@@ -1,10 +1,13 @@
 "use client";
 
 import { ChatProvider } from "@/contexts/ChatContext";
+import { useChatbot } from "@/contexts/ChatContext";
+import dynamic from "next/dynamic";
 import { ThemeProvider, useTheme } from "next-themes";
 import React from "react";
 import { Toaster } from "sonner";
-import Chat from "./Chat";
+
+const Chat = dynamic(() => import("./Chat"), { ssr: false });
 
 export default function Providers({ children }: { children: React.ReactNode }) {
   return (
@@ -16,11 +19,16 @@ export default function Providers({ children }: { children: React.ReactNode }) {
     >
       <ChatProvider>
         {children}
-        <Chat />
+        <ChatSurface />
       </ChatProvider>
       <ToastProvider />
     </ThemeProvider>
   );
+}
+
+function ChatSurface() {
+  const { isVisible } = useChatbot();
+  return isVisible ? <Chat /> : null;
 }
 
 function ToastProvider() {

@@ -1,0 +1,72 @@
+---
+title: "KAM CLI: A Local AI Command Layer with OpenClaw"
+summary: "KAM CLI is an open-source, single-user wrapper around OpenClaw that provides isolated local state and three configurable agents for strategy, implementation, and quality review."
+image: "/kam-cli.png"
+publishedAt: "2026-03-25"
+updatedAt: "2026-09-10"
+---
+
+**[KAM CLI](https://github.com/Khalil-am/kam-cli)** is an open-source command layer for running a locally configured set of AI agents. The current project is a thin wrapper around [OpenClaw](https://openclaw.ai/), with KAM branding, an isolated configuration directory, and opinionated agent roles for consulting, delivery, coding, quality review, and decision support.
+
+This distinction matters: KAM does not claim to be a new model or a fork of the OpenClaw runtime. It packages a particular single-user workflow on top of that runtime. OpenClaw remains an upstream dependency, while KAM provides the command, defaults, agent identities, and local state layout.
+
+## The three-agent model
+
+The default setup separates work into three configurable roles:
+
+- **Kyle** coordinates strategy and executive-support tasks such as structured requirements, meeting notes, research, proposals, and delegation.
+- **Kade** focuses on technical implementation such as code, APIs, integrations, dashboards, and automation.
+- **Knox** focuses on quality assurance, including requirements review, test cases, UAT support, defect detection, and readiness checks.
+
+These are operating roles, not independent claims of correctness. The underlying model, connected tools, instructions, permissions, and human review still determine what the system can do safely.
+
+## Isolated local state
+
+KAM keeps its working state under `~/.kam/` rather than mixing it with an ordinary OpenClaw installation. That directory can contain configuration, agent workspaces, extensions, credentials, and gateway logs. The CLI sets the OpenClaw state and configuration paths for the processes it starts, giving the branded setup a clear local boundary.
+
+The public command surface includes ways to:
+
+- start and inspect the local gateway;
+- send a task to Kyle, Kade, or Knox;
+- view and validate configuration;
+- inspect resolved paths and versions;
+- connect explicitly configured channels or MCP tools; and
+- pass advanced arguments through to the upstream runtime.
+
+That surface is deliberately smaller than the range of work the agents may attempt. A command can make a workflow easier to invoke, but it does not remove the need to inspect permissions, inputs, generated output, and side effects.
+
+## Installation boundary
+
+The public package is distributed as `kam-cli`, while the installed command is `kam`. The current documentation requires Node.js 20 or later, a separate OpenClaw installation, and a model backend selected by the user. Because providers and connected tools may have their own pricing, privacy, and data-retention rules, installing the CLI does not make those external services free or private.
+
+## Security and limitations
+
+KAM is documented for one trusted user on a personal machine. Its default agent configuration can operate with the permissions of that operating-system user, so it should not be treated as a hardened multi-user or production service. A production deployment would need a much stronger sandbox, scoped credentials, access controls, audit logging, network policy, and operational review.
+
+The `~/.kam/` directory may hold API keys or OAuth credentials. It should not be committed to source control or copied into an untrusted backup. Any model provider, messaging channel, plugin, or MCP server receives only the access that the user explicitly configures, but each connection expands the trust boundary and must be reviewed on its own terms.
+
+The repository states that the KAM wrapper itself has no telemetry. That does not cover telemetry or data handling by the upstream runtime, model provider, connected channel, or external tool.
+
+## Why publish it openly?
+
+The project is available under the MIT License, with source, setup guidance, Arabic documentation, contribution instructions, and security reporting guidance in the [public repository](https://github.com/Khalil-am/kam-cli). Publishing the wrapper makes its defaults and boundaries inspectable and gives users a concrete basis for deciding whether the workflow fits their environment.
+
+KAM CLI also provides a practical implementation surface for the broader, permission-led orchestration ideas described in [KAM AI](/blog/kam-ai-agent-orchestration). Both should be evaluated as personal, configurable tooling—not proof of enterprise deployment or autonomous reliability.
+
+## FAQ
+
+### What is KAM CLI?
+
+KAM CLI is an open-source, single-user command layer that wraps OpenClaw with isolated local state, KAM defaults, and three configurable agent roles: Kyle, Kade, and Knox.
+
+### Is KAM CLI open source?
+
+Yes. Its source is public on [GitHub](https://github.com/Khalil-am/kam-cli) under the MIT License.
+
+### Is KAM CLI a fork of OpenClaw?
+
+No. The project is documented as a thin wrapper around OpenClaw. It adds branded commands, isolated state, defaults, and agent roles while relying on OpenClaw as the upstream runtime.
+
+### Is KAM CLI suitable for a shared production server?
+
+Not in its default form. It is designed for a single trusted user on a personal machine. Shared or production use would require a hardened sandbox, scoped credentials, stronger access controls, logging, and environment-specific security review.

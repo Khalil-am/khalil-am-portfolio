@@ -1,10 +1,15 @@
 export const SITE_URL = "https://www.khalil-am.com";
+export const SITE_LAST_MODIFIED = "2026-09-10";
 
 export const siteConfig = {
   name: "Khalil Abu Mushref",
-  title: "Khalil Abu Mushref | Principal Product Manager / Product Owner | Team Lead",
+  shortName: "Khalil AM",
+  alternateNames: ["Khalil AM", "خليل أبو مشرف", "خليل ابو مشرف"],
+  givenName: "Khalil",
+  familyName: "Abu Mushref",
+  title: "Khalil Abu Mushref | Principal Product Manager",
   description:
-    "Principal Product Manager / Product Owner | Team Lead at Digital Next, driving AI-enabled product strategy across 150+ GCC entities. 8+ years in government, healthcare, and fintech.",
+    "Official portfolio of Khalil Abu Mushref, Principal Product Manager and Product Owner at Digital Next, leading AI-enabled products across Riyadh and Abu Dhabi.",
   url: SITE_URL,
   jobTitle: "Principal Product Manager / Product Owner | Team Lead",
   employer: {
@@ -24,6 +29,8 @@ export const siteConfig = {
   socials: {
     linkedin: "https://linkedin.com/in/khalil-am",
     github: "https://github.com/Khalil-am",
+    huggingFace: "https://huggingface.co/Khalil-am",
+    indiePage: "https://indiepa.ge/khalilam",
   },
   keywords: [
     "Khalil Abu Mushref",
@@ -44,5 +51,22 @@ export const siteConfig = {
     "United Arab Emirates",
     "Riyadh",
     "Saudi Arabia",
+  ],
+  expertise: [
+    "Product Strategy",
+    "Product Discovery",
+    "Product Ownership",
+    "AI Product Management",
+    "AI Product Strategy",
+    "Business Analysis",
+    "Requirements Engineering",
+    "Business Intelligence",
+    "Data Products",
+    "Delivery Governance",
+    "Digital Transformation",
+    "Enterprise Software",
+    "Healthcare Technology",
+    "Government Digital Services",
+    "Fintech",
   ],
 } as const;

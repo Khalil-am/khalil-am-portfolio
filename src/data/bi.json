@@ -2,28 +2,20 @@
   "projects": [
     {
       "name": "Executive Insights Dashboard",
-      "description": "A comprehensive executive dashboard providing real-time KPIs, revenue metrics, and strategic insights. Features interactive visualizations for CFO-level decision making, including financial performance tracking, trend analysis, and key business metrics across multiple dimensions.",
-      "href": "https://yadree.khalil-am.com",
+      "description": "A portfolio dashboard example showing how executives can organize reviewed KPIs, revenue measures, trends, and strategic context across multiple business dimensions.",
       "image": "/dashboard-executive.png",
       "tags": [
         "Power BI",
         "Executive Analytics",
         "Financial KPIs",
-        "Real-time Monitoring",
+        "KPI Monitoring",
         "Strategic Insights"
       ],
-      "links": [
-        {
-          "name": "View Demo",
-          "href": "https://yadree.khalil-am.com",
-          "icon": "globe"
-        }
-      ]
+      "links": []
     },
     {
       "name": "Sales Performance Analytics",
-      "description": "Advanced sales analytics dashboard featuring revenue breakdowns, customer segmentation, and performance metrics. Includes trend analysis, forecasting capabilities, and detailed drill-down views for sales team performance, product categories, and regional comparisons.",
-      "href": "https://kpionthefly.khalil-am.com",
+      "description": "A sales analytics dashboard concept covering revenue breakdowns, customer segments, trend views, and drill-downs across teams, product categories, and regions.",
       "image": "/dashboard-analytics.png",
       "tags": [
         "Tableau",
@@ -32,18 +24,11 @@
         "Customer Insights",
         "Performance Metrics"
       ],
-      "links": [
-        {
-          "name": "View Demo",
-          "href": "https://kpionthefly.khalil-am.com",
-          "icon": "globe"
-        }
-      ]
+      "links": []
     },
     {
       "name": "Marketing & Operations Dashboard",
-      "description": "Integrated marketing and operations intelligence platform delivering actionable insights on campaign performance, operational efficiency, and resource allocation. Features multi-channel analytics, conversion tracking, and operational KPIs with predictive modeling capabilities.",
-      "href": "https://yadree.khalil-am.com",
+      "description": "A portfolio dashboard concept for connecting campaign performance, conversion measures, operational KPIs, and resource-allocation questions in one review surface.",
       "image": "/dashboard-sales.png",
       "tags": [
         "Power BI",
@@ -52,18 +37,11 @@
         "Campaign Tracking",
         "ROI Analysis"
       ],
-      "links": [
-        {
-          "name": "View Demo",
-          "href": "https://yadree.khalil-am.com",
-          "icon": "globe"
-        }
-      ]
+      "links": []
     },
     {
       "name": "Web Analytics Intelligence Platform",
-      "description": "Sophisticated web analytics dashboard providing comprehensive insights into user behavior, traffic patterns, and engagement metrics. Features real-time monitoring, conversion funnel analysis, audience segmentation, and detailed performance tracking across all digital touchpoints.",
-      "href": "https://kpionthefly.khalil-am.com",
+      "description": "A web analytics dashboard concept for reviewing traffic patterns, engagement measures, conversion funnels, audience segments, and digital-channel performance.",
       "image": "/dashboard-web-analytics.png",
       "tags": [
         "Tableau",
@@ -72,18 +50,11 @@
         "Conversion Optimization",
         "Digital Intelligence"
       ],
-      "links": [
-        {
-          "name": "View Demo",
-          "href": "https://kpionthefly.khalil-am.com",
-          "icon": "globe"
-        }
-      ]
+      "links": []
     },
     {
       "name": "Yadree: Business Intelligence Consultant System",
-      "description": "A comprehensive AI-powered business intelligence solution that integrates real-time data visualization, SQLFlow, and machine learning to enhance decision-making. Features automated insights generation, natural language querying, and intelligent data exploration capabilities.",
-      "href": "https://yadree.khalil-am.com",
+      "description": "A portfolio prototype exploring AI-assisted business intelligence, SQL workflow support, data visualization, and machine-learning-assisted analysis for human decision-making.",
       "image": "/biac.png",
       "tags": [
         "AI",
@@ -92,18 +63,11 @@
         "SQLFlow",
         "Machine Learning"
       ],
-      "links": [
-        {
-          "name": "Website",
-          "href": "https://yadree.khalil-am.com",
-          "icon": "globe"
-        }
-      ]
+      "links": []
     },
     {
       "name": "KPI on the Fly AI",
-      "description": "A powerful AI-powered business intelligence platform designed to generate real-time KPIs directly from your data. Seamlessly integrating with Apache Superset, it enables effortless dashboard creation and dynamic KPI generation. Experience streamlined analytics with intelligent automation and Excel integration.",
-      "href": "https://kpionthefly.khalil-am.com",
+      "description": "An AI-assisted business intelligence concept for proposing KPIs from structured data and carrying reviewed metrics into Apache Superset dashboard workflows.",
       "image": "/kpionthefly.jpg",
       "tags": [
         "AI",
@@ -112,13 +76,7 @@
         "KPI Generation",
         "Apache Superset"
       ],
-      "links": [
-        {
-          "name": "Website",
-          "href": "https://kpionthefly.khalil-am.com",
-          "icon": "globe"
-        }
-      ]
+      "links": []
     }
   ]
 }

@@ -4,7 +4,6 @@ import {
   CardContent,
   CardFooter,
   CardHeader,
-  CardTitle,
 } from "@/components/ui/Card";
 import Image from "next/image";
 import Link from "next/link";
@@ -18,22 +17,25 @@ interface ModelProps {
     link: string;
     tags?: string[];
   };
+  headingLevel?: 2 | 3;
 }
 
-export function MLModelCard({ model }: ModelProps) {
+export function MLModelCard({ model, headingLevel = 3 }: ModelProps) {
   const { title, description, imageUrl, link, tags } = model;
+  const Heading = headingLevel === 2 ? "h2" : "h3";
 
   return (
     <Card className="flex flex-col">
       <CardHeader>
         {imageUrl &&
           (link ? (
-            <Link href={link}>
+            <Link href={link} target="_blank" rel="noopener noreferrer">
               <Image
                 src={imageUrl}
                 alt={`Illustration for ${title}`}
                 width={500}
                 height={300}
+                sizes="(max-width: 639px) calc(100vw - 2rem), 352px"
                 className="h-40 w-full object-cover object-top"
               />
             </Link>
@@ -43,12 +45,15 @@ export function MLModelCard({ model }: ModelProps) {
               alt={`Illustration for ${title}`}
               width={500}
               height={300}
+              sizes="(max-width: 639px) calc(100vw - 2rem), 352px"
               className="h-40 w-full object-cover object-top"
             />
           ))}
       </CardHeader>
       <CardContent className="flex flex-col gap-2">
-        <CardTitle>{title}</CardTitle>
+        <Heading className="font-semibold leading-none tracking-tight">
+          {title}
+        </Heading>
         <p className="prose max-w-full text-pretty font-sans text-xs text-muted-foreground dark:prose-invert">
           {description}
         </p>
@@ -72,11 +77,10 @@ export function MLModelCard({ model }: ModelProps) {
             href={link}
             target="_blank"
             rel="noopener noreferrer"
-            aria-label={`Learn more about ${title}`}
           >
             <Badge className="flex gap-2 px-2 py-1 text-[10px]">
               <Icon name="file-text" className="size-3" />
-              Learn More
+              Learn about {title}
             </Badge>
           </Link>
         </div>

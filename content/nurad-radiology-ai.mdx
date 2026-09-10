@@ -1,13 +1,16 @@
 ---
 title: "NuRad: Teaching AI to Read Radiology Reports"
-summary: "NuRad is an AI-driven medical intelligence platform that scans radiology reports, clinical findings, and medical terminology in unstructured healthcare text."
+summary: "NuRad is a research and portfolio prototype exploring AI-assisted terminology extraction from radiology reports and other unstructured healthcare text."
 image: "/Nurad.png"
 publishedAt: "2024-11-12"
+updatedAt: "2026-09-10"
 ---
 
 Ask a clinician which documents carry the most weight per sentence, and radiology reports will be near the top of the list. Ask a software engineer to parse one, and they will quickly find out why.
 
-That mismatch pushed me to build **NuRad** — an **AI-driven medical intelligence platform** focused on radiology and clinical terminology scanning. It analyzes medical reports, radiology findings, and unstructured healthcare text, and works toward turning prose that only a trained specialist can safely read into something software can actually help with.
+That mismatch pushed me to build **NuRad**—a research and portfolio prototype focused on radiology and clinical terminology scanning. It explores how software might help structure terms and context from medical reports, radiology findings, and other unstructured healthcare text.
+
+> NuRad is not presented as a medical device, a clinically validated system, or a tool for patient care. It must not be used for diagnosis, treatment, or emergency decisions. Any future clinical use would require appropriate governance, privacy safeguards, validation, regulatory review, and qualified professional oversight.
 
 Before getting into what NuRad does, it is worth explaining why this problem is genuinely hard.
 
@@ -19,13 +22,13 @@ A radiology report is not a form. It is a narrative — dictated under time pres
 
 Three things make it brutal for conventional software:
 
-**Negation is everywhere.** A report that mentions "hemorrhage" is very often saying *no evidence of hemorrhage*. Keyword search reads that as a hit. A clinician reads it as reassurance. Any system that cannot tell the difference is worse than useless — it is actively misleading.
+**Negation is everywhere.** A report that mentions "hemorrhage" is very often saying _no evidence of hemorrhage_. Keyword search reads that as a hit. A clinician reads it as reassurance. Any system that cannot tell the difference is worse than useless — it is actively misleading.
 
 > In clinical text, the most important word in a sentence is often "no."
 
-**The same finding wears many names.** One radiologist's "opacity" is another's "density." Abbreviations collide across specialties, and everyday words like *unremarkable* carry precise clinical meaning. Terminology is not a vocabulary list; it is a moving target.
+**The same finding wears many names.** One radiologist's "opacity" is another's "density." Abbreviations collide across specialties, and everyday words like _unremarkable_ carry precise clinical meaning. Terminology is not a vocabulary list; it is a moving target.
 
-**Uncertainty is a feature, not a bug.** Radiologists hedge deliberately — *cannot be excluded*, *likely represents*, *correlate clinically*. That hedging carries real information about confidence and next steps. Software that flattens it into yes/no answers is not simplifying the report; it is corrupting it.
+**Uncertainty is a feature, not a bug.** Radiologists hedge deliberately — _cannot be excluded_, _likely represents_, _correlate clinically_. That hedging carries real information about confidence and next steps. Software that flattens it into yes/no answers is not simplifying the report; it is corrupting it.
 
 Regular expressions do not survive contact with this. Rigid parsers do not either. This is squarely a **language problem** — which is why it stayed hard for so long, and why modern language models finally change the equation.
 
@@ -35,11 +38,11 @@ Regular expressions do not survive contact with this. Rigid parsers do not eithe
 
 NuRad points **LLMs and clinical NLP** at exactly this material. Give it medical reports, radiology findings, or any unstructured healthcare text, and it scans for the clinical terminology inside — the terms, the findings, and the context they sit in — instead of treating the report as an opaque blob of prose.
 
-That is the core of it: **radiology management powered by AI reading**, with the report itself as the first-class input. Where a keyword tool sees strings, NuRad is built to see clinical language.
+That is the core research question: can an AI-assisted system preserve the wording and context of a report better than a simple keyword matcher while keeping every extracted item traceable to its source?
 
-This is not my first run at machine-read medical material. My master's research sits in **AI for oncology**, my day job keeps me inside enterprise healthcare-adjacent software as a business analyst and product owner, and my earlier [feature extraction work](/blog/Features-Extraction) taught me how much signal hides inside imaging data. NuRad brings that same interest to the *text* side of radiology — the reports that wrap every scan.
+This is not my first run at machine-read medical material. My master's research sits in **AI for oncology**, my product leadership background includes healthcare-adjacent enterprise software, and my earlier [feature extraction work](/blog/medical-image-feature-extraction) taught me how much signal hides inside imaging data. NuRad brings that same interest to the _text_ side of radiology — the reports that wrap every scan.
 
-NuRad is live at [nurad.khalil-am.com](https://nurad.khalil-am.com).
+The demonstration is intentionally not linked from this case study until its public safety language fully matches the research-only scope described here.
 
 ---
 
@@ -47,15 +50,15 @@ NuRad is live at [nurad.khalil-am.com](https://nurad.khalil-am.com).
 
 Building in this domain forces a discipline that most software never needs. These are the principles NuRad is built around — and the ones I would hold any clinical AI to:
 
-**AI assists. It never diagnoses alone.** NuRad is *diagnosis support*, and that word order matters. The system's job is to help a clinician move through reports and terminology faster — the read, the judgment, and the decision belong to the human. Full stop.
+**Keep the prototype outside diagnosis.** NuRad explores terminology extraction and source traceability. It does not diagnose, recommend treatment, or claim to improve clinical speed or outcomes.
 
-**Surface, don't decide.** The right output for clinical AI is *"here is what the text says, and here is where it says it"* — not a verdict. Confidence belongs to the clinician, not the model.
+**Surface, don't decide.** The right output for clinical AI is _"here is what the text says, and here is where it says it"_ — not a verdict. Confidence belongs to the clinician, not the model.
 
-**Preserve uncertainty.** If the radiologist wrote *cannot be excluded*, the system must carry that hedge forward intact. Flattening uncertainty is the fastest way to lose a clinician's trust — and they would be right to withdraw it.
+**Preserve uncertainty.** If the radiologist wrote _cannot be excluded_, the system must carry that hedge forward intact. Flattening uncertainty is the fastest way to lose a clinician's trust — and they would be right to withdraw it.
 
 **Respect the source.** Anything the AI recognizes should stay traceable back to the original text. In medicine, an answer without its provenance is not an answer.
 
-None of this makes the product flashier. All of it makes the product *usable* in a domain where the cost of a wrong shortcut is measured in something other than money.
+None of this makes the product flashier. All of it makes the product _usable_ in a domain where the cost of a wrong shortcut is measured in something other than money.
 
 ---
 
@@ -63,11 +66,11 @@ None of this makes the product flashier. All of it makes the product *usable* in
 
 ### What is NuRad?
 
-NuRad is an AI-driven medical intelligence platform focused on radiology and clinical terminology scanning. It analyzes medical reports, radiology findings, and unstructured healthcare text, and it is live at nurad.khalil-am.com.
+NuRad is a research and portfolio prototype exploring AI-assisted terminology extraction from radiology reports and unstructured healthcare text. It is not for clinical or patient-care use.
 
 ### Does NuRad diagnose patients?
 
-No. NuRad is built as diagnosis *support* — it scans reports and surfaces clinical terminology and findings so a clinician can work faster, but the read, the judgment, and the final decision always belong to the human.
+No. NuRad is not a diagnostic tool, medical device, or clinically validated patient-care system. It is a portfolio prototype for exploring terminology extraction and source traceability.
 
 ### What technology does NuRad use?
 

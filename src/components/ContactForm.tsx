@@ -7,11 +7,13 @@ import { Input } from "./ui/Input";
 import { Textarea } from "./ui/Textarea";
 import Link from "next/link";
 import { useState } from "react";
+import { toast } from "sonner";
 
 type Inputs = {
   name: string;
   email: string;
   message: string;
+  website: string;
 };
 
 const ContactForm = () => {
@@ -19,21 +21,32 @@ const ContactForm = () => {
   const {
     register,
     handleSubmit,
+    reset,
     formState: { errors },
   } = useForm<Inputs>();
 
   const processForm: SubmitHandler<Inputs> = async (data) => {
     setIsSubmitting(true);
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      });
 
-    const res = await fetch("/api/contact", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(data),
-    });
+      if (!res.ok) {
+        throw new Error("The message could not be sent.");
+      }
 
-    if (res.ok) {
+      reset();
+      toast.success("Message sent. Khalil will get back to you soon.");
+    } catch {
+      toast.error(
+        "The message could not be sent. Please email khalil-am@outlook.com instead.",
+      );
+    } finally {
       setIsSubmitting(false);
     }
   };
@@ -41,45 +54,88 @@ const ContactForm = () => {
   return (
     <form onSubmit={handleSubmit(processForm)}>
       <div className="grid grid-cols-1 gap-2 sm:grid-cols-2">
+        <div className="sr-only" aria-hidden="true">
+          <label htmlFor="website">Website</label>
+          <input
+            id="website"
+            tabIndex={-1}
+            autoComplete="off"
+            {...register("website")}
+          />
+        </div>
         {/* Name */}
-        <div className="h-16">
+        <div>
+          <label htmlFor="name" className="mb-2 block text-sm font-semibold">
+            Name
+          </label>
           <Input
             id="name"
             type="text"
-            placeholder="Name"
+            placeholder="Your name"
             autoComplete="given-name"
-            {...register("name", { required: "Name is required" })}
+            maxLength={100}
+            aria-invalid={Boolean(errors.name)}
+            aria-describedby={errors.name ? "name-error" : undefined}
+            {...register("name", {
+              required: "Name is required",
+              maxLength: { value: 100, message: "Name is too long" },
+            })}
           />
           {errors.name?.message && (
-            <p className="input-error">{String(errors.name.message)}</p>
+            <p id="name-error" className="input-error">
+              {String(errors.name.message)}
+            </p>
           )}
         </div>
 
         {/* Email */}
-        <div className="h-16">
+        <div>
+          <label htmlFor="email" className="mb-2 block text-sm font-semibold">
+            Email
+          </label>
           <Input
             id="email"
             type="email"
-            placeholder="Email"
+            placeholder="you@example.com"
             autoComplete="email"
-            {...register("email", { required: "Email is required" })}
+            maxLength={254}
+            aria-invalid={Boolean(errors.email)}
+            aria-describedby={errors.email ? "email-error" : undefined}
+            {...register("email", {
+              required: "Email is required",
+              maxLength: { value: 254, message: "Email is too long" },
+            })}
           />
           {errors.email?.message && (
-            <p className="input-error">{String(errors.email.message)}</p>
+            <p id="email-error" className="input-error">
+              {String(errors.email.message)}
+            </p>
           )}
         </div>
 
         {/* Message */}
-        <div className="h-32 sm:col-span-2">
+        <div className="sm:col-span-2">
+          <label htmlFor="message" className="mb-2 block text-sm font-semibold">
+            Message
+          </label>
           <Textarea
+            id="message"
             rows={4}
-            placeholder="Leave feedback about the site, career opportunities or just to say hello etc."
-            autoComplete="Message"
+            placeholder="Tell Khalil about the opportunity, collaboration, or question."
+            autoComplete="off"
             className="resize-none"
-            {...register("message", { required: "Message is required" })}
+            maxLength={5000}
+            aria-invalid={Boolean(errors.message)}
+            aria-describedby={errors.message ? "message-error" : undefined}
+            {...register("message", {
+              required: "Message is required",
+              maxLength: { value: 5000, message: "Message is too long" },
+            })}
           />
           {errors.message?.message && (
-            <p className="input-error">{String(errors.message.message)}</p>
+            <p id="message-error" className="input-error">
+              {String(errors.message.message)}
+            </p>
           )}
         </div>
       </div>
