@@ -67,6 +67,9 @@ export const rootMetadata: Metadata = {
   },
   verification: {
     google: "k2m3xNOYGngOTpHpYqMWOgynytDrKugHM1g9TsWjyhA",
+    other: {
+      "msvalidate.01": "F921B71C5B40D4AFA2924BD843A025ED",
+    },
   },
   formatDetection: {
     address: false,
