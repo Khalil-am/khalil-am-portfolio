@@ -97,36 +97,6 @@ export default async function Home() {
         </div>
       </section>
 
-      <section
-        aria-labelledby="who-is-khalil"
-        className="rounded-xl border p-6 sm:p-8"
-      >
-        <p className="text-sm font-semibold uppercase tracking-[0.18em] text-muted-foreground">
-          Official profile
-        </p>
-        <h2 id="who-is-khalil" className="title mt-3 text-2xl sm:text-3xl">
-          Who is Khalil Abu Mushref?
-        </h2>
-        <p className="mt-4 leading-relaxed">
-          Khalil Abu Mushref is a Principal Product Manager, Product Owner, and
-          product team lead at Digital Next. He works across Riyadh and Abu
-          Dhabi, leading AI-enabled product strategy and enterprise delivery
-          from discovery and requirements through governance, release, and
-          measurable outcomes.
-        </p>
-        <div className="mt-5 flex flex-wrap gap-x-6 gap-y-3 text-sm font-semibold">
-          <Link className="link" href="/about">
-            Read the full professional profile
-          </Link>
-          <Link className="link" href="/ar" hrefLang="ar">
-            الملف الشخصي بالعربية
-          </Link>
-          <Link className="link" href="/contact">
-            Contact Khalil
-          </Link>
-        </div>
-      </section>
-
       <Experience />
 
       <section className="flex flex-col gap-8">

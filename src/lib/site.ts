@@ -1,5 +1,5 @@
 export const SITE_URL = "https://www.khalil-am.com";
-export const SITE_LAST_MODIFIED = "2026-09-10";
+export const SITE_LAST_MODIFIED = "2026-09-11";
 
 export const siteConfig = {
   name: "Khalil Abu Mushref",
