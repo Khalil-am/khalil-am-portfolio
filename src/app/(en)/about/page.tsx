@@ -7,7 +7,7 @@ import {
 } from "@/lib/jsonld";
 import { getPosts } from "@/lib/posts";
 import { pageMetadata } from "@/lib/seo";
-import { siteConfig, SITE_URL } from "@/lib/site";
+import { PAGE_LAST_MODIFIED, siteConfig, SITE_URL } from "@/lib/site";
 import { ArrowRightIcon, FileDown } from "lucide-react";
 import Link from "next/link";
 import path from "path";
@@ -78,6 +78,7 @@ export default async function AboutPage() {
               path: "/about",
               language: "en",
               displayName: `About ${siteConfig.name}`,
+              dateModified: PAGE_LAST_MODIFIED.about,
               recentPosts,
             }),
           ),

@@ -6,7 +6,7 @@ import {
   profilePageJsonLd,
 } from "@/lib/jsonld";
 import { pageMetadata } from "@/lib/seo";
-import { siteConfig, SITE_URL } from "@/lib/site";
+import { PAGE_LAST_MODIFIED, siteConfig, SITE_URL } from "@/lib/site";
 import { ArrowLeft, FileDown } from "lucide-react";
 import Link from "next/link";
 
@@ -70,6 +70,7 @@ export default function ArabicProfilePage() {
               path: "/ar",
               language: "ar",
               displayName: "الملف الرسمي لخليل أبو مشرف",
+              dateModified: PAGE_LAST_MODIFIED.arabicProfile,
             }),
           ),
         }}

@@ -40,14 +40,14 @@ export default function Header({
         >
           <Image
             src="/assets/Kam-logo-black.svg"
-            alt=""
+            alt={isArabic ? "شعار خليل أبو مشرف" : "Khalil Abu Mushref logo"}
             width={56}
             height={56}
             className="h-14 w-auto dark:hidden"
           />
           <Image
             src="/assets/Kam-logo-white.svg"
-            alt=""
+            alt={isArabic ? "شعار خليل أبو مشرف" : "Khalil Abu Mushref logo"}
             width={56}
             height={56}
             className="hidden h-14 w-auto dark:block"

@@ -138,6 +138,13 @@ for (const { canonicalUrl, pathname, response, body } of results) {
   if (/noindex/i.test(robots)) fail(`${pathname} has noindex`);
   if (h1Count !== 1) fail(`${pathname} has ${h1Count} H1 elements`);
 
+  for (const match of body.matchAll(/<img\b[^>]*>/gi)) {
+    const attributes = parseAttributes(match[0]);
+    if (!attributes.alt?.trim()) {
+      fail(`${pathname} has an image with missing or empty alt text`);
+    }
+  }
+
   for (const property of ["og:title", "og:description", "og:url", "og:image"]) {
     if (!findMeta(body, "property", property)) {
       fail(`${pathname} is missing ${property}`);
@@ -226,6 +233,15 @@ for (const [pathname, expectedText] of [
   if (!response.ok) fail(`${pathname} returned ${response.status}`);
   if (!body.includes(expectedText))
     fail(`${pathname} is missing expected content`);
+}
+
+const robotsResponse = await fetch(atBase("/robots.txt"));
+const robotsBody = await robotsResponse.text();
+if (/^Host:/im.test(robotsBody)) {
+  fail("robots.txt contains a non-standard Host directive");
+}
+if (!/^User-Agent: \*$/im.test(robotsBody) || !/^Allow: \/$/im.test(robotsBody)) {
+  fail("robots.txt does not explicitly allow public crawling");
 }
 
 const about = results.find(({ pathname }) => pathname === "/about")?.body ?? "";

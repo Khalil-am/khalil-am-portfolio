@@ -1,4 +1,4 @@
-import { siteConfig, SITE_LAST_MODIFIED, SITE_URL } from "@/lib/site";
+import { siteConfig, SITE_URL } from "@/lib/site";
 
 export const PERSON_ID = `${SITE_URL}/#person`;
 export const WEBSITE_ID = `${SITE_URL}/#website`;
@@ -140,11 +140,13 @@ export function profilePageJsonLd({
   path,
   language,
   displayName,
+  dateModified,
   recentPosts = [],
 }: {
   path: string;
   language: "en" | "ar";
   displayName: string;
+  dateModified: string;
   recentPosts?: Array<{ title?: string; slug: string; publishedAt?: string }>;
 }): object {
   const url = `${SITE_URL}${path}`;
@@ -156,7 +158,7 @@ export function profilePageJsonLd({
     name: displayName,
     url,
     inLanguage: language,
-    dateModified: `${SITE_LAST_MODIFIED}T00:00:00.000Z`,
+    dateModified: `${dateModified}T00:00:00.000Z`,
     isPartOf: { "@id": WEBSITE_ID },
     mainEntity: { "@id": PERSON_ID },
     ...(recentPosts.length

@@ -1,10 +1,28 @@
 export const SITE_URL = "https://www.khalil-am.com";
-export const SITE_LAST_MODIFIED = "2026-09-11";
+
+/** Significant content changes by canonical static route. */
+export const PAGE_LAST_MODIFIED = {
+  home: "2026-09-11",
+  projects: "2026-09-10",
+  bi: "2026-09-10",
+  models: "2026-09-10",
+  blog: "2026-09-10",
+  about: "2026-09-10",
+  arabicProfile: "2026-09-10",
+  contact: "2026-09-10",
+  privacy: "2026-09-10",
+  cv: "2026-09-10",
+} as const;
 
 export const siteConfig = {
   name: "Khalil Abu Mushref",
   shortName: "Khalil AM",
-  alternateNames: ["Khalil AM", "خليل أبو مشرف", "خليل ابو مشرف"],
+  alternateNames: [
+    "Khalil AM",
+    "Khalil Abu",
+    "خليل أبو مشرف",
+    "خليل ابو مشرف",
+  ],
   givenName: "Khalil",
   familyName: "Abu Mushref",
   title: "Khalil Abu Mushref | Principal Product Manager",
